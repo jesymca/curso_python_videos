@@ -6,6 +6,7 @@ cabecera = "<div class = 'container'> <div class = 'row well well-sm'> <div clas
 mensajeactualizacion = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/";
 mensajeextra = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/extra/";
 linkextenciones = "http://bit.ly/extensionespdl";
+logoje = "<img src='media/imagen/logo.png' width='180' height='30' alt='J.E SUMINISTROS Y MAS, C.A.' longdesc='LOGO J.E SUMINISTROS Y MAS, C.A.' id='logo' align='left'>";
 
 //DEFINIENDO VARIABLES GLOBALES
 i = " <i title = 'Podra Imprimir' class='fas fa-print'></i>";
@@ -17,6 +18,8 @@ w = " <i title = 'Contiene Archivos Web' class='fab fa-html5'></i>";
 z = " <i title = 'Contiene Archivos Comprimido' class='fas fa-file-archive'></i>";
 l = " <i title = 'Contiene Link' class='fas fa-link'></i>";
 h = " <i title = 'Cargar Inicio' class='fas fa-home'></i>";
+r = " <i title = 'Cargar Inicio' class='fas fa-file-alt'></i>";
+
 
 imprimirxs = "<p class='text-right'><a class='btn btn-danger btn-sm' href='javascript:window.print(); void 0;'>Imprimir " + i + "</a></p>";
 
@@ -46,7 +49,6 @@ tca = "<b>Para hacer ";
 tcc = " se requieren:</b>";
 sup = 'Seleccione un Producto...';
 
-
 //a = Componente
 //b = Porcentaje
 function p(b){
@@ -54,7 +56,6 @@ function p(b){
 valor = UI * b / 100;
 return valor;
 }
-
 //FUNCTION QUE QUITARA SIGNO DE IGUAL A CADA COMPONENTE
 function quitarigual(){
     for (ab in componente)
@@ -66,7 +67,6 @@ function quitarigual(){
     }
     return componente[ab].n;
   }
-
 //FUNCTION QUE COLOCARA SIGNO DE IGUAL A CADA COMPONENTE
   function ponerigual(){
     for (ab in componente)
@@ -129,37 +129,67 @@ function botonera() {
 
     var avl = a + v + l;
 
-    botonera = "<div class = 'row'> " +
-        "<div class = 'col-sm-12 col-md-3 col-lg-3'> <div class = 'dropdown'> <button title='Ingrese a la seccion que desee explorar' data-hover='dropdown' class = 'btn btn-sm btn-primary dropdown-toggle col-sm-12' type = 'button' id = 'dropdownMenu1' data-toggle = 'dropdown' aria-haspopup = 'true' aria-expanded = 'true'>Secciones  <span class = 'caret'> </span> </button> <div class='dropdown-menu'> " + "<a onclick='bienvenida();' name='Bienvenida' title='Cargar Inicio del Curso' href='#Bienvenida' class='dropdown-item'>Cargar Bienvenida " + h + " </a> "+
-        "<a onclick='videos(1);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>01 Videos Bienvenida " + v + " </a>" +
-        "<a onclick='videos(2);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>02 Videos Entorno de Aprendizaje " + v + w + z + " </a>"+
-        "<a onclick='videos(3);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>03 Videos Introduccion Informal " + v + w + z + " </a>" +
-        "<a onclick='videos(4);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>04 Videos Operadores y Expresiones " + v + w + " </a>" +
-        "<a onclick='videos(5);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>05 Videos Controlando el flujo " + v + w + " </a>" +
-        "<a onclick='videos(6);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>06 Videos Colecciones de datos " + v + w + " </a>" +
-        "<a onclick='videos(7);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>07 Videos Entradas y salidas de datos " + v + w + " </a>" +
-        "<a onclick='videos(8);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>08 Videos Programacion de funciones " + v + w + " </a>" +
-        "<a onclick='videos(9);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>09 Videos Manejo de excepciones " + v + w + " </a>" +
-        "<a onclick='videos(10);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>10 Videos Clases y objetos " + v + w + " </a>" +
-        "<a onclick='videos(11);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>11 Videos Herencia " + v + w + " </a>" +
-        "<a onclick='videos(12);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>12 Videos Metodos de las colecciones " + v + " </a>" +
-        "<a onclick='videos(13);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>13 Videos Modulos y paquetes " + v + " </a>" +
-        "<a onclick='videos(14);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>14 Videos Manejo de ficheros " + v + " </a>" +
-        "<a onclick='videos(15);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>15 Videos Interfaces graficas con Tkinter " + v + " </a>" +
-        "<a onclick='videos(16);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>16 Videos Bases de datos con SQLite " + v + " </a>" +
-        "<a onclick='videos(17);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>17 Videos Funcionalidades avanzadas " + v + " </a>" +
-        "<a onclick='videos(18);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>18 Videos Documentacion y pruebas " + v + " </a>" +
-        "<a onclick='videos(19);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>19 Videos Distribucion " + w + " </a>" +
-        "<a onclick='videos(20);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>20 Videos Anexos " + w + " </a>" +
-        "<a onclick='videos(21);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>21 Videos Bonus " + w + " </a>" +
+    botonera = "<nav class='navbar navbar-expand-lg navbar-light fixed-top' style='background-color: #c9deff;'>"+
+    "<div class='container'>"+
+    '<a onclick="bienvenida();" title="Cargar Inicio" class="navbar-brand" href="#Bienvenida">'+logoje+' </a>'+
+    '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">'+
+    '<span class="navbar-toggler-icon"></span>'+
+    '</button>'+
+    '<div class="collapse navbar-collapse" id="navbarResponsive">'+
+    '<ul class="navbar-nav">'+
+
+    '<li class="nav-item">'+
+    '<a onclick="bienvenida();" title="Cargar Inicio" class="nav-link active" href="#Bienvenida"><i class="fas fa-home fa-fw"></i> Inicio'+
+    '<span class="sr-only">(current)</span>'+
+    '</a>'+
+    '</li>'+
+
+
+    '<li id="Secciones" class="nav-item dropdown">'+
+    '<a title="Secciones" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+    '<i class="fa fa-puzzle-piece fa-fw"></i>  Secciones'+
+    '</a>'+
+    '<div id="dropdown-item" class="dropdown-menu" aria-labelledby="navbarDropdown">'+
+
+    "<a onclick='videos(1);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>01 Videos Bienvenida " + v + " </a>" +
+    "<a onclick='videos(2);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>02 Videos Entorno de Aprendizaje " + v + w + z + " </a>"+
+    "<a onclick='videos(3);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>03 Videos Introduccion Informal " + v + w + z + " </a>" +
+    "<a onclick='videos(4);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>04 Videos Operadores y Expresiones " + v + w + " </a>" +
+    "<a onclick='videos(5);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>05 Videos Controlando el flujo " + v + w + " </a>" +
+    "<a onclick='videos(6);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>06 Videos Colecciones de datos " + v + w + " </a>" +
+    "<a onclick='videos(7);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>07 Videos Entradas y salidas de datos " + v + w + " </a>" +
+    "<a onclick='videos(8);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>08 Videos Programacion de funciones " + v + w + " </a>" +
+    "<a onclick='videos(9);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>09 Videos Manejo de excepciones " + v + w + " </a>" +
+    "<a onclick='videos(10);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>10 Videos Clases y objetos " + v + w + " </a>" +
+    "<a onclick='videos(11);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>11 Videos Herencia " + v + w + " </a>" +
+    "<a onclick='videos(12);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>12 Videos Metodos de las colecciones " + v + " </a>" +
+    "<a onclick='videos(13);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>13 Videos Modulos y paquetes " + v + " </a>" +
+    "<a onclick='videos(14);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>14 Videos Manejo de ficheros " + v + " </a>" +
+    "<a onclick='videos(15);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>15 Videos Interfaces graficas con Tkinter " + v + " </a>" +
+    "<a onclick='videos(16);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>16 Videos Bases de datos con SQLite " + v + " </a>" +
+    "<a onclick='videos(17);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>17 Videos Funcionalidades avanzadas " + v + " </a>" +
+    "<a onclick='videos(18);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>18 Videos Documentacion y pruebas " + v + " </a>" +
+    "<a onclick='videos(19);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>19 Videos Distribucion " + w + " </a>" +
+    "<a onclick='videos(20);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>20 Videos Anexos " + w + " </a>" +
+    "<a onclick='videos(21);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>21 Videos Bonus " + w + " </a>" +
+    "<a onclick = 'glosario();' title = 'Glosario de Terminos' name = 'Glosario de Terminos' href='#glosario' class='dropdown-item'>Glosario de Terminos <span class = 'glyphicon glyphicon-book' aria-hidden = 'true'> </span> " + i + " </a>" +
+    '</div>'+
+    '</li>'+
+
+
+    '<li>'+
+    "<a href = '#extra' title = 'Ver Extensiones Instaladas' name = 'Extensiones' onclick = 'extra();' class='nav-link'> Extensiones  " + e + " </a>"+
+    '</li>'+
+
+    '<li>'+
+    "<a href = '#Creditos' onclick = 'creditos();' title = 'Creditos' name = 'Creditos' class='nav-link'>Creditos "+r+" </a>"+
+    '</li>'+
 
 
 
-        "<a onclick = 'glosario();' title = 'Glosario de Terminos' name = 'Glosario de Terminos' href='#glosario' class='dropdown-item'>Glosario de Terminos <span class = 'glyphicon glyphicon-book' aria-hidden = 'true'> </span> " + i + " </a>" +
-        "</div></div> </div> " +
-        "<div class = 'col-sm-12 col-md-3 col-lg-3'> <a href = '#extra' title = 'Ver Extensiones Instaladas' name = 'Extensiones' onclick = 'extra();' class = 'btn btn-sm btn-primary btn-block'> Extensiones  " + e + " </a> </div> " +
-        "<div class = 'col-sm-12 col-md-3 col-lg-3'> <a onclick='formulas(), primerselect();' name='Formulas' title='Formulas' href='#Formulas' class = 'btn btn-sm btn-primary btn-block'>Calculo de Formulas " + c + i + " </a> </div> " +
-        "<div class = 'col-sm-12 col-md-3 col-lg-3'> <a href = '#Creditos' onclick = 'creditos();' title = 'Creditos' name = 'Creditos' class = 'btn btn-sm btn-primary btn-block'>Creditos <span class = 'glyphicon glyphicon-link' aria-hidden = 'true'> </span> </a> </div> </div>";
+    '</ul>'+
+    '</div>'+
+    "</div></nav>";
 
     bienvenida();
     footer_site();
