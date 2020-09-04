@@ -142,26 +142,17 @@ function botonera() {
         "<a onclick='videos(9);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>09 Videos Manejo de excepciones " + v + w + " </a>" +
         "<a onclick='videos(10);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>10 Videos Clases y objetos " + v + w + " </a>" +
         "<a onclick='videos(11);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>11 Videos Herencia " + v + w + " </a>" +
-        "<a onclick='videos(12);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>12 Videos Metodos de las colecciones " + v + w + " </a>" +
-        "<a onclick='videos(13);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>13 Videos Modulos y paquetes " + v + w + " </a>" +
-        "<a onclick='videos(14);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>14 Videos Manejo de ficheros " + v + w + " </a>" +
-        "<a onclick='videos(15);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>15 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(16);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>16 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(17);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>17 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(18);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>18 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(19);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>19 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(20);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>20 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(21);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>21 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(22);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>22 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(23);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>23 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(24);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>24 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(25);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>25 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(26);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>26 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(27);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>27 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(28);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>28 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(29);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>29 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(30);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>30 Videos  " + v + w + " </a>" +
-        "<a onclick='videos(31);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>31 Videos  " + v + w + " </a>" +
+        "<a onclick='videos(12);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>12 Videos Metodos de las colecciones " + v + " </a>" +
+        "<a onclick='videos(13);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>13 Videos Modulos y paquetes " + v + " </a>" +
+        "<a onclick='videos(14);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>14 Videos Manejo de ficheros " + v + " </a>" +
+        "<a onclick='videos(15);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>15 Videos Interfaces graficas con Tkinter " + v + " </a>" +
+        "<a onclick='videos(16);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>16 Videos Bases de datos con SQLite " + v + " </a>" +
+        "<a onclick='videos(17);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>17 Videos Funcionalidades avanzadas " + v + " </a>" +
+        "<a onclick='videos(18);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>18 Videos Documentacion y pruebas " + v + " </a>" +
+        "<a onclick='videos(19);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>19 Videos Distribucion " + w + " </a>" +
+        "<a onclick='videos(20);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>20 Videos Anexos " + w + " </a>" +
+        "<a onclick='videos(21);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>21 Videos Bonus " + w + " </a>" +
+
 
 
         "<a onclick = 'glosario();' title = 'Glosario de Terminos' name = 'Glosario de Terminos' href='#glosario' class='dropdown-item'>Glosario de Terminos <span class = 'glyphicon glyphicon-book' aria-hidden = 'true'> </span> " + i + " </a>" +
@@ -852,17 +843,291 @@ let rut = 'media/videos/';
           archivo: "097 Ejercicios optativos - Soluciones paso a paso 3.mp4",
           seccion: 14,
           contenido: ""
+      },{
+          nombre: "107 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "098 Previa.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "108 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "099 Tkinter y los widgets.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "109 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "100 Tk Raiz.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "110 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "101 Frames Marcos.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "111 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "102 Labels Etiquetas.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "112 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "103 Entry Campos de texto.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "113 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "104 Text Textos largos.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "114 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "105 Buttons Botones.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "115 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "106 Radiobuttons Botones radiales.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "116 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "107 Checkbuttons Botones seleccionables.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "117 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "108 Menus Menus.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "118 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "109 Popups Ventanas emergentes.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "119 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "110 Popups avanzados.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "120 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "111 Proyecto Editor de texto con Ficheros I.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "121 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "112 Proyecto Editor de texto con Ficheros II.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "122 Interfaces graficas con Tkinter",
+          ruta: rut + "15 Interfaces graficas con Tkinter/",
+          archivo: "113 Proyecto Editor de texto con Ficheros III.mp4",
+          seccion: 15,
+          contenido: ""
+      },{
+          nombre: "123 Bases de datos con SQLite",
+          ruta: rut + "16 Bases de datos con SQLite/",
+          archivo: "114 Previa.mp4",
+          seccion: 16,
+          contenido: ""
+      },{
+          nombre: "124 Bases de datos con SQLite",
+          ruta: rut + "16 Bases de datos con SQLite/",
+          archivo: "115 Conexion puntero y consultas basicas.mp4",
+          seccion: 16,
+          contenido: ""
+      },{
+          nombre: "125 Bases de datos con SQLite",
+          ruta: rut + "16 Bases de datos con SQLite/",
+          archivo: "116 Claves primarias campos autoincrementales y claves unicas.mp4",
+          seccion: 16,
+          contenido: ""
+      },{
+          nombre: "126 Bases de datos con SQLite",
+          ruta: rut + "16 Bases de datos con SQLite/",
+          archivo: "117 Consultas modificacion y borrado registros.mp4",
+          seccion: 16,
+          contenido: ""
+      },{
+          nombre: "127 Bases de datos con SQLite",
+          ruta: rut + "16 Bases de datos con SQLite/",
+          archivo: "118 Ejercicios optativos - Soluciones paso a paso 1.mp4",
+          seccion: 16,
+          contenido: ""
+      },{
+          nombre: "128 Bases de datos con SQLite",
+          ruta: rut + "16 Bases de datos con SQLite/",
+          archivo: "119 Ejercicios optativos - Soluciones paso a paso 2.mp4",
+          seccion: 16,
+          contenido: ""
+      },{
+          nombre: "129 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "120 Operadores encadenados.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "130 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "121 Comprension de listas.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "131 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "122 Funciones decoradoras I.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "132 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "123 Funciones decoradoras II.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "133 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "124 Funciones generadoras e iteradores.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "134 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "125 Funciones lambda.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "135 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "126 Funcion filter.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "136 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "127 Funcion map.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "137 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "128 Expresiones regulares I.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "138 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "129 Expresiones regulares II.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "139 Funcionalidades avanzadas",
+          ruta: rut + "17 Funcionalidades avanzadas/",
+          archivo: "130 Expresiones regulares III.mp4",
+          seccion: 17,
+          contenido: ""
+      },{
+          nombre: "140 Documentacion y pruebas",
+          ruta: rut + "18 Documentacion y pruebas",
+          archivo: "131 Docstrings.mp4",
+          seccion: 18,
+          contenido: ""
+      },{
+          nombre: "141 Documentacion y pruebas",
+          ruta: rut + "18 Documentacion y pruebas",
+          archivo: "132 Pydoc.mp4",
+          seccion: 18,
+          contenido: ""
+      },{
+          nombre: "142 Documentacion y pruebas",
+          ruta: rut + "18 Documentacion y pruebas",
+          archivo: "133 Doctest I.mp4",
+          seccion: 18,
+          contenido: ""
+      },{
+          nombre: "143 Documentacion y pruebas",
+          ruta: rut + "18 Documentacion y pruebas",
+          archivo: "134 Doctest II.mp4",
+          seccion: 18,
+          contenido: ""
+      },{
+          nombre: "144 Documentacion y pruebas",
+          ruta: rut + "18 Documentacion y pruebas",
+          archivo: "135 Unittest I.mp4",
+          seccion: 18,
+          contenido: ""
+      },{
+          nombre: "145 Documentacion y pruebas",
+          ruta: rut + "18 Documentacion y pruebas",
+          archivo: "136 Unittest II.mp4",
+          seccion: 18,
+          contenido: ""
+      },{
+          nombre: "146 Distribucion",
+          ruta: rut + "19 Distribucion/",
+          archivo: "137 Setuptools.html",
+          seccion: 19,
+          contenido: ""
+      },{
+          nombre: "147 Distribucion",
+          ruta: rut + "19 Distribucion/",
+          archivo: "138 Pyinstaller.html",
+          seccion: 19,
+          contenido: ""
+      },{
+          nombre: "148 Anexos",
+          ruta: rut + "20 Anexos/",
+          archivo: "139 Breve historia sobre Python.html",
+          seccion: 20,
+          contenido: ""
+      },{
+          nombre: "149 Anexos",
+          ruta: rut + "20 Anexos/",
+          archivo: "140 El Zen de Python.html",
+          seccion: 20,
+          contenido: ""
+      },{
+          nombre: "150 Anexos",
+          ruta: rut + "20 Anexos/",
+          archivo: "141 PEP 8 Guia de estilo para Python.html",
+          seccion: 20,
+          contenido: ""
+      },{
+          nombre: "151 Anexos",
+          ruta: rut + "20 Anexos/",
+          archivo: "142 Python 3.6 Format simplificado.html",
+          seccion: 20,
+          contenido: ""
 
+      },{
+          nombre: "152 Bonus",
+          ruta: rut + "21 Bonus/",
+          archivo: "143 Extra Super Ofertas para estudiantes.html",
+          seccion: 21,
+          contenido: ""
 
-
-
-
-  }];
+        }];
     let selectedVideo = videos.filter((item) => (
            item.seccion === a
        ));
 
        let resultado = "<h1>Prueba de Lista de Videos</h1>";
+       //resultado += '<div class="position-fixed">Columna izquierda que se mueve con el scroll...</div>';
        resultado += "<ol>";
        let nodoDOM = selectedVideo.map((video) => {
 
