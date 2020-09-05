@@ -145,11 +145,12 @@ function botonera() {
     '</li>'+
 
 
-    '<li id="Secciones" class="nav-item dropdown">'+
+    '<li id="dropdown-secciones" class="nav-item dropdown">'+
     '<a title="Secciones" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
     '<i class="fa fa-puzzle-piece fa-fw"></i>  Secciones'+
     '</a>'+
-    '<div id="dropdown-item" class="dropdown-menu" aria-labelledby="navbarDropdown">'+
+
+    '<div id="dropdown-secci" class="dropdown-menu" aria-labelledby="navbarDropdown">'+
 
     "<a onclick='videos(1);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>01 Videos Bienvenida " + v + " </a>" +
     "<a onclick='videos(2);' name='Videos' title='Videos' href='#Videos' class='dropdown-item'>02 Videos Entorno de Aprendizaje " + v + w + z + " </a>"+
@@ -240,19 +241,19 @@ let rut = 'media/videos/';
           ruta: rut + "01 Bienvenida/",
           archivo: "001 Presentación personal.mp4",
           seccion: 1,
-          contenido: "Video que contiene la bienvenida inicial."
+          contenido: "Video que contiene la bienvenida por parte del tutor, aca podras ver la presentacion del tutor quien te guiara a lo largo de este curso."
       },{
           nombre: "02 Bienvenida",
           ruta: rut + "01 Bienvenida/",
           archivo: "002 Presentación del curso.mp4",
           seccion: 1,
-          contenido: ""
+          contenido: "En este video podras ver el resumen de la presentacion del curso, podras ver lo que podras aprender haciendo este curso."
       },{
           nombre: "03 El entorno de aprendizaje",
           ruta: rut + "02 El entorno de aprendizaje/",
           archivo: "003 Previa.mp4",
           seccion: 2,
-          contenido: ""
+          contenido: "Aca podras aprender a instalar el entorno de aprendizaje que seran:<br> <a href='https://www.python.org/download/releases/3.0/' target='_blank'>PYTHON 3</a><br> <a href='https://jupyter.org/' target='_blank'>JUPYTER</a><br><a href='https://www.sublimetext.com/' target='_blank'>SUBLIME TEXT</a> este es el editor de codigo pero puedes utilizar el editor que prefieras y te haga sentir mas comodo/a algunos otros editores de codigo que puedes utilizar pueden ser: <a href='https://code.visualstudio.com/' target='_blank'>VISUAL STUDIO CODE DE MICROSOFT</a> o tambien <a href='https://atom.io/' target='_blank'>ATOM</a>"
       },{
           nombre: "04 El entorno de aprendizaje",
           ruta: rut + "02 El entorno de aprendizaje/",
@@ -264,19 +265,19 @@ let rut = 'media/videos/';
           ruta: rut + "02 El entorno de aprendizaje/",
           archivo: "005 Preparando entorno en Windows.mp4",
           seccion: 2,
-          contenido: ""
+          contenido: "En este video podras ver como instalar en un AMBIENTE WINDOWS el software ANACONDA puedes hacerlo directamente ingresando a la web de <a href='https://www.anaconda.com/products/individual' target='_blank'>ANACONDA</a> tambien podras ver como poner en funcionamiento JUPYTER Notebook y por ultimo ver cual es la version de Python instalada en tu computador y verificar si todo esta funcionando bien."
       },{
           nombre: "06 El entorno de aprendizaje",
           ruta: rut + "02 El entorno de aprendizaje/",
           archivo: "006 Preparando entorno en Linux.mp4",
           seccion: 2,
-          contenido: ""
+          contenido: "En este video podras ver como instalar en un AMBIENTE LINUX el software ANACONDA puedes hacerlo directamente ingresando a la web de <a href='https://www.anaconda.com/products/individual' target='_blank'>ANACONDA</a> tambien podras ver como poner en funcionamiento JUPYTER Notebook y por ultimo ver cual es la version de Python instalada en tu computador y verificar si todo esta funcionando bien."
       },{
           nombre: "07 El entorno de aprendizaje",
           ruta: rut + "02 El entorno de aprendizaje/",
           archivo: "007 Preparando entorno en Mac OS X.html",
           seccion: 2,
-          contenido: ""
+          contenido: "Los sistemas MAC son basados en UNIX y por ello es posible que encuentre mucha similitud con la configuracion aplicable a los sistemas LINUX"
       },{
           nombre: "08 El entorno de aprendizaje",
           ruta: rut + "02 El entorno de aprendizaje/",
@@ -291,28 +292,28 @@ let rut = 'media/videos/';
           contenido: ""
       },{
           nombre: "10 El entorno de aprendizaje",
-          ruta: rut + "02 El entorno de aprendizaje/",
-          archivo: "CursoPython-Final.zip",
+          ruta: rut + "02 El entorno de aprendizaje/attached_files/004 Descarga de los recursos y ejercicios/",
+          archivo: "CursoPython.zip",
           seccion: 2,
-          contenido: ""
+          contenido: "Aca podra descargar el archivo ZIP que se muestra en el video y que podra descomprimir y acceder desde el aplicativo Jupyter Notebook"
       },{
           nombre: "11 El entorno de aprendizaje",
-          ruta: rut + "02 El entorno de aprendizaje/",
-          archivo: "CursoPython-Solo-Ejercicios.zip",
+          ruta: rut + "02 El entorno de aprendizaje/attached_files/004 Descarga de los recursos y ejercicios/CursoPython/",
+          archivo: "/",
           seccion: 2,
-          contenido: ""
+          contenido: "Puede ir al Directorio <code>media/videos/02 El entorno de aprendizaje/attached_files/004 Descarga de los recursos y ejercicios/CursoPython/</code> desde su gestor de archivos o explorador de Windows y visitarlo ya descomprimido solo de ejecutar desde una terminal el comando <code>/CursoPython/~]$ jupyter notebook</code>."
       },{
           nombre: "12 Introduccion informal",
           ruta: rut + "03 Introduccion informal/",
           archivo: "010 Previa.mp4",
           seccion: 3,
-          contenido: ""
+          contenido: "Para que programar, que ocurre cuando programamos, manipular datos y usarlos en nuestros proyectos, en importante tener en claro que en <b>PYTHON</b> existen 3 tipos de datos: <ul><li>Numeros</li><li>Textos</li><li>Listas</li>"
       },{
           nombre: "13 Introduccion informal",
           ruta: rut + "03 Introduccion informal/",
           archivo: "011 Numeros.mp4",
           seccion: 3,
-          contenido: ""
+          contenido: "Primera leccion practica del curso, aca comenzará a utilizar datos numericos, operar con ellos, numeros enteros y decimales. Tambien empezará a utilizar variables."
       },{
           nombre: "14 Introduccion informal",
           ruta: rut + "03 Introduccion informal/",
@@ -1191,6 +1192,11 @@ let rut = 'media/videos/';
              boton = "Ver archivo PDF" + z;
            }
 
+           else if (archivo === "/") {
+             previo = "";
+             boton = "Visitar directorio";
+           }
+
 
 
            let listaA = solonombre.toUpperCase();
@@ -1989,12 +1995,3 @@ resultado += "<div class='text-center'><img width='50%' src=\"media\/imagen\/gen
 
     document.getElementById('contenido').innerHTML = resultado;
 }
-
-
-$(document).ready(function () {
-    $("form").keypress(function (e) {
-        if (e.which == 13) {
-            return false;
-        }
-    });
-});
