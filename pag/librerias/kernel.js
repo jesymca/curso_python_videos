@@ -231,7 +231,12 @@ function bienvenida() {
 
 function videos(a) {
 
-
+  $('li a').click(function(e) {
+     //e.preventDefault();
+     $('a').removeClass('active');
+     $(this).addClass('active');
+  });
+  
   let rut = 'media/videos/';
 
   let videos = [{
@@ -1215,7 +1220,7 @@ function videos(a) {
 
   //       document.getElementById('contenido').innerHTML = resultado;
 
-  window.scrollTo(0, 0)
+  window.scrollTo(0, 0);
 
 }
 
