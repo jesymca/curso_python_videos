@@ -1,4 +1,4 @@
-# ignore all files in any directory named build
+# Ignorando el contenido de los directorios
 media/
 pag/
 *.dir
