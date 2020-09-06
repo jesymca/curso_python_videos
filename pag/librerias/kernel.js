@@ -175,7 +175,6 @@ function botonera() {
     '</div>' +
     '</li>' +
 
-
     '<li>' +
     "<a href = '#extra' title = 'Ver Extensiones Instaladas' name = 'Extensiones' onclick = 'extra();' class='nav-link'> Extensiones  " + e + " </a>" +
     '</li>' +
@@ -183,8 +182,6 @@ function botonera() {
     '<li>' +
     "<a href = '#Creditos' onclick = 'creditos();' title = 'Creditos' name = 'Creditos' class='nav-link'>Creditos " + r + " </a>" +
     '</li>' +
-
-
 
     '</ul>' +
     '</div>' +
