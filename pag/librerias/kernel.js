@@ -235,8 +235,9 @@ function videos(a) {
      //e.preventDefault();
      $('a').removeClass('active');
      $(this).addClass('active');
+
   });
-  
+
   let rut = 'media/videos/';
 
   let videos = [{
@@ -298,13 +299,13 @@ function videos(a) {
     ruta: rut + "02 El entorno de aprendizaje/attached_files/004 Descarga de los recursos y ejercicios/",
     archivo: "001 CursoPython.zip",
     seccion: 2,
-    contenido: "Aca podra descargar el archivo ZIP que se muestra en el video y que podra descomprimir y acceder desde el aplicativo Jupyter Notebook"
+    contenido: "Aca podra descargar el archivo ZIP que se muestra en el video y que podra descomprimir y acceder desde el aplicativo Jupyter Notebook."
   }, {
     nombre: "11 El entorno de aprendizaje",
     ruta: rut + "02 El entorno de aprendizaje/attached_files/004 Descarga de los recursos y ejercicios/CursoPython/",
     archivo: "/",
     seccion: 2,
-    contenido: "Puede ir al Directorio <code>media/videos/02 El entorno de aprendizaje/attached_files/004 Descarga de los recursos y ejercicios/CursoPython/</code> desde su gestor de archivos o explorador de Windows y visitarlo ya descomprimido solo de ejecutar desde una terminal el comando <code>/CursoPython/~]$ jupyter notebook</code>."
+    contenido: "Puede ir al Directorio <kbd>media/videos/02 El entorno de aprendizaje/attached_files/004 Descarga de los recursos y ejercicios/CursoPython/</kbd> desde su gestor de archivos o explorador de Windows y visitarlo ya descomprimido solo de ejecutar desde una terminal el comando <kbd>/CursoPython/~]$ jupyter notebook</kbd>."
   }, {
     nombre: "12 Introduccion informal",
     ruta: rut + "03 Introduccion informal/",
@@ -322,25 +323,25 @@ function videos(a) {
     ruta: rut + "03 Introduccion informal/",
     archivo: "012 Textos.mp4",
     seccion: 3,
-    contenido: "En esta segunda leccion se aprendera a trabajar con textos o cadenas de caracteres. Aprendera a utilizar las comillas dobre y comillas simples, los simbolos para escapar errores de simbolos y comandos:<ul><li> Uso del comando para imprimir <code>print()</code></li> <li>Uso del escape tabulador <code>/t</code> </li><li>Uso del escape espaciador <code>/n</code></li></ul><br>Tambien se aprendera las operaciones disponibles con las cadenas de caracteres, uso de variables."
+    contenido: "En esta segunda leccion se aprendera a trabajar con textos o cadenas de caracteres. Aprendera a utilizar las comillas dobre y comillas simples, los simbolos para escapar errores de simbolos y comandos:<ul><li> Uso del comando para imprimir <kbd>print()</kbd></li> <li>Uso del escape tabulador <kbd>/t</kbd> </li><li>Uso del escape espaciador <kbd>/n</kbd></li></ul><br>Tambien se aprendera las operaciones disponibles con las cadenas de caracteres, uso de variables."
   }, {
     nombre: "15 Introduccion informal",
     ruta: rut + "03 Introduccion informal/",
     archivo: "013 Indices y slicing.mp4",
     seccion: 3,
-    contenido: "Se continua con el trabajo de cadena de caracteres, en esta oportunidad con el uso de indices sobre los caracteres, es decir los numeros de posiciones de las cadenas de caracteres, tambien se explica el uso de la tecnica de indices llamada slicing y se hace introduccion a la funcion <code>len()</code>."
+    contenido: "Se continua con el trabajo de cadena de caracteres, en esta oportunidad con el uso de indices sobre los caracteres, es decir los numeros de posiciones de las cadenas de caracteres, tambien se explica el uso de la tecnica de indices llamada slicing y se hace introduccion a la funcion <kbd>len()</kbd>."
   }, {
     nombre: "16 Introduccion informal",
     ruta: rut + "03 Introduccion informal/",
     archivo: "014 Listas.mp4",
     seccion: 3,
-    contenido: "El uso de las listas son importantes ya que las mismas se utilizan para agrupar variables y valores dentro de una variable, relacionando dichas listas con los indices respectivos. Se da introduccion a los metodos <code>.append</code> y por ultimo estudiaremos la capacidad de anidar listas."
+    contenido: "El uso de las listas son importantes ya que las mismas se utilizan para agrupar variables y valores dentro de una variable, relacionando dichas listas con los indices respectivos. Se da introduccion a los metodos <kbd>.append</kbd> y por ultimo estudiaremos la capacidad de anidar listas."
   }, {
     nombre: "17 Introduccion informal",
     ruta: rut + "03 Introduccion informal/",
     archivo: "015 Lectura por teclado.mp4",
     seccion: 3,
-    contenido: "Se analizaran la funcion que permite leer una variable en tiempo real desde el teclado con la funcion <code>input()</code> que se encarga de leer la cadena de caracteres introducidos desde el teclado, se aprenderá a operar con este dato, convirtiendo la cadena en un numero entero <code>int()</code> o en un numero decimal <code>float()</code>"
+    contenido: "Se analizaran la funcion que permite leer una variable en tiempo real desde el teclado con la funcion <kbd>input()</kbd> que se encarga de leer la cadena de caracteres introducidos desde el teclado, se aprenderá a operar con este dato, convirtiendo la cadena en un numero entero <kbd>int()</kbd> o en un numero decimal <kbd>float()</kbd>"
   }, {
     nombre: "18 Introduccion informal",
     ruta: rut + "03 Introduccion informal/",
@@ -364,19 +365,19 @@ function videos(a) {
     ruta: rut + "04 Operadores y expresiones/",
     archivo: "018 Previa.mp4",
     seccion: 4,
-    contenido: ""
+    contenido: "Resumen y pequeña introduccion a los operadores disponibles para los argumentos en Python. Los operadores van a permitir armar lo que se va a calcular y tambien la logica de como debe funcionar nuestra aplicacion."
   }, {
     nombre: "22 Operadores y expresiones",
     ruta: rut + "04 Operadores y expresiones/",
     archivo: "019 El tipo logico.mp4",
     seccion: 4,
-    contenido: ""
+    contenido: "En esta leccion se analizaran los operadores aplicables para la ejecucion de operadores y expresiones de tipo logicos."
   }, {
     nombre: "23 Operadores y expresiones",
     ruta: rut + "04 Operadores y expresiones/",
     archivo: "020 Operadores relacionales.mp4",
     seccion: 4,
-    contenido: ""
+    contenido: "Los operadores relacionales son los que se usan para realizar comparaciones para obtener resultados del tipo <kbd>true</kbd> o del tipo <kbd>false</kbd>. Estas expresiones son las siguientes: <ul><li>Operador Igual que: <kbd>3 == 3 #true</kbd></li><li>Operador Distinto que: <kbd>3 != 4 #true</kbd></li><li>Operador Mayor que: <kbd>4 > 2 #true</kbd></li><li>Operador Menor que: <kbd>2 < 9 #true</kbd></li><li>Operador Mayor o igual que <kbd>2 >= 2 #true</kbd></li><li>Operador Menor o igual que <kbd>1 <= 3 #true</kbd></li></ul><br>Vale indicar que en los ejemplos anteriores todas dan como resultado <b>true</b>, pero en los siguientes ejemplos los resultados del operador logico serian <b>false</b>:<ul><li>Operador Igual que: <kbd>3 == 1 #false</kbd></li><li>Operador Distinto que: <kbd>3 != 3 #false</kbd></li><li>Operador Mayor que: <kbd>4 > 9 #false</kbd></li><li>Operador Menor que: <kbd>2 < 1 #false</kbd></li><li>Operador Mayor o igual que <kbd>2 >= 1 #false</kbd></li><li>Operador Menor o igual que <kbd>1 <= -3 #false</kbd></li></ul>"
   }, {
     nombre: "24 Operadores y expresiones",
     ruta: rut + "04 Operadores y expresiones/",
