@@ -3,3 +3,4 @@ media/
 pag/
 *.dir
 *.scale
+.gitignore
