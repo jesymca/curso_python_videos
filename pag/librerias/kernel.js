@@ -383,7 +383,7 @@ function videos(a) {
     ruta: rut + "04 Operadores y expresiones/",
     archivo: "021 Operadores logicos.mp4",
     seccion: 4,
-    contenido: ""
+    contenido: "En el caso de las expresiones"
   }, {
     nombre: "25 Operadores y expresiones",
     ruta: rut + "04 Operadores y expresiones/",
