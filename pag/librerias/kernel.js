@@ -252,7 +252,7 @@ function videos(a) {
     ruta: rut + "02 El entorno de aprendizaje/",
     archivo: "003 Previa.mp4",
     seccion: 2,
-    contenido: "Aca podras aprender a instalar el entorno de aprendizaje que seran:<br> <a href='https://www.python.org/download/releases/3.0/' target='_blank'>PYTHON 3</a><br> <a href='https://jupyter.org/' target='_blank'>JUPYTER</a><br><a href='https://www.sublimetext.com/' target='_blank'>SUBLIME TEXT</a> este es el editor de codigo pero puedes utilizar el editor que prefieras y te haga sentir mas comodo/a algunos otros editores de codigo que puedes utilizar pueden ser: <a href='https://code.visualstudio.com/' target='_blank'>VISUAL STUDIO CODE DE MICROSOFT</a> o tambien otro editor de codigo muy utilizado como lo es <a href='https://atom.io/' target='_blank'>ATOM</a><br>Es posible que ya este familiarizado con los programas de instalacion de paquetes de software pero seas de los que le guste instalar sus programas por separado, en este caso me refiero a instalar Python, Jupyter notebook por separado sin necesidad de Instalar ANACONDA que se explica en el siguiente video."
+    contenido: "Aca podras aprender a instalar el entorno de aprendizaje que seran:<ul> <li>Lenguaje de programacion PYTHON: <a class='clase6' href='https://www.python.org/download/releases/3.0/' target='_blank' title='Visitar PYTHON 3'>PYTHON 3</a></li><li>Project Jupyter Notebook: <a class='clase6' href='https://jupyter.org/' target='_blank' title='Visitar JUPYTER NOTEBOOK'>JUPYTER NOTEBOOK</a></li><li>Editor de texto Sublime Text: <a class='clase6' href='https://www.sublimetext.com/' target='_blank' title='Visitar SUBLIME TEXT'>SUBLIME TEXT</a></li></ul> este es el editor de codigo pero puedes utilizar el editor que prefieras y te haga sentir mas comodo/a algunos otros editores de codigo que puedes utilizar pueden ser: <a class='clase6' href='https://code.visualstudio.com/' target='_blank' title='Visitar VISUAL STUDIO CODE DE MICROSOFT'>VISUAL STUDIO CODE DE MICROSOFT</a> o tambien otro editor de codigo muy utilizado como lo es <a class='clase6' href='https://atom.io/' target='_blank' title='Visitar ATOM'>ATOM</a><br>Es posible que ya este familiarizado con los programas de instalacion de paquetes de software pero seas de los que le guste instalar sus programas por separado, en este caso me refiero a instalar Python, Jupyter notebook por separado sin necesidad de Instalar ANACONDA que se explica en el siguiente video."
   }, {
     nombre: "04 El entorno de aprendizaje",
     ruta: rut + "02 El entorno de aprendizaje/",
@@ -264,13 +264,13 @@ function videos(a) {
     ruta: rut + "02 El entorno de aprendizaje/",
     archivo: "005 Preparando entorno en Windows.mp4",
     seccion: 2,
-    contenido: "En este video podras ver como instalar en un AMBIENTE WINDOWS el software ANACONDA puedes hacerlo directamente ingresando a la web de <a href='https://www.anaconda.com/products/individual' target='_blank'>ANACONDA</a> tambien podras ver como poner en funcionamiento JUPYTER Notebook y por ultimo ver cual es la version de Python instalada en tu computador y verificar si todo esta funcionando bien."
+    contenido: "En este video podras ver como instalar en un <a class='clase6' href='https://www.microsoft.com/es-es/windows' target='_blank' title='Visitar WINDOWS'>AMBIENTE WINDOWS</a> el software <a class='clase6' href='https://www.anaconda.com/products/individual' target='_blank' title='Visitar ANACONDA'>ANACONDA</a> puedes hacerlo directamente ingresando a su web de <a class='clase6' href='https://www.anaconda.com/products/individual' target='_blank' title='Visitar ANACONDA'>ANACONDA</a> tambien podras ver como poner en funcionamiento <a class='clase6' href='https://jupyter.org/' target='_blank' title='Visitar JUPYTER NOTEBOOK'>JUPYTER NOTEBOOK</a> y por ultimo ver cual es la version de <a class='clase6' href='https://www.python.org/download/releases/3.0/' target='_blank' title='Visitar PYTHON 3'>PYTHON 3</a> instalada en tu computador y verificar si todo esta funcionando bien."
   }, {
     nombre: "06 El entorno de aprendizaje",
     ruta: rut + "02 El entorno de aprendizaje/",
     archivo: "006 Preparando entorno en Linux.mp4",
     seccion: 2,
-    contenido: "En este video podras ver como instalar en un AMBIENTE LINUX el software ANACONDA puedes hacerlo directamente ingresando a la web de <a href='https://www.anaconda.com/products/individual' target='_blank'>ANACONDA</a> tambien podras ver como poner en funcionamiento JUPYTER Notebook y por ultimo ver cual es la version de Python instalada en tu computador y verificar si todo esta funcionando bien."
+    contenido: "En este video podras ver como instalar en un <a class='clase6' href='https://www.linux.org/pages/download/' target='_blank' title='Visitar INSTALADORES LINUX'>AMBIENTE LINUX</a> el software <a class='clase6' href='https://www.anaconda.com/products/individual' target='_blank' title='Visitar ANACONDA'>ANACONDA</a> puedes hacerlo directamente ingresando a la web de <a class='clase6' href='https://www.anaconda.com/products/individual' target='_blank' title='Visitar ANACONDA'>ANACONDA</a> tambien podras ver como poner en funcionamiento <a class='clase6' href='https://jupyter.org/' target='_blank' title='Visitar JUPYTER NOTEBOOK'>JUPYTER NOTEBOOK</a> y por ultimo ver cual es la version de <a class='clase6' href='https://www.python.org/download/releases/3.0/' target='_blank' title='Visitar PYTHON 3'>PYTHON 3</a> instalada en tu computador y verificar si todo esta funcionando bien. En el caso de linux es posible que prefieras realizar la instalacion por separado de Python y de Jupyter Notebook, pero ya alli la eleccion que realices te permitira seleccionar la opcion con la que puedas trabajar de forma mas comoda."
   }, {
     nombre: "07 El entorno de aprendizaje",
     ruta: rut + "02 El entorno de aprendizaje/",
@@ -378,7 +378,7 @@ function videos(a) {
     ruta: rut + "04 Operadores y expresiones/",
     archivo: "021 Operadores logicos.mp4",
     seccion: 4,
-    contenido: "En el caso de las expresiones"
+    contenido: "En el caso de las expresiones es importante comprender que la negacion de la mentira es verdad y la negacion de la verdad es una mentira. <ul><li>Operador <kbd>not</kbd></li><li>Operador <kbd>and</kbd></li><li>Operador <kbd>or</kbd></li></ul>"
   }, {
     nombre: "25 Operadores y expresiones",
     ruta: rut + "04 Operadores y expresiones/",
@@ -1375,37 +1375,37 @@ function creditos() {
     direccion: "http://www.ehu.eus/biomoleculas/ph/neutra.htm",
     fecha: "22-08-2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "PYTHON 3",
+    direccion: "https://www.python.org/download/releases/3.0/",
+    fecha: "06/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Jupyter Notebook",
+    direccion: "https://jupyter.org/",
+    fecha: "06/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Sublime Text",
+    direccion: "https://www.sublimetext.com/",
+    fecha: "06/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Visual Studio Code",
+    direccion: "https://code.visualstudio.com/",
+    fecha: "06/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Atom",
+    direccion: "https://atom.io/",
+    fecha: "06/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Anaconda",
+    direccion: "https://www.anaconda.com/products/individual",
+    fecha: "06/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Repositorio en GitHub",
+    direccion: "https://github.com/jesymca/curso_python_videos/",
+    fecha: "06/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Lista de Instaladores Sistemas Operativos basados en LINUX",
+    direccion: "https://www.linux.org/pages/download/",
+    fecha: "06/09/2020"
   }, {
     nombre: "",
     direccion: "",
