@@ -384,13 +384,13 @@ function videos(a) {
     ruta: rut + "04 Operadores y expresiones/",
     archivo: "022 Expresiones anidadas.mp4",
     seccion: 4,
-    contenido: ""
+    contenido: "Las expresiones anidadas se refieren a las combinaciones de expresiones que siguen una norma de precendencia para obtener siempre un resultado <kbd>true</kbd> o <kbd>false</kbd>"
   }, {
     nombre: "26 Operadores y expresiones",
     ruta: rut + "04 Operadores y expresiones/",
     archivo: "023 Operadores de asignacion.mp4",
     seccion: 4,
-    contenido: ""
+    contenido: "Los operadores de asignacion permiten asignar valores a variables:<ul><li>Operador de asignacion de variable: <kbd>a = 0 # Asigna a la variable a = 0</kbd></li><li>Operador de suma en la asignacion <kbd>a += 4 # Asigna a la variable a la suma del valor 4 es decir quedaria a = 4</kbd></li><li>Operador de resta en la asignacion <kbd>a -= 1 # Asigna a la variable a la resta del valor 1 es decir quedaria a = 3</kbd></li><li>Operador de multiplicacion en la asignacion <kbd>a *= 2 # Asigna a la variable a la multiplicacion por el valor 2 es decir quedaria a = 6</kbd></li><li>Operador de divisio en la asignacion <kbd>a /= 2 # Asigna a la variable a la division por el valor 2 es decir quedaria a = 3</kbd></li><li>Operador de modulo en la asignacion <kbd>a %= 2 # Asigna a la variable la identificacion de que si el numero es o no par quedando a = 1.0</kbd></li><li>Operador de potencia en la asignacion <kbd>a **= 2 # Asigna a la variable la potencia de a elevado a la 2 quedando a = 1.0</kbd> Si el valor de la variable a fuera uno diferente a 1 se ejecutaria la operacion matematica del valor de a elevado al numero de la potencia en asignacion.</li></ul>"
   }, {
     nombre: "27 Operadores y expresiones",
     ruta: rut + "04 Operadores y expresiones/",
