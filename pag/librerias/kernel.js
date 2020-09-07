@@ -390,37 +390,37 @@ function videos(a) {
     ruta: rut + "04 Operadores y expresiones/",
     archivo: "023 Operadores de asignacion.mp4",
     seccion: 4,
-    contenido: "Los operadores de asignacion permiten asignar valores a variables:<ul><li>Operador de asignacion de variable: <kbd>a = 0 # Asigna a la variable a = 0</kbd></li><li>Operador de suma en la asignacion <kbd>a += 4 # Asigna a la variable a la suma del valor 4 es decir quedaria a = 4</kbd></li><li>Operador de resta en la asignacion <kbd>a -= 1 # Asigna a la variable a la resta del valor 1 es decir quedaria a = 3</kbd></li><li>Operador de multiplicacion en la asignacion <kbd>a *= 2 # Asigna a la variable a la multiplicacion por el valor 2 es decir quedaria a = 6</kbd></li><li>Operador de divisio en la asignacion <kbd>a /= 2 # Asigna a la variable a la division por el valor 2 es decir quedaria a = 3</kbd></li><li>Operador de modulo en la asignacion <kbd>a %= 2 # Asigna a la variable la identificacion de que si el numero es o no par quedando a = 1.0</kbd></li><li>Operador de potencia en la asignacion <kbd>a **= 2 # Asigna a la variable la potencia de a elevado a la 2 quedando a = 1.0</kbd> Si el valor de la variable a fuera uno diferente a 1 se ejecutaria la operacion matematica del valor de a elevado al numero de la potencia en asignacion.</li></ul>"
+    contenido: "Los operadores de asignacion permiten asignar valores a variables:<ul><li>Operador de asignacion de variable:<br> <kbd>a = 0 # Asigna a la variable a = 0</kbd></li><li>Operador de suma en la asignacion:<br> <kbd>a += 4 # Asigna a la variable a la suma del valor 4 es decir quedaria a = 4</kbd></li><li>Operador de resta en la asignacion:<br> <kbd>a -= 1 # Asigna a la variable a la resta del valor 1 es decir quedaria a = 3</kbd></li><li>Operador de multiplicacion en la asignacion:<br> <kbd>a *= 2 # Asigna a la variable a la multiplicacion por el valor 2 es decir quedaria a = 6</kbd></li><li>Operador de divisio en la asignacion:<br> <kbd>a /= 2 # Asigna a la variable a la division por el valor 2 es decir quedaria a = 3</kbd></li><li>Operador de modulo en la asignacion:<br> <kbd>a %= 2 # Asigna a la variable la identificacion de que si el numero es o no par quedando a = 1.0</kbd></li><li>Operador de potencia en la asignacion:<br> <kbd>a **= 2 # Asigna a la variable la potencia de a elevado a la 2 quedando a = 1.0</kbd> <br>Si el valor de la variable a fuera uno diferente a 1 se ejecutaria la operacion matematica del valor de a elevado al numero de la potencia en asignacion.</li></ul>"
   }, {
     nombre: "27 Operadores y expresiones",
     ruta: rut + "04 Operadores y expresiones/",
     archivo: "024 Ejercicios optativos - Soluciones paso a paso.mp4",
     seccion: 4,
-    contenido: ""
+    contenido: "Aca se presentan paso a paso los ejercicios propuestos desde <a class='clase6' href='https://jupyter.org/' target='_blank' title='Visitar JUPYTER NOTEBOOK'>JUPYTER NOTEBOOK</a>"
   }, {
-    nombre: "28 Operadores y expresiones",
-    ruta: rut + "04 Operadores y expresiones/quizzes/",
-    archivo: "002 Quiz de la seccion.html",
-    seccion: 4,
-    contenido: ""
+    //nombre: "28 Operadores y expresiones",
+    //ruta: rut + "04 Operadores y expresiones/quizzes/",
+    //archivo: "002 Quiz de la seccion.html",
+    //seccion: 4,
+    //contenido: ""
   }, {
     nombre: "29 Controlando el flujo",
     ruta: rut + "05 Controlando el flujo/",
     archivo: "025 Previa.mp4",
     seccion: 5,
-    contenido: ""
+    contenido: "Introduccion al orden de flujo que se debe tomar en cuenta durante la programacion en Python."
   }, {
     nombre: "30 Controlando el flujo",
     ruta: rut + "05 Controlando el flujo/",
     archivo: "026 Sentencia If.mp4",
     seccion: 5,
-    contenido: ""
+    contenido: "Controlando el flujo con la sentencia condicional <kbd>if</kbd> que es si se quiere la sentencia mas utilizada en la programacion y permite ejecutar instrucciones para procesar valores logicos."
   }, {
     nombre: "31 Controlando el flujo",
     ruta: rut + "05 Controlando el flujo/",
     archivo: "027 Sentencia While.mp4",
     seccion: 5,
-    contenido: ""
+    contenido: "La iteracion se refiere a utilizar una operacion varias veces, tambien se le llama en otros terminos un bucle. La sentencia <kbd>while</kbd> es capaz de repetir un bloque de codigo cuantas veces sea necesario hasta que el resultado sea <kbd>true</kbd> y logicamente dentro de los bloques de codigo se pueden combinar muchas sentencias para lograr obtener el resultado necesario."
   }, {
     nombre: "32 Controlando el flujo",
     ruta: rut + "05 Controlando el flujo/",
@@ -1167,18 +1167,20 @@ function videos(a) {
     let seccion = video.seccion;
     let contenido = video.contenido;
 
-    let arch = archivo.substr(-4);
-
     let solonombre = nombre.substr(3);
     narchi = archivo.substring(0, archivo.lastIndexOf("."));
     narchi = narchi.substr(3);
     solonombre = solonombre + " <b>" + narchi + "</b>";
 
+    nomb = archivo.lastIndexOf(".");
+    largo = archivo.length;
+    arch = archivo.substring(largo, nomb);
+
     if (arch === '.mp4') {
-      previo = '<video width="70%" controls="controls" preload="metadata">  <source src="' + ruta + archivo + '#t=0.1" type="video/mp4"></video>';
+      previo = '<video controls width="70%" preload="metadata" poster="media/imagen/postervideos.png">  <source src="' + ruta + archivo + '" type="video/mp4"></video>';
       boton = "Ver Video en otra ventana" + v;
 
-    } else if (arch === 'html') {
+    } else if (arch === '.html') {
       previo = "<a title='Ver Contenido HTML " + archivo + "'  href='" + ruta + archivo + "' target = '_blank'>" + '<img class="clase2" alt="img0" src="media/imagen/html.png"/>' + "</a>";
       boton = "Ver contenido Web" + w;
 
@@ -1216,7 +1218,9 @@ function videos(a) {
 
   //       document.getElementById('contenido').innerHTML = resultado;
 
-  window.scrollTo(0, 0);
+window.scrollTo(0, 0);
+
+
 
 }
 
@@ -1407,9 +1411,9 @@ function creditos() {
     direccion: "https://www.linux.org/pages/download/",
     fecha: "06/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Microsoft Windows",
+    direccion: "https://www.microsoft.com/es-es/windows",
+    fecha: "06/09/2020"
   }, {
     nombre: "",
     direccion: "",
