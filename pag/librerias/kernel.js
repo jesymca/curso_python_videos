@@ -238,13 +238,13 @@ function videos(a) {
   let videos = [{
     nombre: "01 Bienvenida",
     ruta: rut + "01 Bienvenida/",
-    archivo: "001 Presentación personal.mp4",
+    archivo: "001 Presentacion personal.mp4",
     seccion: 1,
     contenido: "Video que contiene la bienvenida por parte del tutor, aca podras ver la presentacion del tutor quien te guiara a lo largo de este curso."
   }, {
     nombre: "02 Bienvenida",
     ruta: rut + "01 Bienvenida/",
-    archivo: "002 Presentación del curso.mp4",
+    archivo: "002 Presentacion del curso.mp4",
     seccion: 1,
     contenido: "En este video podras ver el resumen de la presentacion del curso, podras ver lo que podras aprender haciendo este curso."
   }, {
@@ -426,7 +426,7 @@ function videos(a) {
     ruta: rut + "05 Controlando el flujo/",
     archivo: "028 Sentencia For.mp4",
     seccion: 5,
-    contenido: ""
+    contenido: "For puede llegar a ser el mejor aliado dentro de la programacion en PYTHON y es porque la sintaxis de un bucle <kbd>for</kbd> es mas sencillo que la sintaxis de un bucle <kbd>while</kbd>"
   }, {
     nombre: "33 Controlando el flujo",
     ruta: rut + "05 Controlando el flujo/",
@@ -1169,7 +1169,7 @@ function videos(a) {
 
     let solonombre = nombre.substr(3);
     narchi = archivo.substring(0, archivo.lastIndexOf("."));
-    narchi = narchi.substr(3);
+    narchi = narchi.substr(4);
     solonombre = solonombre + " <b>" + narchi + "</b>";
 
     nomb = archivo.lastIndexOf(".");
@@ -1177,7 +1177,7 @@ function videos(a) {
     arch = archivo.substring(largo, nomb);
 
     if (arch === '.mp4') {
-      previo = '<video controls width="70%" preload="metadata" poster="media/imagen/postervideos.png">  <source src="' + ruta + archivo + '" type="video/mp4"></video>';
+      previo = '<video id="'+narchi+'" controls width="70%" preload="metadata" poster="media/imagen/postervideos.png">  <source src="' + ruta + archivo + '" type="video/mp4"></video>';
       boton = "Ver Video en otra ventana" + v;
 
     } else if (arch === '.html') {
@@ -1220,6 +1220,15 @@ function videos(a) {
 
 window.scrollTo(0, 0);
 
+$('video').off('play').on('play', function() {
+    var dd = this.id
+    $('video').each(function( index ) {
+        if(dd != this.id){
+            this.pause();
+            this.currentTime = 0;
+        }
+    });
+});
 
 
 }
