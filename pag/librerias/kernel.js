@@ -193,6 +193,13 @@ function botonera() {
   document.getElementById('botonera').innerHTML = botonera, document.getElementById('foot').innerHTML = foot, document.getElementById('contenido').innerHTML = contenido;
   mensextra();
 
+  $('li a').click(function(e) {
+     //e.preventDefault();
+     $('a').removeClass('active');
+     $(this).addClass('active');
+
+  });
+
 
 }
 
@@ -225,13 +232,6 @@ function bienvenida() {
 
 
 function videos(a) {
-
-  $('li a').click(function(e) {
-     //e.preventDefault();
-     $('a').removeClass('active');
-     $(this).addClass('active');
-
-  });
 
   let rut = 'media/videos/';
 
@@ -432,67 +432,67 @@ function videos(a) {
     ruta: rut + "05 Controlando el flujo/",
     archivo: "029 Post Analisis.mp4",
     seccion: 5,
-    contenido: ""
+    contenido: "En este video se efectua un resumen de los conocimientos adquirirdos hasta el momento, se repasan las sentencias y funciones que se han estudiado hasta el momento."
   }, {
     nombre: "34 Controlando el flujo",
     ruta: rut + "05 Controlando el flujo/",
     archivo: "030 Ejercicios optativos - Soluciones paso a paso 1 al 3.mp4",
     seccion: 5,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
     nombre: "35 Controlando el flujo",
     ruta: rut + "05 Controlando el flujo/",
     archivo: "031 Ejercicios optativos - Soluciones paso a paso 4 al 7.mp4",
     seccion: 5,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
-    nombre: "36 Controlando el flujo",
-    ruta: rut + "05 Controlando el flujo/quizzes/",
-    archivo: "003 Quiz de la seccion.html",
-    seccion: 5,
-    contenido: ""
+    //nombre: "36 Controlando el flujo",
+    //ruta: rut + "05 Controlando el flujo/quizzes/",
+    //archivo: "003 Quiz de la seccion.html",
+    //seccion: 5,
+    //contenido: ""
   }, {
     nombre: "37 Colecciones de datos",
     ruta: rut + "06 Colecciones de datos/",
     archivo: "032 Previa.mp4",
     seccion: 6,
-    contenido: ""
+    contenido: "Introduccion al uso de las colecciones disponibles en Python."
   }, {
     nombre: "38 Colecciones de datos",
     ruta: rut + "06 Colecciones de datos/",
     archivo: "033 Tuplas.mp4",
     seccion: 6,
-    contenido: ""
+    contenido: "Tuplas son usados por Python en algunas funciones para devolver resultados inmutables es decir que no pueden ser modificados. Las tuplas son como las listas pero estan entre parentesis ejemplo: <kbd>varieble = (1,2,3,"string",[a,b,c,d],-10)</kbd><br>Dichos datos pueden accederse con las tecnicas de indices ya estudiadas."
   }, {
     nombre: "39 Colecciones de datos",
     ruta: rut + "06 Colecciones de datos/",
     archivo: "034 Conjuntos.mp4",
     seccion: 6,
-    contenido: ""
+    contenido: "Los conjuntos son colecciones desordenadas de elementos, se usa para verificar datos de una lista, duplicados entre otros. Los conjuntos son caracterizados por ser declarados entre llaves ejemplo: <kbd>conjunto = {1,2,3,'A','B'}</kbd> Se caracterizan por no poseer repetido un mismo valor dentro del conjunto, si se agrega un valor ya existente a un conjunto esta accion no sucedera porque dicho valor ya existe en el conjunto. Los conjuntos pueden convertirse en lista para operar con ellas."
   }, {
     nombre: "40 Colecciones de datos",
     ruta: rut + "06 Colecciones de datos/",
     archivo: "035 Diccionarios.mp4",
     seccion: 6,
-    contenido: ""
+    contenido: "Los diccionarios son otro tipo de colecciones de Python que si se quiere son junto a las listas las colecciones que mas se utilizan en el lenguaje Python y basicamente pudieramos decir que es una especie de lista con definiciones y poseen la siguiente estrectura: <kbd>diccionario = {'casa':'house','carro':'car','perro':'dog'}</kbd>. Tienen la particularidad de ser modificables y se pueden acceder a ellos como si se tratase de indices pero con el valor que los identifica o con su palabra clave."
   }, {
     nombre: "41 Colecciones de datos",
     ruta: rut + "06 Colecciones de datos/",
     archivo: "036 Pilas y colas con listas.mp4",
     seccion: 6,
-    contenido: ""
+    contenido: "Python no implementa directamente las Pilas y Colas, basicamente lo que hacen es permitir agregar o retirar un elemento de dicha agrupacion o de dicha lista. En el caso de la simulacion en Python se utilizaram los comandos: <ul><li>Agregar valor al final de nuestra lista<kbd>.append()</kbd></li><li>Quitar ultimo elemento de nuestra lista<kbd>pop()</kbd></li><ul><br>En el caso de las colas su forma de funcionamiento en la vida real es diferente ya que al momento de agregar se agregan siempre al final de dicha lista, pero al momento de eliminar algun dato este dato seria el primero de dicha lista y para ello basicamente se logra al utilizar una coleccion ya existente dentro de Python y se ejecutaria mediante la declaracion inicial de la importacion de dicha coleccion <kbd>from collections import deque</kbd>"
   }, {
     nombre: "42 Colecciones de datos",
     ruta: rut + "06 Colecciones de datos/",
     archivo: "037 Ejercicios optativos - Soluciones paso a paso.mp4",
     seccion: 6,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
-    nombre: "43 Colecciones de datos",
-    ruta: rut + "06 Colecciones de datos/quizzes/",
-    archivo: "004 Quiz de la seccion.html",
-    seccion: 6,
-    contenido: ""
+    //nombre: "43 Colecciones de datos",
+    //ruta: rut + "06 Colecciones de datos/quizzes/",
+    //archivo: "004 Quiz de la seccion.html",
+    //seccion: 6,
+    //contenido: ""
   }, {
     nombre: "44 Entradas y salidas de datos",
     ruta: rut + "07 Entradas y salidas de datos/",
@@ -1229,6 +1229,14 @@ $('video').off('play').on('play', function() {
         }
     });
 });
+
+$('li a').click(function(e) {
+   //e.preventDefault();
+   $('a').removeClass('active');
+   $(this).addClass('active');
+
+});
+
 
 
 }
@@ -2065,8 +2073,4 @@ function ph() {
   resultado += "<\/div>";
 
   document.getElementById('contenido').innerHTML = resultado;
-}
-
-function toTop() {
-    window.scrollTo(0, 0)
 }
