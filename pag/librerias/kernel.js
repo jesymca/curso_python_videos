@@ -518,7 +518,7 @@ function videos(a) {
     ruta: rut + "07 Entradas y salidas de datos/",
     archivo: "041 Salidas.mp4",
     seccion: 7,
-    contenido: ""
+    contenido: "Manejar la forma en que Python le da salida a los datos que se estan tratando es de gran importancia ya que va a permitir mostrar pocas o muchas variables, algunas largas y otras cortas, por ello es muy importante formatear la forma en que se van a mostrar los parametros."
   }, {
     nombre: "48 Entradas y salidas de datos",
     ruta: rut + "07 Entradas y salidas de datos/",
@@ -542,25 +542,25 @@ function videos(a) {
     ruta: rut + "08 Programacion de funciones/",
     archivo: "044 Previa.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "Las funciones es un fragmento de codigo que puede ser llamado una y otra vez utilizando su nombre y pasandole las variables con las que queremos que interactue para obtener un determinado resultado."
   }, {
     nombre: "52 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
     archivo: "045 Definicion de funciones.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "Una funcion posee la siguiente estructura:<br><kbd>def ejemplo():</kbd> Las funciones son programadas para que ejecuten muchas tareas de forma que cuando se necesite ejecutar esta misma tarea solo se haga el llamado desde otra parte del codigo. Es importante prestar atencion a lo que representa el ambito de la funcion. En Python al trabajar con variables fuera y dentro del mismo ambito de una funcion notaras que se crearan variables con el mismo nombre por ello es recomendable cambiar el nombre de las variables o evitar la declaracion de la misma variables varias veces en el codigo siempre que no sea necesario por la logica del script que estes diseñando."
   }, {
     nombre: "53 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
     archivo: "046 Retorno de valores.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "Las variables dentro de una funcion no tienen alcance fuera de ellas, pero si se retornan valores podemos solucionar esta situacion."
   }, {
     nombre: "54 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
     archivo: "047 Enviando valores.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "Las funciones normalmente interactuan con datos que son enviados a ella desde fuera de la funcion para que pueda ejecutarse, en este video de forma bastante sencilla se da un ejemplo de como se le envia a una funcion los datos que esta va a utilizar."
   }, {
     nombre: "55 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
