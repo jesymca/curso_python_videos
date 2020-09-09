@@ -1,7 +1,9 @@
 // VARIABLES GLOBALES
 deposito = "LFI0432016600887";
+nombre_curso = "MANUAL PYTHON 3 EN VIDEOS"
 version = "1.0.0"
 ano = "2020"
+editor = "J.E SUMINISTROS Y MAS, C.A."
 cabecera = "<div class = 'container'> <div class = 'row well well-sm'> <div class = 'hidden-xs col-sm-4 col-md-6 text-center'> <h2>Descripcion</h2> </div> <div class = 'hidden-xs col-sm-8 col-md-6 text-center'> <h2>Archivo</h2> </div> </div>";
 mensajeactualizacion = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/";
 mensajeextra = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/extra/";
@@ -96,7 +98,7 @@ function updateLi() {
 }
 
 function updateP() {
-  document.getElementById('rotator').innerHTML = navigator.onLine ? '<iframe marginheight="0" marginwidth="0" align="center" margin="0 auto" scrolling="no" src="https://goo.gl/rpjfB6" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>' : '<iframe marginheight="0" marginwidth="0" align="center" scrolling="no" src="./pag/publicidad/indexoff.html" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>';
+  document.getElementById('rotator').innerHTML = navigator.onLine ? '<iframe marginheight="0" marginwidth="0" align="center" margin="0 auto" scrolling="no" src="http://bit.ly/publi_je" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>' : '<iframe marginheight="0" marginwidth="0" align="center" scrolling="no" src="./pag/publicidad/indexoff.html" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>';
   document.getElementById('mensaje').innerHTML = navigator.onLine ? "<iframe scrolling='no' src=" + mensajeactualizacion + " name='texto' width='100%' height='60' frameborder='0'></iframe>" : "<div class='alert alert-warning' role='alert'><span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span><span class='sr-only'>Error:</span> COMO NO ESTA CONECTADO A INTERNET ESTE SISTEMA NO ESTA EN CAPACIDAD DE VERIFICAR SI POSEE LA ULTIMA VERSION DE ESTE CURSO, FAVOR CONECTESE A INTERNET Y DE MANERA AUTOMATICA SE EFECTUARA ESTA VERIFICACION.</div>";
 
 
@@ -462,7 +464,7 @@ function videos(a) {
     ruta: rut + "06 Colecciones de datos/",
     archivo: "033 Tuplas.mp4",
     seccion: 6,
-    contenido: "Tuplas son usados por Python en algunas funciones para devolver resultados inmutables es decir que no pueden ser modificados. Las tuplas son como las listas pero estan entre parentesis ejemplo: <kbd>varieble = (1,2,3,"string",[a,b,c,d],-10)</kbd><br>Dichos datos pueden accederse con las tecnicas de indices ya estudiadas."
+    contenido: "Tuplas son usados por Python en algunas funciones para devolver resultados inmutables es decir que no pueden ser modificados. Las tuplas son como las listas pero estan entre parentesis ejemplo: <kbd>varieble = (1,2,3,'string',[a,b,c,d],-10)</kbd><br>Dichos datos pueden accederse con las tecnicas de indices ya estudiadas."
   }, {
     nombre: "39 Colecciones de datos",
     ruta: rut + "06 Colecciones de datos/",
@@ -480,7 +482,7 @@ function videos(a) {
     ruta: rut + "06 Colecciones de datos/",
     archivo: "036 Pilas y colas con listas.mp4",
     seccion: 6,
-    contenido: "Python no implementa directamente las Pilas y Colas, basicamente lo que hacen es permitir agregar o retirar un elemento de dicha agrupacion o de dicha lista. En el caso de la simulacion en Python se utilizaram los comandos: <ul><li>Agregar valor al final de nuestra lista<kbd>.append()</kbd></li><li>Quitar ultimo elemento de nuestra lista<kbd>pop()</kbd></li><ul><br>En el caso de las colas su forma de funcionamiento en la vida real es diferente ya que al momento de agregar se agregan siempre al final de dicha lista, pero al momento de eliminar algun dato este dato seria el primero de dicha lista y para ello basicamente se logra al utilizar una coleccion ya existente dentro de Python y se ejecutaria mediante la declaracion inicial de la importacion de dicha coleccion <kbd>from collections import deque</kbd>"
+    contenido: "Python no implementa directamente las Pilas y Colas, basicamente lo que hacen es permitir agregar o retirar un elemento de dicha agrupacion o de dicha lista. En el caso de la simulacion en Python se utilizaram los comandos: <ul><li>Agregar valor al final de nuestra lista<kbd>.append()</kbd></li><li>Quitar ultimo elemento de nuestra lista<kbd>pop()</kbd></li></ul><br>En el caso de las colas su forma de funcionamiento en la vida real es diferente ya que al momento de agregar se agregan siempre al final de dicha lista, pero al momento de eliminar algun dato este dato seria el primero de dicha lista y para ello basicamente se logra al utilizar una coleccion ya existente dentro de Python y se ejecutaria mediante la declaracion inicial de la importacion de dicha coleccion <kbd>from collections import deque</kbd>"
   }, {
     nombre: "42 Colecciones de datos",
     ruta: rut + "06 Colecciones de datos/",
@@ -498,19 +500,19 @@ function videos(a) {
     ruta: rut + "07 Entradas y salidas de datos/",
     archivo: "038 Previa.mp4",
     seccion: 7,
-    contenido: ""
+    contenido: "Breve introduccion sobre entradas y salidas de informacion en Python."
   }, {
     nombre: "45 Entradas y salidas de datos",
     ruta: rut + "07 Entradas y salidas de datos/",
     archivo: "039 Entradas.mp4",
     seccion: 7,
-    contenido: ""
+    contenido: "Las entradas en Python se hacen mediante la instruccion <kbd>input()</kbd> que como es de suponer perfectamente se puede combinar para la creacion de listas, indices, diccionarios y cualquier operacion necesaria en nuestra programacion."
   }, {
     nombre: "46 Entradas y salidas de datos",
     ruta: rut + "07 Entradas y salidas de datos/",
     archivo: "040 Scripts.mp4",
     seccion: 7,
-    contenido: ""
+    contenido: "Los script funcionan de forma tal que interactuan con un usuario por medio de la interfaces con la que sean destinados. En este video podras empezar a poner en practica los conocimientos adquiridos hasta el momento, de una forma muy basica podra empezar a diseñar su primer script."
   }, {
     nombre: "47 Entradas y salidas de datos",
     ruta: rut + "07 Entradas y salidas de datos/",
@@ -522,19 +524,19 @@ function videos(a) {
     ruta: rut + "07 Entradas y salidas de datos/",
     archivo: "042 Ejercicios optativos - Soluciones paso a paso 1 y 2.mp4",
     seccion: 7,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
     nombre: "49 Entradas y salidas de datos",
     ruta: rut + "07 Entradas y salidas de datos/",
     archivo: "043 Ejercicios optativos - Soluciones paso a paso 3.mp4",
     seccion: 7,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
-    nombre: "50 Entradas y salidas de datos",
-    ruta: rut + "07 Entradas y salidas de datos/quizzes/",
-    archivo: "005 Quiz de la seccion.html",
-    seccion: 7,
-    contenido: ""
+    //nombre: "50 Entradas y salidas de datos",
+    //ruta: rut + "07 Entradas y salidas de datos/quizzes/",
+    //archivo: "005 Quiz de la seccion.html",
+    //seccion: 7,
+    //contenido: ""
   }, {
     nombre: "51 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
@@ -594,13 +596,13 @@ function videos(a) {
     ruta: rut + "08 Programacion de funciones/",
     archivo: "053 Ejercicios optativos - Soluciones paso a paso.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
-    nombre: "61 Programacion de funciones",
-    ruta: rut + "08 Programacion de funciones/quizzes/",
-    archivo: "006 Quiz de la seccion.html",
-    seccion: 8,
-    contenido: ""
+    //nombre: "61 Programacion de funciones",
+    //ruta: rut + "08 Programacion de funciones/quizzes/",
+    //archivo: "006 Quiz de la seccion.html",
+    //seccion: 8,
+    //contenido: ""
   }, {
     nombre: "62 Manejo de excepciones",
     ruta: rut + "09 Manejo de excepciones/",
@@ -636,13 +638,13 @@ function videos(a) {
     ruta: rut + "09 Manejo de excepciones/",
     archivo: "059 Ejercicios optativos - Soluciones paso a paso.mp4",
     seccion: 9,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
-    nombre: "68 Manejo de excepciones",
-    ruta: rut + "09 Manejo de excepciones/quizzes/",
-    archivo: "007 Quiz de la seccion.html",
-    seccion: 9,
-    contenido: ""
+    //nombre: "68 Manejo de excepciones",
+    //ruta: rut + "09 Manejo de excepciones/quizzes/",
+    //archivo: "007 Quiz de la seccion.html",
+    //seccion: 9,
+    //contenido: ""
   }, {
     nombre: "69 Clases y objetos",
     ruta: rut + "10 Clases y objetos/",
@@ -690,13 +692,13 @@ function videos(a) {
     ruta: rut + "10 Clases y objetos/",
     archivo: "067 Ejercicios optativos - Soluciones paso a paso.mp4",
     seccion: 10,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
-    nombre: "77 Clases y objetos",
-    ruta: rut + "10 Clases y objetos/",
-    archivo: "008 Quiz de la sección.html",
-    seccion: 10,
-    contenido: ""
+    //nombre: "77 Clases y objetos",
+    //ruta: rut + "10 Clases y objetos/",
+    //archivo: "008 Quiz de la sección.html",
+    //seccion: 10,
+    //contenido: ""
 
   }, {
     nombre: "78 Herencia",
@@ -727,13 +729,13 @@ function videos(a) {
     ruta: rut + "11 Herencia/",
     archivo: "072 Ejercicios optativos - Soluciones paso a paso.mp4",
     seccion: 11,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
-    nombre: "83 Herencia",
-    ruta: rut + "11 Herencia/quizzes/",
-    archivo: "009 Quiz de la seccion.html",
-    seccion: 11,
-    contenido: ""
+    //nombre: "83 Herencia",
+    //ruta: rut + "11 Herencia/quizzes/",
+    //archivo: "009 Quiz de la seccion.html",
+    //seccion: 11,
+    //contenido: ""
 
   }, {
     nombre: "84 Metodos de las colecciones",
@@ -770,7 +772,7 @@ function videos(a) {
     ruta: rut + "12 Metodos de las colecciones/",
     archivo: "078 Ejercicios optativos - Soluciones paso a paso.mp4",
     seccion: 12,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
     nombre: "90 Modulos y paquetes",
     ruta: rut + "13 Modulos y paquetes/",
@@ -830,13 +832,13 @@ function videos(a) {
     ruta: rut + "13 Modulos y paquetes/",
     archivo: "088 Ejercicios optativos - Soluciones paso a paso 1 y 2.mp4",
     seccion: 13,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
     nombre: "100 Modulos y paquetes",
     ruta: rut + "13 Modulos y paquetes/",
     archivo: "089 Ejercicios optativos - Soluciones paso a paso 3.mp4",
     seccion: 13,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
     nombre: "101 Manejo de ficheros",
     ruta: rut + "14 Manejo de ficheros/",
@@ -866,7 +868,7 @@ function videos(a) {
     ruta: rut + "14 Manejo de ficheros/",
     archivo: "096 Ejercicios optativos - Soluciones paso a paso 1 y 2.mp4",
     seccion: 14,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos."
   }, {
     nombre: "106 Manejo de ficheros",
     ruta: rut + "14 Manejo de ficheros/",
@@ -1482,32 +1484,32 @@ function creditos() {
   resultado += "<p align=\"justify\">Usted puede vender, distribuir, re-distribuir, cambiar, adaptar, modificar este producto, pero siempre debe indicar de quien es el diseño original y cuales fueron las modificaciones efectuadas, si desean que se incluya alguna mejora pueden";
   resultado += "comunicarse con J.E Suministros y Mas, C.A. en";
   resultado += "<a class=\"clase6\" href=\"http:\/\/www.jesuministrosymas.com.ve\/\" name=\"Ingresar a la web de J.E SUMINISTROS Y MAS, C.A.\" target=\"_blank\">www.jesuministrosymas.com.ve<\/a><\/p><br>";
-  resultado += "<p class=\"bg-warning\">";
+  resultado += "<div class=\"alert alert-warning\">";
   resultado += "<\/b> Diseñado y Producido en:<br> La República Bolivariana de Venezuela<br> Maracay - Estado Aragua<br> Desde el Año 2016<br>Version Actual " + version + " Del año " + ano + "<br>Diseño Bajo Tecnologías Libres.<br> Autor y Diseño: José Herrera<br> Revisión: Ing. Elena Nuñez<br>        Esta fue una Producción de <a class=\"clase6\" href=\"http:\/\/www.jesuministrosymas.com.ve\/\" name=\"J.E SUMINISTROS Y MAS, C.A.\" target=\"_blank\">J.E SUMINISTROS Y MAS, C.A.<\/a>";
-  resultado += "<\/p>";
+  resultado += "<\/div>";
   resultado += "<h2>PARA CITAR ESTE MANUAL:<\/h2>";
   resultado += "";
   resultado += "";
   resultado += "<div>";
   resultado += "<!-- Nav tabs -->";
   resultado += "<ul class=\"nav nav-tabs\" role=\"tablist\">";
-  resultado += "<li role=\"presentation\" class=\"active\"><a href=\"#apa\" aria-controls=\"apae\" role=\"tab\" data-toggle=\"tab\">NORMA APA<\/a><\/li>";
-  resultado += "<li role=\"presentation\"><a href=\"#iso0690\" aria-controls=\"iso0690\" role=\"tab\" data-toggle=\"tab\">NORMA ISO0690<\/a><\/li>";
-  resultado += "<li role=\"presentation\"><a href=\"#mla\" aria-controls=\"mla\" role=\"tab\" data-toggle=\"tab\">NORMA MLA<\/a><\/li>";
+  resultado += "<li class=\"nav-item\"><a class=\"nav-link active\" href=\"#apa\" aria-controls=\"apae\" role=\"tab\" data-toggle=\"tab\">NORMA APA<\/a><\/li>";
+  resultado += "<li class=\"nav-item\" role=\"presentation\"><a class=\"nav-link\" href=\"#iso0690\" aria-controls=\"iso0690\" role=\"tab\" data-toggle=\"tab\">NORMA ISO0690<\/a><\/li>";
+  resultado += "<li class=\"nav-item\" role=\"presentation\"><a class=\"nav-link\" href=\"#mla\" aria-controls=\"mla\" role=\"tab\" data-toggle=\"tab\">NORMA MLA<\/a><\/li>";
   resultado += "<\/ul>";
   resultado += "<!-- Tab panes -->";
   resultado += "<div class=\"tab-content\">";
-  resultado += "<div role=\"tabpanel\" class=\"tab-pane active fade in active\" id=\"apa\">";
+  resultado += "<div role=\"tabpanel\" class=\"tab-pane fade show active\" id=\"apa\">";
   resultado += "<h3>NORMA APA<\/h3>";
-  resultado += "Herrera Vargas J. M. (" + ano + "). MANUAL DIGITAL COMO ELABORAR PRODUCTOS DE LIMPIEZA EN VENEZUELA VERSION " + version + " EDICIONES J.E SUMINISTROS Y MAS, C.A.";
+  resultado += "Herrera Vargas J. M. (" + ano + "). "+nombre_curso+" VERSION " + version + " EDICIONES "+editor+"";
   resultado += "<\/div>";
   resultado += "<div role=\"tabpanel\" class=\"tab-pane fade\" id=\"iso0690\">";
   resultado += "<h3>NORMA ISO690<\/h3>";
-  resultado += "HERRERA VARGAS, Jose Medardo; J.E SUMINISTROS Y MAS, C.A., MANUAL DIGITAL COMO ELABORAR PRODUCTOS DE LIMPIEZA EN VENEZUELA VERSION  " + version + " . " + ano + ".";
+  resultado += "HERRERA VARGAS, Jose Medardo; "+editor+", "+nombre_curso+" VERSION  " + version + " . " + ano + ".";
   resultado += "<\/div>";
   resultado += "<div role=\"tabpanel\" class=\"tab-pane fade\" id=\"mla\">";
   resultado += "<h3>NORMA MLA<\/h3>";
-  resultado += "Herrera Vargas, Jose Medardo. \"MANUAL DIGITAL COMO ELABORAR PRODUCTOS DE LIMPIEZA EN VENEZUELA VERSION " + version + "\" EDICIONES J.E SUMINISTROS Y MAS, C.A. (" + ano + ").";
+  resultado += "Herrera Vargas, Jose Medardo. \""+nombre_curso+" VERSION " + version + "\" EDICIONES "+editor+" (" + ano + ").";
   resultado += "<\/div>";
   resultado += "<\/div>";
   resultado += "<\/div>";
@@ -2006,16 +2008,6 @@ function popove() {
     html: true
   });
 }
-
-
-
-
-function paramodal() {
-  var materiales = "<p>Son Bastante sencillos y casi que de uso comun, hay cosas que pueden ser sustituidos por otros instrumentos que hagan la misma funcion, como por ejemplo los instrumentos aforados pueden ser sustituidos por jarras o vasos de uso domestico que tengan marcas de medidas, si no tienen marcas usted puede hacer dichas marcas con marcadores permanentes o teipes, la idea de que esten marcadas las medidas es acelerar los procesos de produccion.</p>" + olli + "Tobos plasticos con 4 veces la capacidad de producto a preparar." + lili + "Paletas de madera, palos de escoba, cabos de madera." + lili + "PH metro o bandas medidoras de PH (es posible en algunos paises que el uso de las bandas resulten de pronto mas economicas), Tome en cuenta que si se decantan por utilizar Bandas Medidoras de PH las mismas son desechables y si usted va a mantener una produccion constante a la larga le sera mejor economicamente hablando el uso del dispositivo digital PH Metro." + lili + "Probetas de varias capacidades, tambien le puede servir jarras con medidas marcadas." + lili + "Delantal de cuero de chivo (Cuero de Ovino) o plastico resistente, para efectos de proteccion se pueden utilizar cualquiera de los 2 materiales, pero para efectos de durabilidad los delantales de cuero son mucho mas duraderos en el tiempo, los mismos los puedes encontrar en sitios donde confeccionen bolsos de cuero o zapatos, talabarterias, personas que fabriquen correas o productos de cuero, Tambien puede servir cuero de Vaca (Cuero de Bovino) pero el mismo tiende a ser muy pesado pero es mucho mas resistente y mas si se trabaja con acidos o alcalis fuertes." + lili + "Guantes aislantes de cuero o de goma. Evite manipular acidos o alcalis fuertes con guantes de latex." + lili + "Lentes de seguridad o careta de proteccion." + lili + "Tapa boca, filtros, deshumificadores, etc." + lili + "Pesos digitales o analogicos." + lili + "Embudos de varios tamaños." + lili + "Vestimenta adecuada, bragas, batas de laboratorio." + lili + "Se recomienda que en la instalacion donde se va a producir productos de limpieza se tenga una fuente de agua garantizada." + liol;
-  document.getElementById('materiales').innerHTML = materiales;
-}
-paramodal();
-
 
 function industrial() {
   var resultado = "";
