@@ -566,31 +566,31 @@ function videos(a) {
     ruta: rut + "08 Programacion de funciones/",
     archivo: "048 Argumentos y parametros.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "Los argumentos dentro de las funciones son las encargadas de brindar control sobre la funcion, teniendo la posibilidad de no cometer errores al momento de ejecutar la asignacion de valores o de argumentos a dicha funcion."
   }, {
     nombre: "56 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
     archivo: "049 Argumentos por valor y referencia.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "Normalmente cuando se envian datos a una funcion esta se hacen por <b>valor</b>, es decir se crea una copia de los valores dentro de sus propias variables, pero las colecciones, listas, diccionarios o conjuntos esto no sucede, ya que la forma de pasar este tipo de datos se le llama por <b>referencia</b> y en este caso si se efectua alguna modificacion sobre este tipo de valores tambien se vera afectado el valor de la variable fuera de la funcion ya que en este caso la funcion hace referencia a este tipo de datos como si se tratase de un acceso directo."
   }, {
     nombre: "57 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
     archivo: "050 Argumentos indeterminados.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "Trabajar con numeros indeterminados dentro de las funciones en el caso de Python lo logra ya que implementa 2 formas distintas de gestionar valores indeterminados y se explican en este video."
   }, {
     nombre: "58 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
     archivo: "051 Funciones recursivas.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "La recursividad es cuando algo se repite una y otra vez de forma que un problema puede ser dividido en fragmentos mas pequeños de forma talq ue permita solucionar el confligto desde pequeñas partes del codigo y una funcion puede ser llamada por si misma dentro de ella, y la finalidad es ahorrar lineas de codigo al hacer un bucle."
   }, {
     nombre: "59 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
     archivo: "052 Funciones integradas.mp4",
     seccion: 8,
-    contenido: ""
+    contenido: "Dentro de Python existen funciones ya integradas que ayudan de alguna manera a convertir codigo obtenido sin necesidad de tener que crear este tipo de funciones, un ejemplo de ellas son:<ul><li>Obtener numero binario <kbd>bin()</kbd></li><li>Obtener Numero hexadecimal<kbd>hex()</kbd></li><li>Obtener numero absoluto <kbd>abs()</kbd></li><li>Obtener numero entero <kbd>int()</kbd></li><li>Funcion de redondeo <kbd>round()</kbd></li><li>Evaluar cadenas como numeros <kbd>eval()</kbd></li><li>Conocer la longitud de una cadena <kbd>len()</kbd></li><li>Ayuda de Python llama a la funcion <kbd>help()</kbd></li></ul>Esto es solo un ejemplo basico de de las funciones integradas usadas en Python, pero siempre puede acceder a la documentacion oficial y consultar toda la gama funciones integradas que implemanta Python 3<br> <a href='https://docs.python.org/es/3.8/' title='Visitar Documentacion oficial Python' class='clase6' target='_blank'>Documentacion Oficial de Referencia Python 3</a><br><a href='https://entrenamiento-python-basico.readthedocs.io/es/latest/leccion5/funciones_integradas.html' title='Visitar Documentacion oficial Python' class='clase6' target='_blank'>Documentacion No Oficial de Referencia Python 3</a> "
   }, {
     nombre: "60 Programacion de funciones",
     ruta: rut + "08 Programacion de funciones/",
@@ -608,31 +608,31 @@ function videos(a) {
     ruta: rut + "09 Manejo de excepciones/",
     archivo: "054 Previa.mp4",
     seccion: 9,
-    contenido: ""
+    contenido: "Detectar errores, manejarlos y manejar tambien las excepciones."
   }, {
     nombre: "63 Manejo de excepciones",
     ruta: rut + "09 Manejo de excepciones/",
     archivo: "055 Errores.mp4",
     seccion: 9,
-    contenido: ""
+    contenido: "En Python hay varias formas de indicar que hay errores en el codigo que estamos escribiendo, Python dara que tipo de error es el que esta sucediendo y este puede ser errores de sintaxis, pero tambien erores del tipo semantico y en este video se generaran varios tipos de errores tipicos que ocurren cuando estamos escribiendo codigo en Python. La idea es aprender a identificar este tipo de errores para poder solucionar sobre la marcha."
   }, {
     nombre: "64 Manejo de excepciones",
     ruta: rut + "09 Manejo de excepciones/",
     archivo: "056 Excepciones.mp4",
     seccion: 9,
-    contenido: ""
+    contenido: "Las exepciones se manejan colocando el codigo dentro de un bloque<br> <pre class=\"line-numbers language-javascript\"><code>try:<br>&nbsp;&nbsp;&nbsp;TODO EL CODIGO QUE PUEDE TENER ERRORES<br>except:<br>&nbsp;&nbsp;&nbsp;print(\"Mensaje de error\")</code></pre>"
   }, {
     nombre: "65 Manejo de excepciones",
     ruta: rut + "09 Manejo de excepciones/",
     archivo: "057 Múltiples excepciones.mp4",
     seccion: 9,
-    contenido: ""
+    contenido: "Asi como se pueden hacer exepciones tambien es posible hacer exepciones multiples, siempre con la finalidad de tener modos de depurar nuestro codigo a medida que vamos escribiendolo."
   }, {
     nombre: "66 Manejo de excepciones",
     ruta: rut + "09 Manejo de excepciones/",
     archivo: "058 Invocacion de excepciones.mp4",
     seccion: 9,
-    contenido: ""
+    contenido: "Las exepciones nos ayudan a optimizar nuestros programas y a prevenir errores durante la ejecucion de nuestro codigo."
   }, {
     nombre: "67 Manejo de excepciones",
     ruta: rut + "09 Manejo de excepciones/",
@@ -650,7 +650,7 @@ function videos(a) {
     ruta: rut + "10 Clases y objetos/",
     archivo: "060 Previa.mp4",
     seccion: 10,
-    contenido: ""
+    contenido: "Ya ahora con los conocimientos adquirirdos podemos poner en marcha la relacion directa con la programacion orientada a objetos."
   }, {
     nombre: "70 Clases y objetos",
     ruta: rut + "10 Clases y objetos/",
@@ -1433,6 +1433,30 @@ function creditos() {
     nombre: "Microsoft Windows",
     direccion: "https://www.microsoft.com/es-es/windows",
     fecha: "06/09/2020"
+  }, {
+    nombre: "Documentacion Oficial de Referencia Python 3",
+    direccion: "https://docs.python.org/es/3.8/",
+    fecha: "09/09/2020"
+  }, {
+    nombre: "Documentacion No Oficial de Referencia Python 3",
+    direccion: "Documentacion No Oficial de Referencia Python 3",
+    fecha: "09/09/2020"
+  }, {
+    nombre: "",
+    direccion: "",
+    fecha: ""
+  }, {
+    nombre: "",
+    direccion: "",
+    fecha: ""
+  }, {
+    nombre: "",
+    direccion: "",
+    fecha: ""
+  }, {
+    nombre: "",
+    direccion: "",
+    fecha: ""
   }, {
     nombre: "",
     direccion: "",
