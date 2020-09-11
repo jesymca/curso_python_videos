@@ -656,37 +656,37 @@ function videos(a) {
     ruta: rut + "10 Clases y objetos/",
     archivo: "061 Programacion estructurada vs POO.mp4",
     seccion: 10,
-    contenido: ""
+    contenido: "En Python <b>TODO SON OBJETOS</b> en este video se explica este paradigma de la vieja forma de programacion y la nueva forma de programar usando objetos."
   }, {
     nombre: "71 Clases y objetos",
     ruta: rut + "10 Clases y objetos/",
     archivo: "062 Clases y objetos.mp4",
     seccion: 10,
-    contenido: ""
+    contenido: "Las clases se puede decir son los moldes para crear los objetos. Los objetos se crean mediante un proceso que se llama Instanciacion."
   }, {
     nombre: "72 Clases y objetos",
     ruta: rut + "10 Clases y objetos/",
     archivo: "063 Atributos y metodos de clase.mp4",
     seccion: 10,
-    contenido: ""
+    contenido: "Cada objeto posee atributos diferentes, esto es lo que diferencia cada objeto dentro de una misma clase y esto se logra por medio de la creacion de los metodos."
   }, {
     nombre: "73 Clases y objetos",
     ruta: rut + "10 Clases y objetos/",
     archivo: "064 Metodos especiales.mp4",
     seccion: 10,
-    contenido: ""
+    contenido: "Aparte de los metodos que podamos crear, existen en Python lo que se denominan <b>Metodos Especiales</b> alguno de ellos son analizados en este video y son los siguientes: <ul><li>Metodo Constructor <kbd>__init__()</kbd></li><li> Metodo Destructor <kbd>__del__()</kbd></li><li> Metodo String <kbd>__str__()</kbd></li><li> Metodo Length <kbd>__len__()</kbd></li></ul> "
   }, {
     nombre: "74 Clases y objetos",
     ruta: rut + "10 Clases y objetos/",
     archivo: "065 Objetos dentro de objetos.mp4",
     seccion: 10,
-    contenido: ""
+    contenido: "En Python es posible tener un objeto dentro de otro objeto, vale destacar que segun el metodo que utilicemos se podran simplificar procesos como agregar, editar, catalogar y tambien eliminar."
   }, {
     nombre: "75 Clases y objetos",
     ruta: rut + "10 Clases y objetos/",
     archivo: "066 Encapsulacion de atributos y metodos.mp4",
     seccion: 10,
-    contenido: ""
+    contenido: "En Python se puede simular un comportamiento parecido a la opcion de encapsular los atributos o metodos de un objeto, esto es necesario para que un atributo no tenga alcance fuera del objeto o funcion donde se esta ejecutando."
   }, {
     nombre: "76 Clases y objetos",
     ruta: rut + "10 Clases y objetos/",
@@ -705,25 +705,25 @@ function videos(a) {
     ruta: rut + "11 Herencia/",
     archivo: "068 Previa.mp4",
     seccion: 11,
-    contenido: ""
+    contenido: "Las herencias son una de las funcionalidades basicas en la programacion orientada a objetos. La capacidad de heredar atributos y metodos de otra clase, ademas de agregar nuevos atributos o metodos o modificar los existentes."
   }, {
     nombre: "79 Herencia",
     ruta: rut + "11 Herencia/",
     archivo: "069 Herencia.mp4",
     seccion: 11,
-    contenido: ""
+    contenido: "Las herencias son bastante complejas, pero si que tienen una utilidad aplicable en los diseños de programacion de tareas avanzadas y especificas en donde los objetos tengan simulitud en sus caracteristicas y permitira agrupar de forma bastante rapida datos con estructuras similares."
   }, {
     nombre: "80 Herencia",
     ruta: rut + "11 Herencia/",
     archivo: "070 Clases heredadas y polimorfismo.mp4",
     seccion: 11,
-    contenido: ""
+    contenido: "El polimorfismo puede diseñarse para conjugar una serie de objetos y darle un tratamiento particular a cada uno, este tipo de practicas permite tambien manipular de forma individual cada atributo para generar salidas que se adapten de forma apropiada a nuestra programacion."
   }, {
     nombre: "81 Herencia",
     ruta: rut + "11 Herencia/",
     archivo: "071 Herencia multiple.mp4",
     seccion: 11,
-    contenido: ""
+    contenido: "Las herencias multiples es una caracteristica soportada por Python y que no esta soportada por ningun otro lenguaje de programacion y hace referencia a que una subclase herede metodos y atrubutos de varias super clases a la vez."
   }, {
     nombre: "82 Herencia",
     ruta: rut + "11 Herencia/",
@@ -742,31 +742,31 @@ function videos(a) {
     ruta: rut + "12 Metodos de las colecciones/",
     archivo: "073 Previa.mp4",
     seccion: 12,
-    contenido: ""
+    contenido: "Vamos a hablar de las colecciones y aprender alguno de sus metodos y clases."
   }, {
     nombre: "85 Metodos de las colecciones",
     ruta: rut + "12 Metodos de las colecciones/",
     archivo: "074 Cadenas.mp4",
     seccion: 12,
-    contenido: ""
+    contenido: "Aca en este video haremos un repaso de los diferentes metodos que se utilizan con las cadenas:<ul><li>Todo Mayuscula: <kbd>.upper()</kbd></li> <li>Todo Minuscula: <kbd>.lower()</kbd></li> <li>Solo Primera letra Mayuscula: <kbd>.capitalize()</kbd></li> <li>La primera letra de cada palabra Mayuscula: <kbd>.title()</kbd></li> <li>Contar las veces que aparece una palabra en una cadena: <kbd>.count()</kbd></li> <li>Contar desde que indice se encuentra una palabra en una cadena: <kbd>.find()</kbd></li> <li>Contar el indice desde donde aparece la ultima palabra en una cadena: <kbd>.rfind()</kbd></li> <li>Verificar si una cadena son numeros: <kbd>.isdigit()</kbd></li> <li>Verificar si una cadena es alfanumerico: <kbd>.isalnum()</kbd></li> <li>Verificar si una cadena son solo alfabeticos: <kbd>.isalpha()</kbd></li> <li>Verificar si una cadena son letras minusculas: <kbd>.islower()</kbd></li> <li>Verificar si una cadena son letras mayusculas: <kbd>.isupper()</kbd></li> <li>Verificar si una cadena es un titulo: <kbd>.istitle()</kbd></li> <li>Verificar si una cadena esta compuesta de espacios: <kbd>.isspace()</kbd></li> <li>Verificar si una cadena empieza con una cadena en particular: <kbd>.startswith()</kbd></li> <li>Verificar si una cadena finaliza con una cadena en particular: <kbd>.endswith()</kbd></li> <li>Metodo para separar palabras de una cadena en una lista: <kbd>.split()</kbd></li> <li>Metodo para separar una cadena con algun caracter en particular: <kbd>.join()</kbd></li> <li>Metodo para borrar espacios o caracteres que esten de mas: <kbd>.strip()</kbd></li> <li>Metodo para reemplazar un caracter o toda una cadena por otra: <kbd>.replace()</kbd></li>   </ul>"
   }, {
     nombre: "86 Metodos de las colecciones",
     ruta: rut + "12 Metodos de las colecciones/",
     archivo: "075 Listas.mp4",
     seccion: 12,
-    contenido: ""
+    contenido: "Los metodos aplicables a las listas son muchos pero aca se explicaran las siguientes que pueden ser consideradas las mas importantes:<ul><li>Agregar a una lista: <kbd>.append()</kbd></li> <li>Limpiar contenido de la lista: <kbd>.clear()</kbd></li> <li>Unir varias listas: <kbd>.extend()</kbd></li> <li>Contar cadenas en una lista: <kbd><.count()/kbd></li> <li>Saber el indice de una cadena dentro de una lista: <kbd>.index()</kbd></li> <li>Agregar elemento en una posicion en particular<kbd>.insert(n,n)</kbd></li> <li>Sacar elementos de una lista: <kbd>.pop()</kbd></li> <li>Borrar un valor en particular de una lista: <kbd>.remove()</kbd></li><li>Revertir una lista: <kbd>.reverse()</kbd></li> <li>Unir caracteres de una lista: <kbd>.join()</kbd></li> <li>Ordenar elementos de una lista: <kbd>.sort()</kbd></li></ul>"
   }, {
     nombre: "87 Metodos de las colecciones",
     ruta: rut + "12 Metodos de las colecciones/",
     archivo: "076 Conjuntos.mp4",
     seccion: 12,
-    contenido: ""
+    contenido: "Metodos que le dan potencialidad a los conjuntos: <ul><li>Agregar un nuevo elemento: <kbd>.add()</kbd></li> <li>Descartar un elemento de un conjunto: <kbd>.discard()</kbd></li> <li>Copiar una coleccion: <kbd>.copy()</kbd></li> <li>Limpiar todos el conjunto: <kbd>.clear()</kbd></li> <li>Verificar si conjuntos no tiene nada que ver con otro: <kbd>.isdisjoint()</kbd></li> <li>Verificar si un conjunto es subconjunto de otro: <kbd>.issubset()</kbd></li> <li>Verificar si un conjunto es superconjunto de otro: <kbd>.issuperset()</kbd></li> <li>Unir conjuntos: <kbd>.union()</kbd></li> <li>Actualizar un conjunto: <kbd>.update()</kbd></li> <li>Solo mostrar las diferencias de los conjuntos: <kbd>.difference()</kbd></li> <li>Actualizar un conjunto con el resultado de la diferencia: <kbd>.difference_update()</kbd></li> <li>Mostrar la intercepcion entre los conjuntos: <kbd>.intersection()</kbd></li> <li>Actualizar un conjunto con el valor de la intercepcion de conjuntos: <kbd>.intersection_update</kbd></li> <li>Mostrar diferencias simetricas entre conjuntos: <kbd>.symmetric_difference()</kbd></li></ul>"
   }, {
     nombre: "88 Metodos de las colecciones",
     ruta: rut + "12 Metodos de las colecciones/",
     archivo: "077 Diccionarios.mp4",
     seccion: 12,
-    contenido: ""
+    contenido: "Los metodos que podemos utilizar con los diccionarios son los siguientes: <ul> <li>Evaluar o buscar claves: <kbd>.get()</kbd></li> <li>Buscar y dar resultado <b>true></b> o <b>false</b> <kbd>in</kbd></li> <li>Mostrar el diccionario de claves: <kbd>.keys()</kbd></li> <li>Mostrar el diccionario de valores: <kbd>.values()</kbd></li> <li>Mostrar Valores y Claves: <kbd>.items()</kbd></li> <li>Sustraer un dato del diccionario: <kbd>.pop()</kbd></li> <li>Vaciar un diccionario: <kbd>.clear()</kbd></li></ul>"
   }, {
     nombre: "89 Metodos de las colecciones",
     ruta: rut + "12 Metodos de las colecciones/",
@@ -1075,37 +1075,37 @@ function videos(a) {
     contenido: ""
   }, {
     nombre: "140 Documentacion y pruebas",
-    ruta: rut + "18 Documentacion y pruebas",
+    ruta: rut + "18 Documentacion y pruebas/",
     archivo: "131 Docstrings.mp4",
     seccion: 18,
     contenido: ""
   }, {
     nombre: "141 Documentacion y pruebas",
-    ruta: rut + "18 Documentacion y pruebas",
+    ruta: rut + "18 Documentacion y pruebas/",
     archivo: "132 Pydoc.mp4",
     seccion: 18,
     contenido: ""
   }, {
     nombre: "142 Documentacion y pruebas",
-    ruta: rut + "18 Documentacion y pruebas",
+    ruta: rut + "18 Documentacion y pruebas/",
     archivo: "133 Doctest I.mp4",
     seccion: 18,
     contenido: ""
   }, {
     nombre: "143 Documentacion y pruebas",
-    ruta: rut + "18 Documentacion y pruebas",
+    ruta: rut + "18 Documentacion y pruebas/",
     archivo: "134 Doctest II.mp4",
     seccion: 18,
     contenido: ""
   }, {
     nombre: "144 Documentacion y pruebas",
-    ruta: rut + "18 Documentacion y pruebas",
+    ruta: rut + "18 Documentacion y pruebas/",
     archivo: "135 Unittest I.mp4",
     seccion: 18,
     contenido: ""
   }, {
     nombre: "145 Documentacion y pruebas",
-    ruta: rut + "18 Documentacion y pruebas",
+    ruta: rut + "18 Documentacion y pruebas/",
     archivo: "136 Unittest II.mp4",
     seccion: 18,
     contenido: ""
@@ -1160,6 +1160,7 @@ function videos(a) {
 
   let resultado = "<h1>Prueba de Lista de Videos</h1>";
   //resultado += '<div class="position-fixed">Columna izquierda que se mueve con el scroll...</div>';
+  //resultado += '<div class="alert alert-primary" role="alert">';
   resultado += "<ol>";
   let nodoDOM = selectedVideo.map((video) => {
 
@@ -1209,11 +1210,13 @@ function videos(a) {
     // resultado += "<li>" + listaA + "<br>" + listaB + "<br>" + archivo + "<br><br></li>";
 
 
-    resultado += '<div class="card">  <h4 class="card-header">    <li>' + listaA + '</li>  </h4>  <div class="card-body">    <h4 class="card-title">' + nombre + '</h4> <h5>' + narchi + '</h5>   <p class="card-text text-center">' + previo + '</p> <p class="card-text">' + contenido + '</p>' + listaB + '  </div></div>';
+    resultado += ' <div class="card"> <div class="card-header"><h4 class="card-header"><li>    ' + listaA + '  </li></h4> </div> <div class="card-body">    <h4 class="card-title">' + nombre + '</h4> <h5>' + narchi + '</h5>   <p class="card-text text-center">' + previo + '</p> <p class="card-text">' + contenido + '</p>' + listaB + '  </div></div>';
 
     return resultado;
   });
   resultado += "</ol>";
+  //resultado += "<div>";
+
 
   nodoDOM.map((item) => (document.getElementById('contenido').innerHTML = item));
   //document.getElementById('contenido').innerHTML = nodoDOM;
