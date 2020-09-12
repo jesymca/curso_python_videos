@@ -171,7 +171,7 @@ function botonera() {
     "<a onclick='videos(17);' name='Videos_Seccion_17' title='Videos' href='#Videos_Seccion_17' class='dropdown-item'>17 Videos Funcionalidades avanzadas " + v + " </a>" +
     "<a onclick='videos(18);' name='Videos_Seccion_18' title='Videos' href='#Videos_Seccion_18' class='dropdown-item'>18 Videos Documentacion y pruebas " + v + " </a>" +
     "<a onclick='videos(19);' name='Videos_Seccion_19' title='Videos' href='#Videos_Seccion_19' class='dropdown-item'>19 Videos Distribucion " + w + " </a>" +
-    "<a onclick='videos(20);' name='Videos_Seccion_20' title='Videos' href='#Videos_Seccion_20' class='dropdown-item'>20 Videos Anexos " + w + " </a>" +
+    "<a onclick='videos(20);' name='Videos_Seccion_20' title='Videos' href='#Videos_Seccion_20' class='dropdown-item'>20 Videos Anexos " + w + a + " </a>" +
     "<a onclick='videos(21);' name='Videos_Seccion_21' title='Videos' href='#Videos_Seccion_21' class='dropdown-item'>21 Videos Bonus " + w + " </a>" +
     "<a onclick = 'glosario();' title = 'Glosario de Terminos' name = 'Glosario de Terminos' href='#glosario' class='dropdown-item'>Glosario de Terminos <span class = 'glyphicon glyphicon-book' aria-hidden = 'true'> </span> " + i + " </a>" +
     '</div>' +
@@ -236,6 +236,7 @@ function bienvenida() {
 function videos(a) {
 
   let rut = 'media/videos/';
+  let setup_py = '<pre class="line-numbers language-javascript"><code><br>import setuptools<br>with open("README.md", "r") as fh:<br>&nbsp;&nbsp;&nbsp;long_description = fh.read()<br><br>setuptools.setup(<br>&nbsp;&nbsp;&nbsp;name="example-pkg-YOUR-USERNAME-HERE", # Replace with your own username<br>&nbsp;&nbsp;&nbsp;version="0.0.1",<br>&nbsp;&nbsp;&nbsp;author="Example Author",<br>&nbsp;&nbsp;&nbsp;author_email="author@example.com",<br>&nbsp;&nbsp;&nbsp;description="A small example package",<br>&nbsp;&nbsp;&nbsp;long_description=long_description,<br>&nbsp;&nbsp;&nbsp;long_description_content_type="text/markdown",<br>&nbsp;&nbsp;&nbsp;url="https://github.com/pypa/sampleproject",<br>&nbsp;&nbsp;&nbsp;packages=setuptools.find_packages(),<br>&nbsp;&nbsp;&nbsp;classifiers=[<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Programming Language :: Python :: 3",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"License :: OSI Approved :: MIT License",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Operating System :: OS Independent",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;python_requires=\'>=3.6\',<br>)<br></code></pre>';
 
   let videos = [{
     nombre: "01 Bienvenida",
@@ -620,7 +621,7 @@ function videos(a) {
     ruta: rut + "09 Manejo de excepciones/",
     archivo: "056 Excepciones.mp4",
     seccion: 9,
-    contenido: "Las exepciones se manejan colocando el codigo dentro de un bloque<br> <pre class=\"line-numbers language-javascript\"><code>try:<br>&nbsp;&nbsp;&nbsp;TODO EL CODIGO QUE PUEDE TENER ERRORES<br>except:<br>&nbsp;&nbsp;&nbsp;print(\"Mensaje de error\")</code></pre>"
+    contenido: "Las exepciones se manejan colocando el codigo dentro de un bloque<br> <pre class=\"line-numbers language-python\"><code>try:<br>&nbsp;&nbsp;&nbsp;TODO EL CODIGO QUE PUEDE TENER ERRORES<br>except:<br>&nbsp;&nbsp;&nbsp;print(\"Mensaje de error\")</code></pre>"
   }, {
     nombre: "65 Manejo de excepciones",
     ruta: rut + "09 Manejo de excepciones/",
@@ -778,31 +779,31 @@ function videos(a) {
     ruta: rut + "13 Modulos y paquetes/",
     archivo: "079 Previa.mp4",
     seccion: 13,
-    contenido: ""
+    contenido: "Ahora aprenderemos con los modulos, para que se utilizan y como."
   }, {
     nombre: "91 Modulos y paquetes",
     ruta: rut + "13 Modulos y paquetes/",
     archivo: "080 Modulos.mp4",
     seccion: 13,
-    contenido: ""
+    contenido: "Crear un modulo en Python es tan sencillo como crear una funcion, en este video podras empezar a crear un modulo de saludo."
   }, {
     nombre: "92 Modulos y paquetes",
     ruta: rut + "13 Modulos y paquetes/",
     archivo: "081 Paquetes.mp4",
     seccion: 13,
-    contenido: ""
+    contenido: "Utilizar paquetes brindan ventajas de distribucion de nuestro codigo en diferentes asi como manejar paquetes y megapaquetes."
   }, {
     nombre: "93 Modulos y paquetes",
     ruta: rut + "13 Modulos y paquetes/",
     archivo: "082 Distribucion basica.mp4",
     seccion: 13,
-    contenido: ""
+    contenido: "Los paquetes distribuibles se hacen creando un archivo <kbd>setup.py</kbd> segun <a href='https://packaging.python.org/tutorials/packaging-projects/' target='_blank' class='clase6'>Documentacion Oficial Python</a> posee la siguiente estructura:<br>" + setup_py
   }, {
     nombre: "94 Modulos y paquetes",
     ruta: rut + "13 Modulos y paquetes/",
     archivo: "083 Modulos estandar.mp4",
     seccion: 13,
-    contenido: ""
+    contenido: "Existen diversos modulos standar, aca en este video se mencionaran y en los videos posteriores se analizaran uno a uno los modulos mas importantes."
   }, {
     nombre: "95 Modulos y paquetes",
     ruta: rut + "13 Modulos y paquetes/",
@@ -844,25 +845,25 @@ function videos(a) {
     ruta: rut + "14 Manejo de ficheros/",
     archivo: "092 Ficheros de texto.mp4",
     seccion: 14,
-    contenido: ""
+    contenido: "Python posee herramientas que permiten abrir ficheros y explorar su contenido. Es importante ejecitar las funciones de leer fichero  <kbd>.read()</kbd> guardar el contenido del fichero en una variable y luego cerrar el fichero <kbd>close()</kbd>"
   }, {
     nombre: "102 Manejo de ficheros",
     ruta: rut + "14 Manejo de ficheros/",
     archivo: "093 Manejo del puntero.mp4",
     seccion: 14,
-    contenido: ""
+    contenido: "En esta unidad aprenderemos como manipular el puntero dentro de un fichero que esta siendo manipulado por Python."
   }, {
     nombre: "103 Manejo de ficheros",
     ruta: rut + "14 Manejo de ficheros/",
     archivo: "094 Ficheros y objetos con Pickle.mp4",
     seccion: 14,
-    contenido: ""
+    contenido: "Pickle es una libreria que permite manipular ficheros y posee la versatilidad de permitir de forma sencilla crear archivos binarios y de recuperar tambien ficheros binarios y leer su contenido."
   }, {
     nombre: "104 Manejo de ficheros",
     ruta: rut + "14 Manejo de ficheros/",
     archivo: "095 Catalogo de peliculas persistente.mp4",
     seccion: 14,
-    contenido: ""
+    contenido: "Aca se trabajara con un ejemplo practico de manejo de datos de un catalogo relacionado con un ejemplo de la vida real."
   }, {
     nombre: "105 Manejo de ficheros",
     ruta: rut + "14 Manejo de ficheros/",
@@ -874,7 +875,7 @@ function videos(a) {
     ruta: rut + "14 Manejo de ficheros/",
     archivo: "097 Ejercicios optativos - Soluciones paso a paso 3.mp4",
     seccion: 14,
-    contenido: ""
+    contenido: "En esta seccion se podran ver el analisis de las respuestas de los ejercicios propuestos"
   }, {
     nombre: "107 Interfaces graficas con Tkinter",
     ruta: rut + "15 Interfaces graficas con Tkinter/",
@@ -1126,32 +1127,43 @@ function videos(a) {
     ruta: rut + "20 Anexos/",
     archivo: "139 Breve historia sobre Python.html",
     seccion: 20,
-    contenido: ""
+    contenido: 'Vea una breve Historia sobre Python'
   }, {
     nombre: "149 Anexos",
     ruta: rut + "20 Anexos/",
     archivo: "140 El Zen de Python.html",
     seccion: 20,
-    contenido: ""
+    contenido: "Informacion sobre Zen de Python"
   }, {
     nombre: "150 Anexos",
     ruta: rut + "20 Anexos/",
-    archivo: "141 PEP 8 Guia de estilo para Python.html",
+    archivo: "141 pep8es.pdf",
     seccion: 20,
-    contenido: ""
+    contenido: "Guía de estilo para el código Python – PEP 8 en Español"
   }, {
     nombre: "151 Anexos",
     ruta: rut + "20 Anexos/",
     archivo: "142 Python 3.6 Format simplificado.html",
     seccion: 20,
     contenido: ""
-
   }, {
     nombre: "152 Bonus",
     ruta: rut + "21 Bonus/",
     archivo: "143 Extra Super Ofertas para estudiantes.html",
     seccion: 21,
-    contenido: ""
+    contenido: "Visite Nuestra web para ver mas contenido"
+  }, {
+    nombre: "152 Bonus",
+    ruta: rut + "21 Bonus/",
+    archivo: "144 Python 3 para impacientes.html",
+    seccion: 21,
+    contenido: "Aca podra acceder a un curso de acceso rapido."
+  }, {
+    nombre: "152 Bonus",
+    ruta: rut + "21 Bonus/",
+    archivo: "/",
+    seccion: 21,
+    contenido: "Visite Nuestra web para ver mas contenido"
 
   }];
   let selectedVideo = videos.filter((item) => (
@@ -1195,7 +1207,12 @@ function videos(a) {
       previo = "<a title='Descargar " + archivo + "'  href='" + ruta + archivo + "' target = '_blank'>" + '<img width="30%" class="clase2" alt="img0" src="media/imagen/pdf.png"/>' + "</a>";
       boton = "Ver archivo PDF" + z;
 
-    } else if (archivo === "/") {
+    } else if (arch === '') {
+      previo = "";
+      boton = "";
+
+    }
+    else if (archivo === "/") {
       previo = "";
       boton = "Visitar directorio";
 
@@ -1445,13 +1462,13 @@ function creditos() {
     direccion: "Documentacion No Oficial de Referencia Python 3",
     fecha: "09/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Microtutorial sobre material Python",
+    direccion: "https://argentinaenpython.com/material-de-difusion/microtutorial_argentina-en-python.pdf",
+    fecha: "11/09/2020"
   }, {
-    nombre: "",
-    direccion: "",
-    fecha: ""
+    nombre: "Python 3 para impacientes",
+    direccion: "https://python-para-impacientes.blogspot.com/",
+    fecha: "11/09/2020"
   }, {
     nombre: "",
     direccion: "",
@@ -1474,14 +1491,10 @@ function creditos() {
     fecha: "22-08-2020"
   }];
   // Ordena de manera alfabetica
-  webvisitadas.sort(function(a, b) {
-    if (a.nombre > b.nombre) {
-      return 1;
-    }
-    if (a.nombre < b.nombre) {
-      return -1;
-    }
-    // a must be equal to b
+  webvisitadas = webvisitadas.filter(item => item.nombre).sort(function(a, b)
+   {
+    if (a.nombre > b.nombre) return 1;
+    if (a.nombre < b.nombre) return -1;
     return 0;
   });
   // Genera los link y lista de webvisitadas
