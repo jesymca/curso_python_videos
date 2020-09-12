@@ -1,55 +1,71 @@
 // VARIABLES GLOBALES
-deposito = "LFI0432016600887";
+deposito = "LFI0432016600887"
 nombre_curso = "MANUAL PYTHON 3 EN VIDEOS"
 version = "1.0.0"
 ano = "2020"
 editor = "J.E SUMINISTROS Y MAS, C.A."
-cabecera = "<div class = 'container'> <div class = 'row well well-sm'> <div class = 'hidden-xs col-sm-4 col-md-6 text-center'> <h2>Descripcion</h2> </div> <div class = 'hidden-xs col-sm-8 col-md-6 text-center'> <h2>Archivo</h2> </div> </div>";
-mensajeactualizacion = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/";
-mensajeextra = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/extra/";
-linkextenciones = "http://bit.ly/extensionespdl";
-logoje = "<img src='media/imagen/logo.png' width='180' height='30' alt='J.E SUMINISTROS Y MAS, C.A.' longdesc='LOGO J.E SUMINISTROS Y MAS, C.A.' id='logo' align='left'>";
+cabecera = "<div class = 'container'> <div class = 'row well well-sm'> <div class = 'hidden-xs col-sm-4 col-md-6 text-center'> <h2>Descripcion</h2> </div> <div class = 'hidden-xs col-sm-8 col-md-6 text-center'> <h2>Archivo</h2> </div> </div>"
+mensajeactualizacion = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/" // Mensajeria de verificacion de actualizacion
+mensajeextra = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/extra/" //Mensajeria contendio extra
+linkextenciones = "http://bit.ly/extensionespdl" // Link de consulta de actualizaciones
+logoje = "<img src='media/imagen/logo.png' width='180' height='30' alt='J.E SUMINISTROS Y MAS, C.A.' longdesc='LOGO J.E SUMINISTROS Y MAS, C.A.' id='logo' align='left'>"
+
+lugar = "La República Bolivariana de Venezuela<br> Maracay - Estado Aragua"
+desde = "Desde el Año 2016"
+autordiseno = "José Herrera"
+revision = "Ing. Elena Nuñez"
+propiedadvideos = "" //Siempre debe agregarse al final un <br>
+descripcion_contenido = "" // Siempre debe agregarse al final un <br>
+linkjesymca = '<a class="clase6" href="http://www.jesuministrosymas.com.ve/" name="J.E SUMINISTROS Y MAS, C.A." target="_blank">J.E SUMINISTROS Y MAS, C.A.</a>'
+licencia = "Esta obra está bajo una<br><a class = 'clase6'  rel = 'license' target = '_blank' href = 'https://creativecommons.org/licenses/by-sa/3.0/ve/'> Licencia de Creative Commons</a><br><a target = '_blank' rel = 'license' href = 'https://creativecommons.org/licenses/by-sa/3.0/ve/'> <img alt = 'Licencia de Creative Commons' style = 'border-width:0' src = 'media/imagen/88x31.png' /> </a><br>"
+
+//REDES SOCIALES
+twitter = '<a class="clase6" href = "https://twitter.com/JESYMCA" class = "twitter-follow-button" data-show-count = "false" data-lang = "es" target="_blank">Twitter @JESYMCA</a>'
+telegram = '<a class="clase6" href = "https://t.me/jesuministrosymas_canal" target="_blank">Telegram  @JESUMINISTROSYMAS</a>'
+whatsapp = '<a class="clase6" href = "http://bit.ly/WhatsApp_JE" target="_blank">WhatsApp @JESUMINISTROSYMAS</a>'
+
+
 
 //DEFINIENDO VARIABLES GLOBALES
-i = " <i title = 'Podra Imprimir' class='fas fa-print'></i>";
-c = " <i title = 'Calculos Automatizados' class='fas fa-calculator'></i>";
-a = " <i title = 'Contiene Archivos PDF' class='fas fa-file-pdf'></i>";
-e = " <i title = 'Consulte Extensiones' class='fas fa-folder-plus'></i>";
-v = " <i title = 'Contiene Videos' class='fas fa-file-video'></i>";
-w = " <i title = 'Contiene Archivos Web' class='fab fa-html5'></i>";
-z = " <i title = 'Contiene Archivos Comprimido' class='fas fa-file-archive'></i>";
-l = " <i title = 'Contiene Link' class='fas fa-link'></i>";
-h = " <i title = 'Cargar Inicio' class='fas fa-home'></i>";
-r = " <i title = 'Cargar Inicio' class='fas fa-file-alt'></i>";
+i = " <i title = 'Podra Imprimir' class='fas fa-print'></i>"
+c = " <i title = 'Calculos Automatizados' class='fas fa-calculator'></i>"
+a = " <i title = 'Contiene Archivos PDF' class='fas fa-file-pdf'></i>"
+e = " <i title = 'Consulte Extensiones' class='fas fa-folder-plus'></i>"
+v = " <i title = 'Contiene Videos' class='fas fa-file-video'></i>"
+w = " <i title = 'Contiene Archivos Web' class='fab fa-html5'></i>"
+z = " <i title = 'Contiene Archivos Comprimido' class='fas fa-file-archive'></i>"
+l = " <i title = 'Contiene Link' class='fas fa-link'></i>"
+h = " <i title = 'Cargar Inicio' class='fas fa-home'></i>"
+r = " <i title = 'Cargar Inicio' class='fas fa-file-alt'></i>"
 
 
-imprimirxs = "<p class='text-right'><a class='btn btn-danger btn-sm' href='javascript:window.print(); void 0;'>Imprimir " + i + "</a></p>";
+imprimirxs = "<p class='text-right'><a class='btn btn-danger btn-sm' href='javascript:window.print(); void 0;'>Imprimir " + i + "</a></p>"
 
-br = "<br>";
-olli = "<ol><li>";
-liol = "</li></ol>";
-olc = "</li></ol>";
-ulli = "<ul><li>";
-liul = "</li></ul>";
-ulc = "</li></ul>";
-eli = "<li>";
-lic = "</li>";
+br = "<br>"
+olli = "<ol><li>"
+liol = "</li></ol>"
+olc = "</li></ol>"
+ulli = "<ul><li>"
+liul = "</li></ul>"
+ulc = "</li></ul>"
+eli = "<li>"
+lic = "</li>"
 lili = lic + eli;
 
-ml = " Mililitros";
-mls = " Mililitro";
-li = " Litros";
-lis = " Litro";
-gr = " Gramos";
-grs = " Gramo";
-mg = " Miligramos";
-mgs = " Miligramo";
-kl = " Kilogramos";
-kls = " Kilogramo";
+ml = " Mililitros"
+mls = " Mililitro"
+li = " Litros"
+lis = " Litro"
+gr = " Gramos"
+grs = " Gramo"
+mg = " Miligramos"
+mgs = " Miligramo"
+kl = " Kilogramos"
+kls = " Kilogramo"
 
-tca = "<b>Para hacer ";
-tcc = " se requieren:</b>";
-sup = 'Seleccione un Producto...';
+tca = "<b>Para hacer "
+tcc = " se requieren:</b>"
+sup = 'Seleccione un Producto...'
 
 //a = Componente
 //b = Porcentaje
@@ -63,7 +79,7 @@ function quitarigual() {
   for (ab in componente) {
     ncompo = componente[ab].n;
     titulocompo = ncompo.replace(" = ", "");
-    //componente[ab].n = "<b>" + componente[ab].n+"</b>";
+    //componente[ab].n = "<b>" + componente[ab].n+"</b>"
     componente[ab].n = titulocompo;
   }
   return componente[ab].n;
@@ -72,7 +88,7 @@ function quitarigual() {
 function ponerigual() {
   for (ab in componente) {
     ncompo = componente[ab].n;
-    igual = "<b> = </b>";
+    igual = "<b> = </b>"
     componente[ab].n = ncompo.concat(igual);
   }
   return componente[ab].n;
@@ -86,43 +102,43 @@ importa();
 
 
 function updateIndicator() {
-  document.getElementById('indicator').innerHTML = navigator.onLine ? "<br><div class='alert alert-info alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><strong>Se ha Detectado un Funcionamiento Perfecto!</strong> Usted Se encuentra conectado/a a Internet.</div>" : "<div class='alert alert-warning alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><strong>Usted se ha Desconectado de Internet!</strong>  hay elementos de este curso que se desactivaran, al recuperar la conexion a internet estaran disponibles de nuevo.</div>";
+  document.getElementById('indicator').innerHTML = navigator.onLine ? "<br><div class='alert alert-info alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><strong>Se ha Detectado un Funcionamiento Perfecto!</strong> Usted Se encuentra conectado/a a Internet.</div>" : "<div class='alert alert-warning alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><strong>Usted se ha Desconectado de Internet!</strong>  hay elementos de este curso que se desactivaran, al recuperar la conexion a internet estaran disponibles de nuevo.</div>"
 }
 
 function updateFrame() {
-  document.getElementById('frame').innerHTML = navigator.onLine ? '<iframe scrolling="no" src="../publicidad/indexon.html" name="publicidad" frameborder="0" width="100%" height="90"></iframe>' : '<iframe align="center" scrolling="no" src="../publicidad/indexoff.html" name="publicidad" frameborder="0" width="100%" height="90"></iframe>';
+  document.getElementById('frame').innerHTML = navigator.onLine ? '<iframe scrolling="no" src="../publicidad/indexon.html" name="publicidad" frameborder="0" width="100%" height="90"></iframe>' : '<iframe align="center" scrolling="no" src="../publicidad/indexoff.html" name="publicidad" frameborder="0" width="100%" height="90"></iframe>'
 }
 
 function updateLi() {
-  document.getElementById('rotator').innerHTML = navigator.onLine ? '<iframe marginheight="0" marginwidth="0" align="center" margin="0 auto" scrolling="no" src="./publicidad/indexon.html" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>' : '<iframe marginheight="0" marginwidth="0" align="center" scrolling="no" src="./publicidad/indexoff.html" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>';
+  document.getElementById('rotator').innerHTML = navigator.onLine ? '<iframe marginheight="0" marginwidth="0" align="center" margin="0 auto" scrolling="no" src="./publicidad/indexon.html" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>' : '<iframe marginheight="0" marginwidth="0" align="center" scrolling="no" src="./publicidad/indexoff.html" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>'
 }
 
 function updateP() {
-  document.getElementById('rotator').innerHTML = navigator.onLine ? '<iframe marginheight="0" marginwidth="0" align="center" margin="0 auto" scrolling="no" src="http://bit.ly/publi_je" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>' : '<iframe marginheight="0" marginwidth="0" align="center" scrolling="no" src="./pag/publicidad/indexoff.html" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>';
-  document.getElementById('mensaje').innerHTML = navigator.onLine ? "<iframe scrolling='no' src=" + mensajeactualizacion + " name='texto' width='100%' height='60' frameborder='0'></iframe>" : "<div class='alert alert-warning' role='alert'><span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span><span class='sr-only'>Error:</span> COMO NO ESTA CONECTADO A INTERNET ESTE SISTEMA NO ESTA EN CAPACIDAD DE VERIFICAR SI POSEE LA ULTIMA VERSION DE ESTE CURSO, FAVOR CONECTESE A INTERNET Y DE MANERA AUTOMATICA SE EFECTUARA ESTA VERIFICACION.</div>";
+  document.getElementById('rotator').innerHTML = navigator.onLine ? '<iframe marginheight="0" marginwidth="0" align="center" margin="0 auto" scrolling="no" src="http://bit.ly/publi_je" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>' : '<iframe marginheight="0" marginwidth="0" align="center" scrolling="no" src="./pag/publicidad/indexoff.html" name="publicidad" frameborder="0" width="700" height="95" style="border: 0px; vertical-align: bottom;"></iframe>'
+  document.getElementById('mensaje').innerHTML = navigator.onLine ? "<iframe scrolling='no' src=" + mensajeactualizacion + " name='texto' width='100%' height='60' frameborder='0'></iframe>" : "<div class='alert alert-warning' role='alert'><span class='glyphicon glyphicon-exclamation-sign' aria-hidden='true'></span><span class='sr-only'>Error:</span> COMO NO ESTA CONECTADO A INTERNET ESTE SISTEMA NO ESTA EN CAPACIDAD DE VERIFICAR SI POSEE LA ULTIMA VERSION DE ESTE CURSO, FAVOR CONECTESE A INTERNET Y DE MANERA AUTOMATICA SE EFECTUARA ESTA VERIFICACION.</div>"
 
 
 }
 
 function updateextra() {
-  document.getElementById('mensajeextra').innerHTML = navigator.onLine ? "<iframe scrolling='no' src=" + mensajeextra + " name='texto' width='100%' height='60' frameborder='0'></iframe>" : "<div class='alert alert-warning' role='alert'><span class='glyphicon glyphicon-exclamation-sign'aria-hidden='true'></span><span class='sr-only'>Error:</span> COMO NO ESTA CONECTADO A INTERNET ESTE SISTEMA NO ESTA EN CAPACIDAD DE VERIFICAR SI EXISTEN EXTENSIONES DISPONIBLES, FAVOR CONECTESE A INTERNET Y DE MANERA AUTOMATICA SE EFECTUARA ESTA VERIFICACION.</div>";
+  document.getElementById('mensajeextra').innerHTML = navigator.onLine ? "<iframe scrolling='no' src=" + mensajeextra + " name='texto' width='100%' height='60' frameborder='0'></iframe>" : "<div class='alert alert-warning' role='alert'><span class='glyphicon glyphicon-exclamation-sign'aria-hidden='true'></span><span class='sr-only'>Error:</span> COMO NO ESTA CONECTADO A INTERNET ESTE SISTEMA NO ESTA EN CAPACIDAD DE VERIFICAR SI EXISTEN EXTENSIONES DISPONIBLES, FAVOR CONECTESE A INTERNET Y DE MANERA AUTOMATICA SE EFECTUARA ESTA VERIFICACION.</div>"
 }
 
 // PARA PRUEBAS
 function onOff() {
-  document.getElementById('rotator').innerHTML = navigator.onLine ? 'EN LINEA' : 'FUERA DE LINEA';
+  document.getElementById('rotator').innerHTML = navigator.onLine ? 'EN LINEA' : 'FUERA DE LINEA'
 }
 /* Case 1 */
 window.addEventListener("online", function() {
-  document.getElementById('test1').innerHTML = "online";
+  document.getElementById('test1').innerHTML = "online"
 }, false);
 
 window.addEventListener("offline", function() {
-  document.getElementById('test1').innerHTML = "OFFLINE";
+  document.getElementById('test1').innerHTML = "OFFLINE"
 }, false);
 
-ncompoa = "";
-ncompo = "";
+ncompoa = ""
+ncompo = ""
 
 
 function botonera() {
@@ -187,7 +203,7 @@ function botonera() {
 
     '</ul>' +
     '</div>' +
-    "</div></nav>";
+    "</div></nav>"
 
   bienvenida();
   footer_site();
@@ -206,8 +222,8 @@ function botonera() {
 }
 
 function footer_site() {
-  foot = "<div class='navbar navbar-default '><div class='container-fluid'> <div class='row'> <div class='col-sm-12 col-md-6'>Esta obra está bajo una <a class = 'clase6'  rel = 'license' target = '_blank' href = 'https://creativecommons.org/licenses/by-sa/3.0/ve/'> Licencia de Creative Commons </a> <br><a target = '_blank' rel = 'license' href = 'https://creativecommons.org/licenses/by-sa/3.0/ve/'> <img alt = 'Licencia de Creative Commons' style = 'border-width:0' src = 'media/imagen/88x31.png' /> </a><br> <strong>DEPOSITO LEGAL VENEZUELA: </strong> " + deposito + "</div> " +
-    "<div class='col-sm-12 col-md-6'> <strong>Visitanos en</strong> <a class = 'clase6' href = 'http://www.jesuministrosymas.com.ve' target = '_blank' name = 'J.E SUMINISTROS Y MAS, C.A.' id = 'link web' lang = 'es' title = 'J.E SUMINISTROS Y MAS, C.A.'> <strong> <em>www.jesuministrosymas.com.ve</em> </strong> </a> <br> <a href = 'https://twitter.com/JESYMCA' class = 'twitter-follow-button' data-show-count = 'false' data-lang = 'es' target='_blank'>Seguir a @JESYMCA</a><br> <a href = 'https://t.me/jesuministrosymas_canal' target='_blank'>Seguirnos en Telegram a @JESUMINISTROSYMAS</a> <br> <a href = 'http://bit.ly/WhatsApp_JE' target='_blank'>Contactanos por WhatsApp @JESUMINISTROSYMAS</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> </div></div></div></div>    <script>$(document).ready(function () {$('[data-toggle=\"popover\"]').popover(); }); </script>";
+  foot = "<div class='navbar navbar-default '><div class='container-fluid'> <div class='row'> <div class='col-sm-12 col-md-6'>"+licencia+" <strong>DEPOSITO LEGAL VENEZUELA: </strong> " + deposito + "</div> " +
+    "<div class='col-sm-12 col-md-6'> <strong>Visitanos en</strong> "+linkjesymca+" <br> "+twitter+"<br> "+telegram+" <br> "+whatsapp
 
   document.getElementById('foot').innerHTML = foot;
 }
@@ -227,7 +243,7 @@ function bienvenida() {
     "<div class = 'carousel-item'> <img class = 'img-rounded' src = 'media/imagen/portadas/cursos/servidor.png' alt = '...'> <div class = 'carousel-caption'> <h3>Monte su Propio Servidor Web en Casa</h3> <p> <a class = 'btn btn-success' href = 'http://www.jesuministrosymas.com.ve/productos/cursos/monta-tu-server' target = '_blank' name = 'Bienvenida' id = 'link8' lang = 'es' title = 'Monte su Propio Servidor Web en Casa'role = 'button'>MAS INFORMACION AQUI</a> </p> </div> </div>" +
     "<div class = 'carousel-item'> <img class = 'img-rounded' src = 'media/imagen/portadas/cursos/otros.png' alt = '...'> <div class = 'carousel-caption'> <h3>Otros Cursos</h3> <p> <a class = 'btn btn-success' href = 'http://www.jesuministrosymas.com.ve/productos/cursos' target = '_blank' name = 'Bienvenida' id = 'link8' lang = 'es' title = 'Otros Cursos Disponibles'role = 'button'>MAS INFORMACION AQUI</a> </p> </div> </div>" +
     "<div class = 'carousel-item'> <img class = 'img-rounded' src = 'media/imagen/portadas/cursos/limpieza.png' alt = '...'> <div class = 'carousel-caption'> <h3>Aprenda a Fabricar Productos de Limpieza</h3> <p> <a class = 'btn btn-success' href = 'http://www.jesuministrosymas.com.ve/productos/cursos/elabore-productos-de-limpieza' target = '_blank' name = 'Bienvenida' id = 'link8' lang = 'es' title = 'Aprenda a Fabricar Productos de Limpieza'role = 'button'>MAS INFORMACION AQUI</a> </p> </div> </div>" +
-    "...</div> <!-- Controls --> <a class = 'left carousel-control' href = '#carousel-example-generic' role = 'button' data-slide = 'prev'> <span class = 'glyphicon glyphicon-chevron-left' aria-hidden = 'true'> </span> <span class = 'sr-only'>Previous</span> </a> <a class = 'right carousel-control' href = '#carousel-example-generic' role = 'button' data-slide = 'next'> <span class = 'glyphicon glyphicon-chevron-right' aria-hidden = 'true'> </span> <span class = 'sr-only'>Next</span> </a> </div> </div> </div> </div> </div> </div> </div> <footer> <div class = 'navbar navbar-default '> <div class = 'container'> <p> <b>Nota</b>: El aprendizaje depende de usted, los humanos solo debemos tener un motivo para hacer las cosas, nada es imposible en esta vida, todo se logra cuando se quiere..!</p> </div> </div> </footer>";
+    "...</div> <!-- Controls --> <a class = 'left carousel-control' href = '#carousel-example-generic' role = 'button' data-slide = 'prev'> <span class = 'glyphicon glyphicon-chevron-left' aria-hidden = 'true'> </span> <span class = 'sr-only'>Previous</span> </a> <a class = 'right carousel-control' href = '#carousel-example-generic' role = 'button' data-slide = 'next'> <span class = 'glyphicon glyphicon-chevron-right' aria-hidden = 'true'> </span> <span class = 'sr-only'>Next</span> </a> </div> </div> </div> </div> </div> </div> </div> <footer> <div class = 'navbar navbar-default '> <div class = 'container'> <p> <b>Nota</b>: El aprendizaje depende de usted, los humanos solo debemos tener un motivo para hacer las cosas, nada es imposible en esta vida, todo se logra cuando se quiere..!</p> </div> </div> </footer>"
 
   document.getElementById('contenido').innerHTML = contenido;
 }
@@ -235,8 +251,8 @@ function bienvenida() {
 
 function videos(a) {
 
-  let rut = 'media/videos/';
-  let setup_py = '<pre class="line-numbers language-javascript"><code><br>import setuptools<br>with open("README.md", "r") as fh:<br>&nbsp;&nbsp;&nbsp;long_description = fh.read()<br><br>setuptools.setup(<br>&nbsp;&nbsp;&nbsp;name="example-pkg-YOUR-USERNAME-HERE", # Replace with your own username<br>&nbsp;&nbsp;&nbsp;version="0.0.1",<br>&nbsp;&nbsp;&nbsp;author="Example Author",<br>&nbsp;&nbsp;&nbsp;author_email="author@example.com",<br>&nbsp;&nbsp;&nbsp;description="A small example package",<br>&nbsp;&nbsp;&nbsp;long_description=long_description,<br>&nbsp;&nbsp;&nbsp;long_description_content_type="text/markdown",<br>&nbsp;&nbsp;&nbsp;url="https://github.com/pypa/sampleproject",<br>&nbsp;&nbsp;&nbsp;packages=setuptools.find_packages(),<br>&nbsp;&nbsp;&nbsp;classifiers=[<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Programming Language :: Python :: 3",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"License :: OSI Approved :: MIT License",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Operating System :: OS Independent",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;python_requires=\'>=3.6\',<br>)<br></code></pre>';
+  let rut = 'media/videos/'
+  let setup_py = '<pre class="line-numbers language-javascript"><code><br>import setuptools<br>with open("README.md", "r") as fh:<br>&nbsp;&nbsp;&nbsp;long_description = fh.read()<br><br>setuptools.setup(<br>&nbsp;&nbsp;&nbsp;name="example-pkg-YOUR-USERNAME-HERE", # Replace with your own username<br>&nbsp;&nbsp;&nbsp;version="0.0.1",<br>&nbsp;&nbsp;&nbsp;author="Example Author",<br>&nbsp;&nbsp;&nbsp;author_email="author@example.com",<br>&nbsp;&nbsp;&nbsp;description="A small example package",<br>&nbsp;&nbsp;&nbsp;long_description=long_description,<br>&nbsp;&nbsp;&nbsp;long_description_content_type="text/markdown",<br>&nbsp;&nbsp;&nbsp;url="https://github.com/pypa/sampleproject",<br>&nbsp;&nbsp;&nbsp;packages=setuptools.find_packages(),<br>&nbsp;&nbsp;&nbsp;classifiers=[<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Programming Language :: Python :: 3",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"License :: OSI Approved :: MIT License",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Operating System :: OS Independent",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;python_requires=\'>=3.6\',<br>)<br></code></pre>'
 
   let videos = [{
     nombre: "01 Bienvenida",
@@ -1170,10 +1186,10 @@ function videos(a) {
     item.seccion === a
   ));
 
-  let resultado = "<h1>Prueba de Lista de Videos</h1>";
-  //resultado += '<div class="position-fixed">Columna izquierda que se mueve con el scroll...</div>';
-  //resultado += '<div class="alert alert-primary" role="alert">';
-  resultado += "<ol>";
+  let resultado = "<h1>Prueba de Lista de Videos</h1>"
+  //resultado += '<div class="position-fixed">Columna izquierda que se mueve con el scroll...</div>'
+  //resultado += '<div class="alert alert-primary" role="alert">'
+  resultado += "<ol>"
   let nodoDOM = selectedVideo.map((video) => {
 
     let nombre = video.nombre;
@@ -1185,36 +1201,36 @@ function videos(a) {
     let solonombre = nombre.substr(3);
     narchi = archivo.substring(0, archivo.lastIndexOf("."));
     narchi = narchi.substr(4);
-    solonombre = solonombre + " <b>" + narchi + "</b>";
+    solonombre = solonombre + " <b>" + narchi + "</b>"
 
     nomb = archivo.lastIndexOf(".");
     largo = archivo.length;
     arch = archivo.substring(largo, nomb);
 
     if (arch === '.mp4') {
-      previo = '<video id="'+narchi+'" controls width="70%" preload="metadata" poster="media/imagen/postervideos.png">  <source src="' + ruta + archivo + '" type="video/mp4"></video>';
+      previo = '<video id="'+narchi+'" controls width="70%" preload="metadata" poster="media/imagen/postervideos.png">  <source src="' + ruta + archivo + '" type="video/mp4"></video>'
       boton = "Ver Video en otra ventana" + v;
 
     } else if (arch === '.html') {
-      previo = "<a title='Ver Contenido HTML " + archivo + "'  href='" + ruta + archivo + "' target = '_blank'>" + '<img class="clase2" alt="img0" src="media/imagen/html.png"/>' + "</a>";
+      previo = "<a title='Ver Contenido HTML " + archivo + "'  href='" + ruta + archivo + "' target = '_blank'>" + '<img class="clase2" alt="img0" src="media/imagen/html.png"/>' + "</a>"
       boton = "Ver contenido Web" + w;
 
     } else if (arch === '.zip') {
-      previo = "<a title='Descargar " + archivo + "'  href='" + ruta + archivo + "' target = '_blank'>" + '<img width="30%" class="clase2" alt="img0" src="media/imagen/zip.png"/>' + "</a>";
+      previo = "<a title='Descargar " + archivo + "'  href='" + ruta + archivo + "' target = '_blank'>" + '<img width="30%" class="clase2" alt="img0" src="media/imagen/zip.png"/>' + "</a>"
       boton = "Descargar archivo comprimido" + z;
 
     } else if (arch === '.pdf') {
-      previo = "<a title='Descargar " + archivo + "'  href='" + ruta + archivo + "' target = '_blank'>" + '<img width="30%" class="clase2" alt="img0" src="media/imagen/pdf.png"/>' + "</a>";
+      previo = "<a title='Descargar " + archivo + "'  href='" + ruta + archivo + "' target = '_blank'>" + '<img width="30%" class="clase2" alt="img0" src="media/imagen/pdf.png"/>' + "</a>"
       boton = "Ver archivo PDF" + z;
 
     } else if (arch === '') {
-      previo = "";
-      boton = "";
+      previo = ""
+      boton = ""
 
     }
     else if (archivo === "/") {
-      previo = "";
-      boton = "Visitar directorio";
+      previo = ""
+      boton = "Visitar directorio"
 
     }
 
@@ -1222,17 +1238,17 @@ function videos(a) {
 
 
     let listaA = solonombre.toUpperCase();
-    let listaB = "<a title='Visitar " + nombre + "'  href='" + ruta + archivo + "' target = '_blank' class='btn btn-primary'>" + boton + "</a>";
+    let listaB = "<a title='Visitar " + nombre + "'  href='" + ruta + archivo + "' target = '_blank' class='btn btn-primary'>" + boton + "</a>"
     // Genera el contenido que va a html contenido
-    // resultado += "<li>" + listaA + "<br>" + listaB + "<br>" + archivo + "<br><br></li>";
+    // resultado += "<li>" + listaA + "<br>" + listaB + "<br>" + archivo + "<br><br></li>"
 
 
-    resultado += ' <div class="card"> <div class="card-header"><h4 class="card-header"><li>    ' + listaA + '  </li></h4> </div> <div class="card-body">    <h4 class="card-title">' + nombre + '</h4> <h5>' + narchi + '</h5>   <p class="card-text text-center">' + previo + '</p> <p class="card-text">' + contenido + '</p>' + listaB + '  </div></div>';
+    resultado += ' <div class="card"> <div class="card-header"><h4 class="card-header"><li>    ' + listaA + '  </li></h4> </div> <div class="card-body">    <h4 class="card-title">' + nombre + '</h4> <h5>' + narchi + '</h5>   <p class="card-text text-center">' + previo + '</p> <p class="card-text">' + contenido + '</p>' + listaB + '  </div></div>'
 
     return resultado;
   });
-  resultado += "</ol>";
-  //resultado += "<div>";
+  resultado += "</ol>"
+  //resultado += "<div>"
 
 
   nodoDOM.map((item) => (document.getElementById('contenido').innerHTML = item));
@@ -1265,38 +1281,38 @@ $('li a').click(function(e) {
 
 
 function creditos() {
-  resultado = "";
-  resultado += "<div class=\"panel panel-info\">";
-  resultado += "<div class=\"panel-heading\">";
-  resultado += "<h3 class=\"panel-title\"><b>Creditos, Web y Libros Consultados</b><\/h3>";
-  resultado += "<\/div>";
-  resultado += "<div class=\"panel-body\">";
+  resultado = ""
+  resultado += "<div class=\"panel panel-info\">"
+  resultado += "<div class=\"panel-heading\">"
+  resultado += "<h3 class=\"panel-title\"><b>Creditos, Web y Libros Consultados</b><\/h3>"
+  resultado += "<\/div>"
+  resultado += "<div class=\"panel-body\">"
   resultado += imprimirxs;
 
-  resultado += "<h2 class=\"western\">Libros Consultados<\/h2>";
-  resultado += "<ul>";
-  resultado += "<li>";
-  resultado += "<p>Proyecto “Apoyo al Fortalecimiento de las Capacidades en Manejo Ambiental en las Américas”, (2007) Informe General, DDS.<\/p>";
-  resultado += "<\/li>";
-  resultado += "<li>";
-  resultado += "<p>Ullmann, F. (1931). Enciclopedia de química industrial.<\/p>";
-  resultado += "<\/li>";
-  resultado += "<li>";
-  resultado += "<p>Salager, J. L., & Fernández, A. (2004). Surfactantes. Cuaderno FIRP, 300, 07-13.<\/p>";
-  resultado += "<\/li>";
-  resultado += "<li>";
-  resultado += "<p>García, G., & Cruz, L. (2011). Elaboración de cuatro tipos de jabones utilizando aceites vegetales residuales de palma africana (Elaeis guineensis) mediante el método de saponificación. Graduated (Doctoral dissertation, Thesis. Universidad";
-  resultado += " Estatal de Bolívar. Facultad de Ciencias Agropecuarias. Recursos Naturales y del Ambiente).<\/p>";
-  resultado += "<\/li>";
-  resultado += "<li>";
-  resultado += "<p>Yubaille, M., Proaño, F., & Peñafiel, S. (2013). Evaluación de tres métodos de saponificación de grasas destinadas a la alimentacion de vacas lecheras (Doctoral dissertation, Tesis Ingenieria en Industrias Pecuarias. Riobamba: Escuela Superior";
-  resultado += " Politécnica del Chimborazo, Facultad de Ciencias Pecuarias).<\/p>";
-  resultado += "<\/li>";
-  resultado += "<li>";
-  resultado += "<p>Moraga, L., Molina, G., Agüero, H., & Zurita, L. (1987). Empleo del Lauril Sulfato de Sodio para el diagnostico de mastitis subclínica. XII Reunión Anual Sociedad Chilena de Producción Animal. Santiago, CL, 46.<\/p>";
-  resultado += "<\/li>";
-  resultado += "";
-  resultado += "<\/ul>";
+  resultado += "<h2 class=\"western\">Libros Consultados<\/h2>"
+  resultado += "<ul>"
+  resultado += "<li>"
+  resultado += "<p>Proyecto “Apoyo al Fortalecimiento de las Capacidades en Manejo Ambiental en las Américas”, (2007) Informe General, DDS.<\/p>"
+  resultado += "<\/li>"
+  resultado += "<li>"
+  resultado += "<p>Ullmann, F. (1931). Enciclopedia de química industrial.<\/p>"
+  resultado += "<\/li>"
+  resultado += "<li>"
+  resultado += "<p>Salager, J. L., & Fernández, A. (2004). Surfactantes. Cuaderno FIRP, 300, 07-13.<\/p>"
+  resultado += "<\/li>"
+  resultado += "<li>"
+  resultado += "<p>García, G., & Cruz, L. (2011). Elaboración de cuatro tipos de jabones utilizando aceites vegetales residuales de palma africana (Elaeis guineensis) mediante el método de saponificación. Graduated (Doctoral dissertation, Thesis. Universidad"
+  resultado += " Estatal de Bolívar. Facultad de Ciencias Agropecuarias. Recursos Naturales y del Ambiente).<\/p>"
+  resultado += "<\/li>"
+  resultado += "<li>"
+  resultado += "<p>Yubaille, M., Proaño, F., & Peñafiel, S. (2013). Evaluación de tres métodos de saponificación de grasas destinadas a la alimentacion de vacas lecheras (Doctoral dissertation, Tesis Ingenieria en Industrias Pecuarias. Riobamba: Escuela Superior"
+  resultado += " Politécnica del Chimborazo, Facultad de Ciencias Pecuarias).<\/p>"
+  resultado += "<\/li>"
+  resultado += "<li>"
+  resultado += "<p>Moraga, L., Molina, G., Agüero, H., & Zurita, L. (1987). Empleo del Lauril Sulfato de Sodio para el diagnostico de mastitis subclínica. XII Reunión Anual Sociedad Chilena de Producción Animal. Santiago, CL, 46.<\/p>"
+  resultado += "<\/li>"
+  resultado += ""
+  resultado += "<\/ul>"
 
 
 
@@ -1498,10 +1514,10 @@ function creditos() {
     return 0;
   });
   // Genera los link y lista de webvisitadas
-  disponible = "<b> Disponible en: </b>";
-  fecha_consulta = "<b> Fecha de Consulta: </b>";
-  resultado += "<h2 class='western'>Web Visitadas</h2>";
-  resultado += "<ul>";
+  disponible = "<b> Disponible en: </b>"
+  fecha_consulta = "<b> Fecha de Consulta: </b>"
+  resultado += "<h2 class='western'>Web Visitadas</h2>"
+  resultado += "<ul>"
 
   for (key in webvisitadas) {
     var nombre = webvisitadas[key];
@@ -1511,49 +1527,49 @@ function creditos() {
     var listaParrafo = direccion.direccion;
     var listaFecha = fecha.fecha;
     var listaA = listaPalabra.toUpperCase();
-    var listaB = "<a title='Visitar " + listaPalabra + "' class='clase6' href='" + listaParrafo + "' target = '_blank'>" + listaParrafo + "</a>";
+    var listaB = "<a title='Visitar " + listaPalabra + "' class='clase6' href='" + listaParrafo + "' target = '_blank'>" + listaParrafo + "</a>"
     // Genera el contenido que va a html contenido
-    resultado += "<li>" + listaA + "<br>" + disponible + listaB + "<br>" + fecha_consulta + listaFecha + "<br><br></li>";
+    resultado += "<li><b>" + listaA + "</b><br>" + disponible + listaB + "<br>" + fecha_consulta + listaFecha + "<br><br></li>"
   }
 
-  resultado += "</ul>";
-  resultado += "<a title=\"Visitar Creative Commons\" target=\"_blank\" rel=\"license\" href=\"http:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/ve\/\">";
-  resultado += "<img alt=\"Licencia de Creative Commons\" style=\"border-width:0\" src=\"media\/imagen\/88x31.png\"><\/a>";
-  resultado += "<br\/>Este obra esta bajo una <a title=\"Visitar Licencia Creative Commons\" class=\"clase6\" rel=\"license\" target=\"_blank\" href=\"http:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/ve\/\"> licencia de Creative Commons<\/a>";
-  resultado += "<br>";
-  resultado += "<p align=\"justify\">Usted puede vender, distribuir, re-distribuir, cambiar, adaptar, modificar este producto, pero siempre debe indicar de quien es el diseño original y cuales fueron las modificaciones efectuadas, si desean que se incluya alguna mejora pueden";
-  resultado += "comunicarse con J.E Suministros y Mas, C.A. en";
-  resultado += "<a class=\"clase6\" href=\"http:\/\/www.jesuministrosymas.com.ve\/\" name=\"Ingresar a la web de J.E SUMINISTROS Y MAS, C.A.\" target=\"_blank\">www.jesuministrosymas.com.ve<\/a><\/p><br>";
-  resultado += "<div class=\"alert alert-warning\">";
-  resultado += "<\/b> Diseñado y Producido en:<br> La República Bolivariana de Venezuela<br> Maracay - Estado Aragua<br> Desde el Año 2016<br>Version Actual " + version + " Del año " + ano + "<br>Diseño Bajo Tecnologías Libres.<br> Autor y Diseño: José Herrera<br> Revisión: Ing. Elena Nuñez<br>        Esta fue una Producción de <a class=\"clase6\" href=\"http:\/\/www.jesuministrosymas.com.ve\/\" name=\"J.E SUMINISTROS Y MAS, C.A.\" target=\"_blank\">J.E SUMINISTROS Y MAS, C.A.<\/a>";
-  resultado += "<\/div>";
-  resultado += "<h2>PARA CITAR ESTE MANUAL:<\/h2>";
-  resultado += "";
-  resultado += "";
-  resultado += "<div>";
-  resultado += "<!-- Nav tabs -->";
-  resultado += "<ul class=\"nav nav-tabs\" role=\"tablist\">";
-  resultado += "<li class=\"nav-item\"><a class=\"nav-link active\" href=\"#apa\" aria-controls=\"apae\" role=\"tab\" data-toggle=\"tab\">NORMA APA<\/a><\/li>";
-  resultado += "<li class=\"nav-item\" role=\"presentation\"><a class=\"nav-link\" href=\"#iso0690\" aria-controls=\"iso0690\" role=\"tab\" data-toggle=\"tab\">NORMA ISO0690<\/a><\/li>";
-  resultado += "<li class=\"nav-item\" role=\"presentation\"><a class=\"nav-link\" href=\"#mla\" aria-controls=\"mla\" role=\"tab\" data-toggle=\"tab\">NORMA MLA<\/a><\/li>";
-  resultado += "<\/ul>";
-  resultado += "<!-- Tab panes -->";
-  resultado += "<div class=\"tab-content\">";
-  resultado += "<div role=\"tabpanel\" class=\"tab-pane fade show active\" id=\"apa\">";
-  resultado += "<h3>NORMA APA<\/h3>";
-  resultado += "Herrera Vargas J. M. (" + ano + "). "+nombre_curso+" VERSION " + version + " EDICIONES "+editor+"";
-  resultado += "<\/div>";
-  resultado += "<div role=\"tabpanel\" class=\"tab-pane fade\" id=\"iso0690\">";
-  resultado += "<h3>NORMA ISO690<\/h3>";
-  resultado += "HERRERA VARGAS, Jose Medardo; "+editor+", "+nombre_curso+" VERSION  " + version + " . " + ano + ".";
-  resultado += "<\/div>";
-  resultado += "<div role=\"tabpanel\" class=\"tab-pane fade\" id=\"mla\">";
-  resultado += "<h3>NORMA MLA<\/h3>";
-  resultado += "Herrera Vargas, Jose Medardo. \""+nombre_curso+" VERSION " + version + "\" EDICIONES "+editor+" (" + ano + ").";
-  resultado += "<\/div>";
-  resultado += "<\/div>";
-  resultado += "<\/div>";
-  resultado += "<\/div>";
+  resultado += "</ul>"
+  resultado += "<a title=\"Visitar Creative Commons\" target=\"_blank\" rel=\"license\" href=\"http:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/ve\/\">"
+  resultado += "<img alt=\"Licencia de Creative Commons\" style=\"border-width:0\" src=\"media\/imagen\/88x31.png\"><\/a>"
+  resultado += "<br\/>Este obra esta bajo una <a title=\"Visitar Licencia Creative Commons\" class=\"clase6\" rel=\"license\" target=\"_blank\" href=\"http:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/ve\/\"> licencia de Creative Commons<\/a>"
+  resultado += "<br>"
+  resultado += "<p align=\"justify\">Usted puede vender, distribuir, re-distribuir, cambiar, adaptar, modificar este producto, pero siempre debe indicar de quien es el diseño original y cuales fueron las modificaciones efectuadas, si desean que se incluya alguna mejora pueden"
+  resultado += "comunicarse con J.E Suministros y Mas, C.A. en"
+  resultado += '<a class="clase6" href="http://www.jesuministrosymas.com.ve/" name="Ingresar a la web de J.E SUMINISTROS Y MAS, C.A." target="_blank">www.jesuministrosymas.com.ve</a></p><br>'
+  resultado += '<div class="alert alert-warning">'
+  resultado += "<b>Diseñado y Producido en:</b><br> "+lugar+"<br> "+desde+"<br>Version Actual " + version + " Del año " + ano + "<br>Diseño Bajo Tecnologías Libres.<br> Autor y Diseño: "+autordiseno+"<br> Revisión: "+revision+"<br> "+propiedadvideos+descripcion_contenido+"Esta fue una Producción de" + linkjesymca;
+  resultado += "<\/div>"
+  resultado += "<h2>PARA CITAR ESTE MANUAL:<\/h2>"
+  resultado += ""
+  resultado += ""
+  resultado += "<div>"
+  resultado += "<!-- Nav tabs -->"
+  resultado += '<ul class="nav nav-tabs" role="tablist">'
+  resultado += '<li class="nav-item"><a class="nav-link active" href="#apa" aria-controls="apae" role="tab" data-toggle="tab">NORMA APA</a></li>'
+  resultado += '<li class="nav-item" role="presentation"><a class="nav-link" href="#iso0690" aria-controls="iso0690" role="tab" data-toggle="tab">NORMA ISO0690</a></li>'
+  resultado += '<li class="nav-item" role="presentation"><a class="nav-link" href="#mla" aria-controls="mla" role="tab" data-toggle="tab">NORMA MLA</a></li>'
+  resultado += '</ul>'
+  resultado += '<!-- Tab panes -->'
+  resultado += '<div class="tab-content">'
+  resultado += '<div role="tabpanel" class="tab-pane fade show active" id="apa">'
+  resultado += '<h3>NORMA APA</h3>'
+  resultado += 'Herrera Vargas J. M. (' + ano + '). '+nombre_curso+' VERSION ' + version + ' EDICIONES '+editor+'.'
+  resultado += '</div>'
+  resultado += '<div role="tabpanel" class="tab-pane fade" id="iso0690">'
+  resultado += '<h3>NORMA ISO690</h3>'
+  resultado += 'HERRERA VARGAS, Jose Medardo; '+editor+', '+nombre_curso+' VERSION  ' + version + ' . ' + ano + '.'
+  resultado += '</div>'
+  resultado += '<div role="tabpanel" class="tab-pane fade" id="mla">'
+  resultado += '<h3>NORMA MLA</h3>'
+  resultado += 'Herrera Vargas, Jose Medardo. "'+nombre_curso+' VERSION ' + version + '" EDICIONES '+editor+' (' + ano + ').'
+  resultado += '</div>'
+  resultado += '</div>'
+  resultado += '</div>'
+  resultado += '</div>'
 
   document.getElementById('contenido').innerHTML = resultado;
 }
@@ -1564,28 +1580,49 @@ function glosario() {
     palabra: "",
     parrafo: ""
   }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
     palabra: "Acido Benzoico",
     parrafo: "Su nombre comercial y científico es el mismo ingrediente activo en la fabricación de la crema para alisar el cabello."
   }];
 
   // Ordena de manera alfabetica
-
-  glosario.sort(function(a, b) {
-    if (a.palabra > b.palabra) {
-      return 1;
-    }
-    if (a.palabra < b.palabra) {
-      return -1;
-    }
-    // a must be equal to b
-    return 0;
+  glosario = glosario.filter(item => item.palabra).sort(function(a, b) {
+    if (a.palabra > b.palabra) return 1
+    if (a.palabra < b.palabra) return -1
+    return 0
   });
 
   // Genera los link y lista de glosario
-  definiciones = "";
-  definiciones += '<div class="panel panel-info"><div class="panel-heading"><h3 class=\"panel-title\"><b>Glosario de Terminos</b></h3></div><div class="panel-body">';
+  definiciones = ""
+  definiciones += '<div class="panel panel-info"><div class="panel-heading"><h3 class=\"panel-title\"><b>Glosario de Terminos</b></h3></div><div class="panel-body">'
   definiciones += imprimirxs;
-  definiciones += "<dl>";
+  definiciones += "<dl>"
   for (var i = 0; i < glosario.length; i++) {
     var palabra = glosario[i];
     var parrafo = glosario[i];
@@ -1594,59 +1631,58 @@ function glosario() {
     var listaA = listaPalabra.toUpperCase();
     var listaB = listaParrafo;
     // Genera el contenido que va a html contenido
-    definiciones += "<dt>" + listaA + "</dt><dd>" + listaB + "</dd>";
+    definiciones += "<dt>" + listaA + "</dt><dd>" + listaB + "</dd>"
 
   }
-  definiciones += "</dl></div></div>";
+  definiciones += "</dl></div></div>"
   document.getElementById('contenido').innerHTML = definiciones;
 }
 
 
 function extra() {
 
-  var di = "extra/media/";
+  var di = "extra/media/"
   var dib = "extra/"
 
   function is_img(file) {
-    act = " <span data-toggle = 'tooltip' data-placement = 'bottom' title = 'Contiene Links' class = 'glyphicon glyphicon-file glyphicon-refresh' aria-hidden = 'true'> </span>";
-    acte = " <span data-toggle = 'tooltip' data-placement = 'bottom' title = 'Contiene Links' class = 'glyphicon glyphicon-file glyphicon-warning-sign' aria-hidden = 'true'> </span>";
+    act = " <span data-toggle = 'tooltip' data-placement = 'bottom' title = 'Contiene Links' class = 'glyphicon glyphicon-file glyphicon-refresh' aria-hidden = 'true'> </span>"
+    acte = " <span data-toggle = 'tooltip' data-placement = 'bottom' title = 'Contiene Links' class = 'glyphicon glyphicon-file glyphicon-warning-sign' aria-hidden = 'true'> </span>"
 
-    var ifrmad = "";
+    var ifrmad = ""
     ifrmad += "<p class='text-right'>" +
       "<button autocomplete='off' id='myButton' class='btn btn-danger btn-sm' " +
       "title = 'Recargar para reconocer Extensiones Instaladas' onclick = 'recarga();' href='#Extensiones'>" +
-      "Recargar Sistema " + act + "</button>";
-    ifrmad += "</p>";
-    ifrmad += "<div class='alert alert-danger' role='alert'> <strong>" + acte + " Lo Sentimos!</strong> Usted no posee instalado Extensiones de este Curso <a href='" + linkextenciones + "' target='_blank' class='btn btn-info' title='Consulte extensiones disponibles'><b>CONSULTAR EXTENSIONES DISPONIBLES AQUI</b> </a> </div>";
+      "Recargar Sistema " + act + "</button>"
+    ifrmad += "</p>"
+    ifrmad += "<div class='alert alert-danger' role='alert'> <strong>" + acte + " Lo Sentimos!</strong> Usted no posee instalado Extensiones de este Curso <a href='" + linkextenciones + "' target='_blank' class='btn btn-info' title='Consulte extensiones disponibles'><b>CONSULTAR EXTENSIONES DISPONIBLES AQUI</b> </a> </div>"
 
-
-    ifrmad += "<div class=\"panel panel-info\">";
-    ifrmad += "<div class=\"panel-heading\"><b>Como Instalar Extensiones</b><\/div>";
-    ifrmad += "<div class=\"panel-body\">";
-    ifrmad += "<h1>Como Instalar una Extension<\/h1>";
-    ifrmad += "<p>El proceso de instalacion es simple, y se explica y detalla paso a paso en estos 5 sencillos pasos:<\/p>";
-    ifrmad += "<ol><li>Es sencillo, el proceso consiste en adquirir el paquete correspondiente a la extension, este archivo lo recibira en formato .7z que es el formato de compresion standar con el que trabajamos en J.E Suministros y Mas, C.A.<\/li>";
-    ifrmad += "<p class=\"text-center\">";
-    ifrmad += "<img class=\"img-thumbnail\" src=\"media\/imagen\/portadas\/extra\/comprimido.png\" alt=\"Archivo Comprimido\">";
-    ifrmad += "<\/p>";
-    ifrmad += "<li>Debe descomprimir el archivo de nombre <strong>extra<\/strong> descargado.<\/li>";
-    ifrmad += "<p class=\"text-center\">";
-    ifrmad += "<img class=\"img-thumbnail\" src=\"media\/imagen\/portadas\/extra\/extraer.png\" alt=\"Archivo Comprimido\">";
-    ifrmad += "<\/p>";
-    ifrmad += "<li>Usted obtendra una carpeta de nombre <strong>extra<\/strong> <\/li>";
-    ifrmad += "<p class=\"text-center\">";
-    ifrmad += "<img class=\"img-thumbnail\" src=\"media\/imagen\/portadas\/extra\/carpetaextraida.png\" alt=\"Archivo Comprimido\">";
-    ifrmad += "<\/p>";
-    ifrmad += "<li>Todos los archivos contenidos en la carpeta deben seleccionarlo y copiarlo<\/li>";
-    ifrmad += "<p class=\"text-center\">";
-    ifrmad += "<img class=\"img-thumbnail\" src=\"media\/imagen\/portadas\/extra\/copiarextra.png\" alt=\"Archivo Comprimido\">";
-    ifrmad += "<\/p>";
-    ifrmad += "<li>Tome en cuenta que su curso posee 3 carpetas que son: <strong>extra</strong>, <strong>media</strong>  y <strong>pag</strong>, y un archivo <strong>index.html</strong> que es el que le permite acceder a su curso. Los archivos copiados en el paso anterior deben ser pegados dentro de la carpeta <strong>extra<\/strong> de su curso, ver imagen de referencia<\/li>";
-    ifrmad += "<p class=\"text-center\">";
-    ifrmad += "<img class=\"img-thumbnail\" src=\"media\/imagen\/portadas\/extra\/carpetaextra.png\" alt=\"Archivo Comprimido\">";
-    ifrmad += "<\/p>";
-    ifrmad += "<\/div>";
-    ifrmad += "<\/div>";
+    ifrmad += '<div class="panel panel-info">'
+    ifrmad += '<div class="panel-heading"><b>Como Instalar Extensiones</b></div>'
+    ifrmad += '<div class="panel-body">'
+    ifrmad += '<h1>Como Instalar una Extension</h1>'
+    ifrmad += '<p>El proceso de instalacion es simple, y se explica y detalla paso a paso en estos 5 sencillos pasos:</p>'
+    ifrmad += '<ol><li>Es sencillo, el proceso consiste en adquirir el paquete correspondiente a la extension, este archivo lo recibira en formato .7z que es el formato de compresion standar con el que trabajamos en J.E Suministros y Mas, C.A.</li>'
+    ifrmad += '<p class="text-center">'
+    ifrmad += '<img class="img-thumbnail" src="media/imagen/portadas/extra/comprimido.png" alt="Archivo Comprimido">'
+    ifrmad += '</p>'
+    ifrmad += '<li>Debe descomprimir el archivo de nombre <strong>extra</strong> descargado.</li>'
+    ifrmad += '<p class="text-center">'
+    ifrmad += '<img class="img-thumbnail" src="media/imagen/portadas/extra/extraer.png" alt="Archivo Comprimido">'
+    ifrmad += '</p>'
+    ifrmad += '<li>Usted obtendra una carpeta de nombre <strong>extra</strong> </li>'
+    ifrmad += '<p class="text-center">'
+    ifrmad += '<img class="img-thumbnail" src="media/imagen/portadas/extra/carpetaextraida.png" alt="Archivo Comprimido">'
+    ifrmad += '</p>'
+    ifrmad += '<li>Todos los archivos contenidos en la carpeta deben seleccionarlo y copiarlo</li>'
+    ifrmad += '<p class="text-center">'
+    ifrmad += '<img class="img-thumbnail" src="media/imagen/portadas/extra/copiarextra.png" alt="Archivo Comprimido">'
+    ifrmad += '</p>'
+    ifrmad += '<li>Tome en cuenta que su curso posee 3 carpetas que son: <strong>extra</strong>, <strong>media</strong>  y <strong>pag</strong>, y un archivo <strong>index.html</strong> que es el que le permite acceder a su curso. Los archivos copiados en el paso anterior deben ser pegados dentro de la carpeta <strong>extra</strong> de su curso, ver imagen de referencia</li>'
+    ifrmad += '<p class="text-center">'
+    ifrmad += '<img class="img-thumbnail" src="media/imagen/portadas/extra/carpetaextra.png" alt="Archivo Comprimido">'
+    ifrmad += '</p>'
+    ifrmad += '</div>'
+    ifrmad += '</div>'
 
     var img = new Image();
     img.src = file;
@@ -1663,9 +1699,9 @@ function extra() {
 
 function recarga() {
 
-  var x = "";
+  var x = ""
   var x = document.getElementsByTagName("body")[0];
-  x.style.backgroundColor = "red";
+  x.style.backgroundColor = "red"
   document.location.reload();
   // return extra();
   //var x += document.location.reload();
