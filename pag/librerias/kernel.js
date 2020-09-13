@@ -5,33 +5,27 @@ version = "1.0.0"
 ano = "2020"
 editor = "J.E SUMINISTROS Y MAS, C.A."
 cabecera = "<div class = 'container'> <div class = 'row well well-sm'> <div class = 'hidden-xs col-sm-4 col-md-6 text-center'> <h2>Descripcion</h2> </div> <div class = 'hidden-xs col-sm-8 col-md-6 text-center'> <h2>Archivo</h2> </div> </div>"
-mensajeactualizacion = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/" // Mensajeria de verificacion de actualizacion
-mensajeextra = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/limpieza500/extra/" //Mensajeria contendio extra
-linkextenciones = "http://bit.ly/extensionespdl" // Link de consulta de actualizaciones
+mensajeactualizacion = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/python/" // Mensajeria de verificacion de actualizacion
+mensajeextra = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/python/extra/" //Mensajeria contendio extra
+linkextenciones = "http://bit.ly/python3_je" // Link de consulta de actualizaciones
 logoje = "<img src='media/imagen/logo.png' width='180' height='30' alt='J.E SUMINISTROS Y MAS, C.A.' longdesc='LOGO J.E SUMINISTROS Y MAS, C.A.' id='logo' align='left'>"
 
 lugar = "La República Bolivariana de Venezuela<br> Maracay - Estado Aragua"
 desde = "Desde el Año 2016"
 autordiseno = "José Herrera"
 revision = "Ing. Elena Nuñez"
-propiedadvideos = "" //Siempre debe agregarse al final un <br>
-descripcion_contenido = "" // Siempre debe agregarse al final un <br>
-linkjesymca = '<a class="clase6" href="http://www.jesuministrosymas.com.ve/" name="J.E SUMINISTROS Y MAS, C.A." target="_blank">J.E SUMINISTROS Y MAS, C.A.</a>'
+propiedadvideos = "<br><b>Sobre las propiedades:</b> Este aplicativo contiene videos e imagenes que no son propiedad de J.E Suministros y Mas, C.A. y el valor que se cobra es por el servicio de organizarlos y verificarlos todos en un solo paquete.<br>" //Siempre debe agregarse al final un <br>
+descripcion_contenido = "<b>Descripcion:</b> Se ha compilado una serie de videos para la facil puesta en marcha los conocimientos sobre Python 3 desde cero y comenzar a programar y a entender este lenguaje de programacion.<br><br>" // Siempre debe agregarse al final un <br>
+linkjesymca = '<a title="Visite nuestra Web" class="clase6" href="http://www.jesuministrosymas.com.ve/" name="J.E SUMINISTROS Y MAS, C.A." target="_blank">J.E SUMINISTROS Y MAS, C.A.</a>'
 licencia = "Esta obra está bajo una<br><a class = 'clase6'  rel = 'license' target = '_blank' href = 'https://creativecommons.org/licenses/by-sa/3.0/ve/'> Licencia de Creative Commons</a><br><a target = '_blank' rel = 'license' href = 'https://creativecommons.org/licenses/by-sa/3.0/ve/'> <img alt = 'Licencia de Creative Commons' style = 'border-width:0' src = 'media/imagen/88x31.png' /> </a><br>"
 
 //REDES SOCIALES
-twitter = '<a class="clase6" href = "https://twitter.com/JESYMCA" class = "twitter-follow-button" data-show-count = "false" data-lang = "es" target="_blank">Twitter @JESYMCA</a>'
-telegram = '<a class="clase6" href = "https://t.me/jesuministrosymas_canal" target="_blank">Telegram  @JESUMINISTROSYMAS</a>'
-whatsapp = '<a class="clase6" href = "http://bit.ly/WhatsApp_JE" target="_blank">WhatsApp @JESUMINISTROSYMAS</a>'
+twitter = '<a title="Visite nuestro Twitter" class="clase6" href = "https://twitter.com/JESYMCA" class = "twitter-follow-button" data-show-count = "false" data-lang = "es" target="_blank">Twitter @JESYMCA</a>'
+telegram = '<a title="Ingrese anuestro canal de Telegram" class="clase6" href = "https://t.me/jesuministrosymas_canal" target="_blank">Telegram  @JESUMINISTROSYMAS</a>'
+whatsapp = '<a title="Contactenos via WhatsApp" class="clase6" href = "http://bit.ly/WhatsApp_JE" target="_blank">WhatsApp @JESUMINISTROSYMAS</a>'
 
-contacteno = [twitter, telegram, whatsapp]
-contactenos = "<ul>"
-contacteno.forEach(myLi)
-contactenos += "</ul>"
-
-function myLi(value) {
-  contactenos += "<li>" + value + "</li>";
-}
+contacteno = [twitter, telegram, whatsapp, linkjesymca]
+contactenos = '<ul><li>'+contacteno.join('</li><li>')+'</li></ul>';
 
 
 //DEFINIENDO VARIABLES GLOBALES
@@ -49,36 +43,13 @@ r = " <i title = 'Cargar Inicio' class='fas fa-file-alt'></i>"
 
 imprimirxs = "<p class='text-right'><a class='btn btn-danger btn-sm' href='javascript:window.print(); void 0;'>Imprimir " + i + "</a></p>"
 
-br = "<br>"
-olli = "<ol><li>"
-liol = "</li></ol>"
-olc = "</li></ol>"
-ulli = "<ul><li>"
-liul = "</li></ul>"
-ulc = "</li></ul>"
-eli = "<li>"
-lic = "</li>"
-lili = lic + eli;
-
-ml = " Mililitros"
-mls = " Mililitro"
-li = " Litros"
-lis = " Litro"
-gr = " Gramos"
-grs = " Gramo"
-mg = " Miligramos"
-mgs = " Miligramo"
-kl = " Kilogramos"
-kls = " Kilogramo"
-
-tca = "<b>Para hacer "
-tcc = " se requieren:</b>"
-sup = 'Seleccione un Producto...'
-
 
 // TEXTOS DE CONTENIDOS
 texto_bienvenida = 'Le saludo y felicito por la adquisicion de este aplicativo, <b>PYTHON EN VIDEOS.</b>'
 
+// TEXTO FOOTER
+nota_footer = "<b>Nota:</b>El aprendizaje depende de usted, los humanos solo debemos tener un motivo para hacer las cosas, nada es imposible en esta vida, todo se logra cuando se quiere..!"
+nota_footer = '<div class="alert alert-light text-muted container"><b>Nota:</b>El aprendizaje depende de usted, los humanos solo debemos tener un motivo para hacer las cosas, nada es imposible en esta vida, todo se logra cuando se quiere..!</div>'
 // TEXTO COMO USAR ESTE MANUAL
 como_usar_primer = "El diseño fue pensado de manera intuitiva, para acceder a cada una de las secciones que se desea revisar solo debe hacer clic en la barra de seleccion y navegar dentro del area que prefiera. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 como_usar_segundo = "Se sugiere tomar apuntes de las descripciones del video, de esta manera siempre podra consultar sus notas en cualquier momento. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -247,7 +218,7 @@ function footer_site() {
 
 
 function bienvenida() {
-  contenido = "<div class = 'panel panel-info'> <div class = 'panel-heading'>  <h1 class = 'panel-title'><strong>Bienvenidos a este Aplicativo</strong></h1> </div> <div class = 'panel-body'> <div class = 'container-fluid'> <div> <!-- Nav tabs --> <ul class = 'nav nav-tabs' role = 'tablist'> <li role = 'presentation' class = 'nav-item'> <a class='nav-link active' href='#home' aria-controls = 'home' role = 'tab' data-toggle = 'tab'>Bienvenidos</a> </li> <li role = 'presentation'> <a class='nav-link' href='#profile' aria-controls = 'profile' role = 'tab' data-toggle = 'tab'>Uso de este Manual</a> </li> <li role = 'presentation'> <a class='nav-link' href = '#contacto' aria-controls = 'contacto' role = 'tab' data-toggle = 'tab'>Contactenos</a> </li> <li role = 'presentation'> <a class='nav-link' href = '#otros' aria-controls = 'otros' role = 'tab' data-toggle = 'tab'>Otros Cursos</a> </li> </ul> <!-- Tab panes --> <div class = 'tab-content'> <div role = 'tabpanel' class = 'tab-pane active' id = 'home'> <b> <h1>Bienvenido</h1> </b> <p>"+texto_bienvenida+"</p> </div> <div role = 'tabpanel' class = 'tab-pane' id = 'profile'> <h1>COMO USAR ESTE MANUAL</h1> <p>Es bastante practico e intuitivo, tome en cuenta que al ser un manual donde el 98% del codigo fuente esta del lado del cliente es posible que experimente ver textos con simbolos raros, normalmente donde se utilicen letras como Ñ o Palabras Acentuadas, de ser asi, normalmente lo primero que debe hacer es no alarmarse e ir a las configuraciones de su navegador web y cambiar su configuracion de codificacion a <kbd>charset=UTF-8</kbd>si por el contrario usted puede visualizar los caracteres sin errores, entonces solo le queda revisar todas las secciones disponibles en este producto.</p> <div class='accordion' id='accordionExample'>   <div class='card'>     <div class='card-header' id='headingOne'>       <h2 class='mb-0'>         <button class='btn btn-link btn-block text-left' type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>           PRIMER PASO         </button>       </h2>     </div>      <div id='collapseOne' class='collapse show' aria-labelledby='headingOne' data-parent='#accordionExample'>       <div class='card-body'>"+como_usar_primer+"</div>     </div>   </div>   <div class='card'>     <div class='card-header' id='headingTwo'>       <h2 class='mb-0'>         <button class='btn btn-link btn-block text-left collapsed' type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'>           SEGUNDO PASO         </button>       </h2>     </div>     <div id='collapseTwo' class='collapse' aria-labelledby='headingTwo' data-parent='#accordionExample'>       <div class='card-body'>"+como_usar_segundo+"</div>     </div>   </div>   <div class='card'>     <div class='card-header' id='headingThree'>       <h2 class='mb-0'>         <button class='btn btn-link btn-block text-left collapsed' type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree'>           TERCER PASO         </button>       </h2>     </div>     <div id='collapseThree' class='collapse' aria-labelledby='headingThree' data-parent='#accordionExample'>       <div class='card-body'>"+como_usar_tercero+" </div>     </div>   </div> </div>   </div> <div role = 'tabpanel' class = 'tab-pane' id = 'contacto'> <h1>Puede contactarnos en:</h1> <br> <p class = 'navbar-text pull-left'>"+contactenos+" </p> <br> <br> <br> <br> <br> <br> <br> <br> </div> <div role = 'tabpanel' class = 'tab-pane' id = 'otros'> <div id = 'carousel-example-generic' class = 'carousel slide' data-ride = 'carousel'> <!-- Indicators --> " +
+  contenido = "<div class = 'card'> <div class = 'card-body'>  <h1 class=\"card-title\"><strong>Bienvenidos a este Aplicativo</strong></h1> </div> <div class = 'card-body'> <div class = 'container-fluid'> <div> <!-- Nav tabs --> <ul class = 'nav nav-tabs' role = 'tablist'> <li role = 'presentation' class = 'nav-item'> <a class='nav-link active' href='#home' aria-controls = 'home' role = 'tab' data-toggle = 'tab'>Bienvenidos</a> </li> <li role = 'presentation'> <a class='nav-link' href='#profile' aria-controls = 'profile' role = 'tab' data-toggle = 'tab'>Uso de este Manual</a> </li> <li role = 'presentation'> <a class='nav-link' href = '#contacto' aria-controls = 'contacto' role = 'tab' data-toggle = 'tab'>Contactenos</a> </li> <li role = 'presentation'> <a class='nav-link' href = '#otros' aria-controls = 'otros' role = 'tab' data-toggle = 'tab'>Otros Cursos</a> </li> </ul> <!-- Tab panes --> <div class = 'tab-content'> <div role = 'tabpanel' class = 'tab-pane active' id = 'home'> <b> <h1>Bienvenido</h1> </b> <p>"+texto_bienvenida+"</p> </div> <div role = 'tabpanel' class = 'tab-pane' id = 'profile'> <h1>COMO USAR ESTE MANUAL</h1> <p>Es bastante practico e intuitivo, tome en cuenta que al ser un manual donde el 98% del codigo fuente esta del lado del cliente es posible que experimente ver textos con simbolos raros, normalmente donde se utilicen letras como Ñ o Palabras Acentuadas, de ser asi, normalmente lo primero que debe hacer es no alarmarse e ir a las configuraciones de su navegador web y cambiar su configuracion de codificacion a <kbd>charset=UTF-8</kbd>si por el contrario usted puede visualizar los caracteres sin errores, entonces solo le queda revisar todas las secciones disponibles en este producto.</p> <div class='accordion' id='accordionExample'>   <div class='card'>     <div class='card-header' id='headingOne'>       <h2 class='mb-0'>         <button class='btn btn-link btn-block text-left' type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>           PRIMER PASO         </button>       </h2>     </div>      <div id='collapseOne' class='collapse show' aria-labelledby='headingOne' data-parent='#accordionExample'>       <div class='card-body'>"+como_usar_primer+"</div>     </div>   </div>   <div class='card'>     <div class='card-header' id='headingTwo'>       <h2 class='mb-0'>         <button class='btn btn-link btn-block text-left collapsed' type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'>           SEGUNDO PASO         </button>       </h2>     </div>     <div id='collapseTwo' class='collapse' aria-labelledby='headingTwo' data-parent='#accordionExample'>       <div class='card-body'>"+como_usar_segundo+"</div>     </div>   </div>   <div class='card'>     <div class='card-header' id='headingThree'>       <h2 class='mb-0'>         <button class='btn btn-link btn-block text-left collapsed' type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree'>           TERCER PASO         </button>       </h2>     </div>     <div id='collapseThree' class='collapse' aria-labelledby='headingThree' data-parent='#accordionExample'>       <div class='card-body'>"+como_usar_tercero+" </div>     </div>   </div> </div>   </div> <div role = 'tabpanel' class = 'tab-pane' id = 'contacto'> <h1>Puede contactarnos en:</h1> <br> <p class = 'navbar-text pull-left'>"+contactenos+" </p> <br> <br> <br> <br> <br> <br> <br> <br> </div> <div role = 'tabpanel' class = 'tab-pane' id = 'otros'> <div id = 'carousel-example-generic' class = 'carousel slide' data-ride = 'carousel'> <!-- Indicators --> " +
     "<ol class = 'carousel-indicators'> " +
     "<li data-target = '#carousel-example-generic' data-slide-to = '0' class = 'active'> </li> " +
     "<li data-target = '#carousel-example-generic' data-slide-to = '1'> </li> " +
@@ -260,7 +231,7 @@ function bienvenida() {
     "<div class = 'carousel-item'> <img class = 'img-rounded' src = 'media/imagen/portadas/cursos/servidor.png' alt = '...'> <div class = 'carousel-caption'> <h3>Monte su Propio Servidor Web en Casa</h3> <p> <a class = 'btn btn-success' href = 'http://www.jesuministrosymas.com.ve/productos/cursos/monta-tu-server' target = '_blank' name = 'Bienvenida' id = 'link8' lang = 'es' title = 'Monte su Propio Servidor Web en Casa'role = 'button'>MAS INFORMACION AQUI</a> </p> </div> </div>" +
     "<div class = 'carousel-item'> <img class = 'img-rounded' src = 'media/imagen/portadas/cursos/otros.png' alt = '...'> <div class = 'carousel-caption'> <h3>Otros Cursos</h3> <p> <a class = 'btn btn-success' href = 'http://www.jesuministrosymas.com.ve/productos/cursos' target = '_blank' name = 'Bienvenida' id = 'link8' lang = 'es' title = 'Otros Cursos Disponibles'role = 'button'>MAS INFORMACION AQUI</a> </p> </div> </div>" +
     "<div class = 'carousel-item'> <img class = 'img-rounded' src = 'media/imagen/portadas/cursos/limpieza.png' alt = '...'> <div class = 'carousel-caption'> <h3>Aprenda a Fabricar Productos de Limpieza</h3> <p> <a class = 'btn btn-success' href = 'http://www.jesuministrosymas.com.ve/productos/cursos/elabore-productos-de-limpieza' target = '_blank' name = 'Bienvenida' id = 'link8' lang = 'es' title = 'Aprenda a Fabricar Productos de Limpieza'role = 'button'>MAS INFORMACION AQUI</a> </p> </div> </div>" +
-    "...</div> <!-- Controls --> <a class = 'left carousel-control' href = '#carousel-example-generic' role = 'button' data-slide = 'prev'> <span class = 'glyphicon glyphicon-chevron-left' aria-hidden = 'true'> </span> <span class = 'sr-only'>Previous</span> </a> <a class = 'right carousel-control' href = '#carousel-example-generic' role = 'button' data-slide = 'next'> <span class = 'glyphicon glyphicon-chevron-right' aria-hidden = 'true'> </span> <span class = 'sr-only'>Next</span> </a> </div> </div> </div> </div> </div> </div> </div> <footer> <div class = 'navbar navbar-default '> <div class = 'container'> <p> <b>Nota</b>: El aprendizaje depende de usted, los humanos solo debemos tener un motivo para hacer las cosas, nada es imposible en esta vida, todo se logra cuando se quiere..!</p> </div> </div> </footer>"
+    "...</div> <!-- Controls --> <a class = 'left carousel-control' href = '#carousel-example-generic' role = 'button' data-slide = 'prev'> <span class = 'glyphicon glyphicon-chevron-left' aria-hidden = 'true'> </span> <span class = 'sr-only'>Previous</span> </a> <a class = 'right carousel-control' href = '#carousel-example-generic' role = 'button' data-slide = 'next'> <span class = 'glyphicon glyphicon-chevron-right' aria-hidden = 'true'> </span> <span class = 'sr-only'>Next</span> </a> </div> </div> </div> </div> </div> </div> </div> <footer> <div class = 'navbar navbar-default '>"+nota_footer+" </div> </footer>"
 
   document.getElementById('contenido').innerHTML = contenido;
 }
@@ -1204,8 +1175,6 @@ function videos(a) {
   ));
 
   let resultado = "<h1>Prueba de Lista de Videos</h1>"
-  //resultado += '<div class="position-fixed">Columna izquierda que se mueve con el scroll...</div>'
-  //resultado += '<div class="alert alert-primary" role="alert">'
   resultado += "<ol>"
   let nodoDOM = selectedVideo.map((video) => {
 
@@ -1299,38 +1268,42 @@ $('li a').click(function(e) {
 
 function creditos() {
   resultado = ""
-  resultado += "<div class=\"panel panel-info\">"
-  resultado += "<div class=\"panel-heading\">"
-  resultado += "<h3 class=\"panel-title\"><b>Creditos, Web y Libros Consultados</b><\/h3>"
+  resultado += "<div class=\"card\">"
+  resultado += "<div class=\"card-body\">"
+  resultado += "<h3 class=\"card-title\"><b>Creditos, Web y Libros Consultados</b><\/h3>"
   resultado += "<\/div>"
-  resultado += "<div class=\"panel-body\">"
+  resultado += "<div class=\"card-body\">"
   resultado += imprimirxs;
 
-  resultado += "<h2 class=\"western\">Libros Consultados<\/h2>"
-  resultado += "<ul>"
-  resultado += "<li>"
-  resultado += "<p>Proyecto “Apoyo al Fortalecimiento de las Capacidades en Manejo Ambiental en las Américas”, (2007) Informe General, DDS.<\/p>"
-  resultado += "<\/li>"
-  resultado += "<li>"
-  resultado += "<p>Ullmann, F. (1931). Enciclopedia de química industrial.<\/p>"
-  resultado += "<\/li>"
-  resultado += "<li>"
-  resultado += "<p>Salager, J. L., & Fernández, A. (2004). Surfactantes. Cuaderno FIRP, 300, 07-13.<\/p>"
-  resultado += "<\/li>"
-  resultado += "<li>"
-  resultado += "<p>García, G., & Cruz, L. (2011). Elaboración de cuatro tipos de jabones utilizando aceites vegetales residuales de palma africana (Elaeis guineensis) mediante el método de saponificación. Graduated (Doctoral dissertation, Thesis. Universidad"
-  resultado += " Estatal de Bolívar. Facultad de Ciencias Agropecuarias. Recursos Naturales y del Ambiente).<\/p>"
-  resultado += "<\/li>"
-  resultado += "<li>"
-  resultado += "<p>Yubaille, M., Proaño, F., & Peñafiel, S. (2013). Evaluación de tres métodos de saponificación de grasas destinadas a la alimentacion de vacas lecheras (Doctoral dissertation, Tesis Ingenieria en Industrias Pecuarias. Riobamba: Escuela Superior"
-  resultado += " Politécnica del Chimborazo, Facultad de Ciencias Pecuarias).<\/p>"
-  resultado += "<\/li>"
-  resultado += "<li>"
-  resultado += "<p>Moraga, L., Molina, G., Agüero, H., & Zurita, L. (1987). Empleo del Lauril Sulfato de Sodio para el diagnostico de mastitis subclínica. XII Reunión Anual Sociedad Chilena de Producción Animal. Santiago, CL, 46.<\/p>"
-  resultado += "<\/li>"
-  resultado += ""
-  resultado += "<\/ul>"
+  resultado += "<h2 class=\"western\">Libros Consultados y Recomendados<\/h2>"
 
+libros_consultados = [
+  'Lutz, M. (2001). Programming python. " O Reilly Media, Inc.".',
+  'Rossum, G. (1995). Python reference manual.',
+  'Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... & Vanderplas, J. (2011). Scikit-learn: Machine learning in Python. the Journal of machine Learning research, 12, 2825-2830.',
+  'Oliphant, T. E. (2007). Python for scientific computing. Computing in Science & Engineering, 9(3), 10-20.',
+  'Challenger-Pérez, I., Díaz-Ricardo, Y., & Becerra-García, R. A. (2014). El lenguaje de programación Python. Ciencias Holguín, 20(2),',
+  'Van Rossum, G., & Drake Jr, F. L. (1995). Python tutorial (Vol. 620). Amsterdam: Centrum voor Wiskunde en Informatica.',
+  'Talamé, L., Cardoso, A., & Amor, M. (2019). Comparación de herramientas de procesamiento de textos en español extraídos de una red social para Python. In XX Simposio Argentino de Inteligencia Artificial (ASAI 2019)-JAIIO 48 (Salta).',
+  'Ros Gómez, I. (2018). Introducción al aprendizaje supervisado e implementación de una red neuronal en Python.',
+  'Varó, A. M., Sevilla, P. G., & Luengo, I. G. (2014). Introducción a la programación con Python 3. Universitat Jaume I. Servei de Comunicació i Publicacions.',
+  'De las Heras, F. H. (2000). Python, el lenguaje de moda. Linux Actual: la primera revista en castellano del sistema operativo Gnu/Linux, 2(12), 42-44.',
+  'Llulluna Llumiquinga, F. R. (2014). Procesamiento de imágenes mediante software libre python para el análisis metalográfico en aceros de bajo contenido de carbono (Bachelor\'s thesis, QUITO, 2014.).',
+  'CAMACHO-ÁLVAREZ, M. Á., & NAVARRO-ÁLVAREZ, E. (2020). Procesamiento del lenguaje natural con Python Natural language processing with Python. Procesamiento del lenguaje natural, 4(13), 24-28.',
+  'Hernampérez, R. (2010). Iniciación al lenguaje Python. Todo linux: la revista mensual para entusiastas de GNU/LINUX, (121), 38-41.',
+  'Cabezuelo, A. S. (2018). Utilización de notebooks para la enseñanza de Python. In Actas del Congreso Virtual: Avances en Tecnologías, Innovación y Desafíos de la Educación Superior ATIDES 2018 (p. 39). Universitat Jaume I.',
+  'Alvarez, J. J. (2003). Programación de red con Python. Todo linux: la revista mensual para entusiastas de GNU/LINUX, (26), 62-64.',
+  'Díaz, J. (2018). Aplicaciones del lenguaje de programación Python en la docencia de ingeniería de estructuras. In Nuevos desafíos en la enseñanza superior (pp. 653-657). Educación Editora.'
+]
+
+libros_consultados = libros_consultados.sort(function(a, b)
+ {
+  if (a > b) return 1;
+  if (a < b) return -1;
+  return 0;
+});
+
+resultado += '<ul><li>'+libros_consultados.join('</li><li>')+'</li></ul>';
 
 
 
@@ -1637,7 +1610,7 @@ function glosario() {
 
   // Genera los link y lista de glosario
   definiciones = ""
-  definiciones += '<div class="panel panel-info"><div class="panel-heading"><h3 class=\"panel-title\"><b>Glosario de Terminos</b></h3></div><div class="panel-body">'
+  definiciones += '<div class="card"><div class="card-body"><h3 class=\"card-title\"><b>Glosario de Terminos</b></h3></div><div class="card-body">'
   definiciones += imprimirxs;
   definiciones += "<dl>"
   for (var i = 0; i < glosario.length; i++) {
@@ -1662,8 +1635,9 @@ function extra() {
   var dib = "extra/"
 
   function is_img(file) {
-    act = " <span data-toggle = 'tooltip' data-placement = 'bottom' title = 'Contiene Links' class = 'glyphicon glyphicon-file glyphicon-refresh' aria-hidden = 'true'> </span>"
-    acte = " <span data-toggle = 'tooltip' data-placement = 'bottom' title = 'Contiene Links' class = 'glyphicon glyphicon-file glyphicon-warning-sign' aria-hidden = 'true'> </span>"
+    act = "<i title = 'Podra Imprimir' class='fas fa-print'></i>"
+
+    acte = " <i title = 'Podra Imprimir' class='fas fa-exclamation-triangle'></i>"
 
     var ifrmad = ""
     ifrmad += "<p class='text-right'>" +
@@ -1673,10 +1647,10 @@ function extra() {
     ifrmad += "</p>"
     ifrmad += "<div class='alert alert-danger' role='alert'> <strong>" + acte + " Lo Sentimos!</strong> Usted no posee instalado Extensiones de este Curso <a href='" + linkextenciones + "' target='_blank' class='btn btn-info' title='Consulte extensiones disponibles'><b>CONSULTAR EXTENSIONES DISPONIBLES AQUI</b> </a> </div>"
 
-    ifrmad += '<div class="panel panel-info">'
-    ifrmad += '<div class="panel-heading"><b>Como Instalar Extensiones</b></div>'
-    ifrmad += '<div class="panel-body">'
-    ifrmad += '<h1>Como Instalar una Extension</h1>'
+    ifrmad += '<div class="card">'
+  //  ifrmad += '<div class="panel-heading"><b>Como Instalar Extensiones</b></div>'
+    ifrmad += '<div class="card-body">'
+    ifrmad += '<h1 class="card-title">Como Instalar una Extension</h1>'
     ifrmad += '<p>El proceso de instalacion es simple, y se explica y detalla paso a paso en estos 5 sencillos pasos:</p>'
     ifrmad += '<ol><li>Es sencillo, el proceso consiste en adquirir el paquete correspondiente a la extension, este archivo lo recibira en formato .7z que es el formato de compresion standar con el que trabajamos en J.E Suministros y Mas, C.A.</li>'
     ifrmad += '<p class="text-center">'
