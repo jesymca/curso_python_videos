@@ -1,5 +1,5 @@
 // VARIABLES GLOBALES
-deposito = "LMN014200058"
+deposito = "EN TRAMITE"
 nombre_curso = "MANUAL PYTHON 3 EN VIDEOS"
 version = "1.0.0"
 ano = "2020"
