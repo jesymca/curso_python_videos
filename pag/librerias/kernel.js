@@ -1,5 +1,5 @@
 // VARIABLES GLOBALES
-deposito = "AUN EN TRAMITE"
+deposito = "LM04125000455"
 nombre_curso = "MANUAL PYTHON 3 EN VIDEOS"
 version = "1.0.0"
 ano = "2020"
@@ -210,7 +210,7 @@ function botonera() {
 }
 
 function footer_site() {
-  foot = "<div class='navbar navbar-default '><div class='container-fluid'> <div class='row'> <div class='col-sm-12 col-md-6'>"+licencia+" <strong>DEPOSITO LEGAL VENEZUELA: </strong> " + deposito + "</div> " +
+  foot = "<div class='navbar navbar-default '><div class='container-fluid'> <div class='row'> <div class='col-sm-12 col-md-6'>"+licencia+" <strong>DEPOSITO LEGAL VENEZUELA: </strong> <br>" + deposito + "</div> " +
     "<div class='col-sm-12 col-md-6'> <strong>Visitanos en</strong> "+linkjesymca+" <br> "+twitter+"<br> "+telegram+" <br> "+whatsapp
 
   document.getElementById('foot').innerHTML = foot;
