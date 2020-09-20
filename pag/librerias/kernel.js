@@ -1573,16 +1573,16 @@ function glosario() {
     palabra: "clase base abstracta",
     parrafo: "Las clases base abstractas (ABC, por sus siglas en inglés Abstract Base Class) complementan al <code>duck-typing</code> brindando un forma de definir interfaces con técnicas como <code>hasattr()</code> que serían confusas o sutilmente erróneas (por ejemplo con magic methods). Las ABC introduce subclases virtuales, las cuales son clases que no heredan desde una clase pero aún así son reconocidas por <code>isinstance()</code> y <code>issubclass()</code>; vea la documentación del módulo abc. Python viene con muchas ABC incorporadas para las estructuras de datos( en el módulo <code>collections.abc</code>), números (en el módulo <code>numbers</code> ) , flujos de datos (en el módulo <code>io</code> ) , buscadores y cargadores de importaciones (en el módulo <code>importlib.abc</code> ) . Puede crear sus propios ABCs con el módulo <code>abc</code>."
   }, {
-    palabra: "anotación",
+    palabra: "anotacion",
     parrafo: "Una etiqueta asociada a una variable, atributo de clase, parámetro de función o valor de retorno, usado por convención como un type hint. Las anotaciones de variables no pueden ser accedidas en tiempo de ejecución, pero las anotaciones de variables globales, atributos de clase, y funciones son almacenadas en el atributo especial __annotations__ de módulos, clases y funciones, respectivamente."
   }, {
     palabra: "argumento",
     parrafo: "Un valor pasado a una function (o method) cuando se llama a la función. Hay dos clases de argumentos:<br>Argumento nombrado: es un argumento precedido por un identificador (por ejemplo, nombre=) en una llamada a una función o pasado como valor en un diccionario precedido por **. Por ejemplo 3 y 5 son argumentos nombrados en las llamadas a <code>complex()</code>:<br><kbd>complex(real=3, imag=5)<br>complex(**{'real': 3, 'imag': 5})</kbd><br>Argumento posicional son aquellos que no son nombrados. Los argumentos posicionales deben aparecer al principio de una lista de argumentos o ser pasados como elementos de un iterable precedido por *. Por ejemplo, 3 y 5 son argumentos posicionales en las siguientes llamadas:<br><kbd>complex(3, 5)<br>complex(*(3, 5))</kbd><br>Los argumentos son asignados a las variables locales en el cuerpo de la función. Vea en la sección Calls las reglas que rigen estas asignaciones. Sintácticamente, cualquier expresión puede ser usada para representar un argumento; el valor evaluado es asignado a la variable local."
   }, {
-    palabra: "administrador asincrónico de contexto",
+    palabra: "administrador asincronico de contexto",
     parrafo: "Un objeto que controla el entorno visible en un sentencia async with al definir los métodos <code>__aenter__()</code> <code>__aexit__()</code>"
   }, {
-    palabra: "generador asincrónico",
+    palabra: "generador asincronico",
     parrafo: "Una función que retorna un asynchronous generator iterator. Es similar a una función corrutina definida con async def</code> excepto que contiene expresiones <code>yield</code> para producir series de variables usadas en un ciclo <code>async for</code>. Usualmente se refiere a una función generadora asincrónica, pero puede referirse a un iterador generador asincrónico en ciertos contextos. En aquellos casos en los que el significado no está claro, usar los términos completos evita la ambigüedad. Una función generadora asincrónica puede contener expresiones <code>await</code> así como sentencias <code>async for</code>, y <code>async with</code>."
   }, {
     palabra: "clase",
@@ -1615,7 +1615,7 @@ function glosario() {
     palabra: "objeto archivo",
     parrafo: "Un objeto que expone una API orientada a archivos (con métodos como <code>read()</code> o <code>write()</code>) al objeto subyacente. Dependiendo de la forma en la que fue creado, un objeto archivo, puede mediar el acceso a un archivo real en el disco u otro tipo de dispositivo de almacenamiento o de comunicación (por ejemplo, entrada/salida estándar, búfer de memoria, sockets, pipes, etc.). Los objetos archivo son también denominados objetos tipo archivo o flujos."
   }, {
-    palabra: "ruta de importación",
+    palabra: "ruta de importacion",
     parrafo: "Una lista de las ubicaciones (o entradas de ruta) que son revisadas por path based finder al importar módulos. Durante la importación, ésta lista de localizaciones usualmente viene de <code>sys.path</code>, pero para los subpaquetes también puede incluir al atributo <code>__path__</code> del paquete padre."
   }, {
     palabra: "importar",
@@ -1630,19 +1630,19 @@ function glosario() {
     palabra: "interpretado",
     parrafo: "Python es un lenguaje interpretado, a diferencia de uno compilado, a pesar de que la distinción puede ser difusa debido al compilador a bytecode. Esto significa que los archivos fuente pueden ser corridos directamente, sin crear explícitamente un ejecutable que es corrido luego. Los lenguajes interpretados típicamente tienen ciclos de desarrollo y depuración más cortos que los compilados, sin embargo sus programas suelen correr más lentamente."
   }, {
-    palabra: "apagado del intérprete",
+    palabra: "apagado del interprete",
     parrafo: "Cuando se le solicita apagarse, el intérprete Python ingresa a un fase especial en la cual gradualmente libera todos los recursos reservados, como módulos y varias estructuras internas críticas. También hace varias llamadas al recolector de basura. Esto puede disparar la ejecución de código de destructores definidos por el usuario o weakref callbacks. El código ejecutado durante la fase de apagado puede encontrar varias excepciones debido a que los recursos que necesita pueden no funcionar más (ejemplos comunes son los módulos de bibliotecas o los artefactos de advertencias warnings machinery)."
   }, {
-    palabra: "función clave",
+    palabra: "funcion clave",
     parrafo: "Una función clave o una función de colación es un invocable que retorna un valor usado para el ordenamiento o clasificación. Por ejemplo, <code>locale.strxfrm()</code> es usada para producir claves de ordenamiento que se adaptan a las convenciones específicas de ordenamiento de un locale. Cierta cantidad de herramientas de Python aceptan funciones clave para controlar como los elementos son ordenados o agrupados. Incluyendo a <code>min()</code>, <code>max()</code>, <code>sorted()</code>, <code>list.sort()</code>, <code>heapq.merge()</code>, <code>heapq.nsmallest()</code>, <code>heapq.nlargest()</code>, y <code>itertools.groupby()</code>."
   }, {
     palabra: "metaclase",
     parrafo: "La clase de una clase. Las definiciones de clases crean nombres de clase, un diccionario de clase, y una lista de clases base. Las metaclases son responsables de tomar estos tres argumentos y crear la clase. La mayoría de los objetos de un lenguaje de programación orientado a objetos provienen de una implementación por defecto. Lo que hace a Python especial que es posible crear metaclases a medida. La mayoría de los usuario nunca necesitarán esta herramienta, pero cuando la necesidad surge, las metaclases pueden brindar soluciones poderosas y elegantes. Han sido usadas para loggear acceso de atributos, agregar seguridad a hilos, rastrear la creación de objetos, implementar singletons, y muchas otras tareas."
   }, {
-    palabra: "método",
+    palabra: "metodo",
     parrafo: "Una función que es definida dentro del cuerpo de una clase. Si es llamada como un atributo de una instancia de otra clase, el método tomará el objeto instanciado como su primer argument (el cual es usualmente denominado self)."
   }, {
-    palabra: "módulo",
+    palabra: "modulo",
     parrafo: "Un objeto que sirve como unidad de organización del código Python. Los módulos tienen espacios de nombres conteniendo objetos Python arbitrarios. Los módulos son cargados en Python por el proceso de importing."
   }, {
     palabra: "especificador de módulo",
@@ -1671,81 +1671,6 @@ function glosario() {
   }, {
     palabra: "Python",
     parrafo: "Según la Wikipedia Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en una sintaxis que favorezca un código legible. Y define este como un lenguaje multiparadigma, debido a que soporta orientación a objetos, programación imperativa y en menor medida programación funcional."
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "",
-    parrafo: ""
-  }, {
-    palabra: "Acido Benzoico",
-    parrafo: "Su nombre comercial y científico es el mismo ingrediente activo en la fabricación de la crema para alisar el cabello."
   }];
 
   // Ordena de manera alfabetica
