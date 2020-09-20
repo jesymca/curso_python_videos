@@ -1567,6 +1567,153 @@ resultado += '<ul><li>'+libros_consultados.join('</li><li>')+'</li></ul>';
 function glosario() {
 
   var glosario = [{
+    palabra: "2to3",
+    parrafo: "Una herramienta que intenta convertir código de Python 2.x a Python 3.x arreglando la mayoría de las incompatibilidades que pueden ser detectadas analizando el código y recorriendo el árbol de análisis sintáctico. 2to3 está disponible en la biblioteca estándar como lib2to3; un punto de entrada independiente es provisto como <kbd>Tools/scripts/2to3</kbd>"
+  }, {
+    palabra: "clase base abstracta",
+    parrafo: "Las clases base abstractas (ABC, por sus siglas en inglés Abstract Base Class) complementan al <code>duck-typing</code> brindando un forma de definir interfaces con técnicas como <code>hasattr()</code> que serían confusas o sutilmente erróneas (por ejemplo con magic methods). Las ABC introduce subclases virtuales, las cuales son clases que no heredan desde una clase pero aún así son reconocidas por <code>isinstance()</code> y <code>issubclass()</code>; vea la documentación del módulo abc. Python viene con muchas ABC incorporadas para las estructuras de datos( en el módulo <code>collections.abc</code>), números (en el módulo <code>numbers</code> ) , flujos de datos (en el módulo <code>io</code> ) , buscadores y cargadores de importaciones (en el módulo <code>importlib.abc</code> ) . Puede crear sus propios ABCs con el módulo <code>abc</code>."
+  }, {
+    palabra: "anotación",
+    parrafo: "Una etiqueta asociada a una variable, atributo de clase, parámetro de función o valor de retorno, usado por convención como un type hint. Las anotaciones de variables no pueden ser accedidas en tiempo de ejecución, pero las anotaciones de variables globales, atributos de clase, y funciones son almacenadas en el atributo especial __annotations__ de módulos, clases y funciones, respectivamente."
+  }, {
+    palabra: "argumento",
+    parrafo: "Un valor pasado a una function (o method) cuando se llama a la función. Hay dos clases de argumentos:<br>Argumento nombrado: es un argumento precedido por un identificador (por ejemplo, nombre=) en una llamada a una función o pasado como valor en un diccionario precedido por **. Por ejemplo 3 y 5 son argumentos nombrados en las llamadas a <code>complex()</code>:<br><kbd>complex(real=3, imag=5)<br>complex(**{'real': 3, 'imag': 5})</kbd><br>Argumento posicional son aquellos que no son nombrados. Los argumentos posicionales deben aparecer al principio de una lista de argumentos o ser pasados como elementos de un iterable precedido por *. Por ejemplo, 3 y 5 son argumentos posicionales en las siguientes llamadas:<br><kbd>complex(3, 5)<br>complex(*(3, 5))</kbd><br>Los argumentos son asignados a las variables locales en el cuerpo de la función. Vea en la sección Calls las reglas que rigen estas asignaciones. Sintácticamente, cualquier expresión puede ser usada para representar un argumento; el valor evaluado es asignado a la variable local."
+  }, {
+    palabra: "administrador asincrónico de contexto",
+    parrafo: "Un objeto que controla el entorno visible en un sentencia async with al definir los métodos <code>__aenter__()</code> <code>__aexit__()</code>"
+  }, {
+    palabra: "generador asincrónico",
+    parrafo: "Una función que retorna un asynchronous generator iterator. Es similar a una función corrutina definida con async def</code> excepto que contiene expresiones <code>yield</code> para producir series de variables usadas en un ciclo <code>async for</code>. Usualmente se refiere a una función generadora asincrónica, pero puede referirse a un iterador generador asincrónico en ciertos contextos. En aquellos casos en los que el significado no está claro, usar los términos completos evita la ambigüedad. Una función generadora asincrónica puede contener expresiones <code>await</code> así como sentencias <code>async for</code>, y <code>async with</code>."
+  }, {
+    palabra: "clase",
+    parrafo: "Una plantilla para crear objetos definidos por el usuario. Las definiciones de clase normalmente contienen definiciones de métodos que operan una instancia de la clase."
+  }, {
+    palabra: "callback",
+    parrafo: "Una función de subrutina que se pasa como argumento para ejecutarse en algún momento en el futuro."
+  }, {
+    palabra: "variable de clase",
+    parrafo: "Una variable definida en una clase y prevista para ser modificada sólo a nivel de clase (es decir, no en una instancia de la clase)."
+  }, {
+    palabra: "variable de contexto",
+    parrafo: "Una variable que puede tener diferentes valores dependiendo del contexto. Esto es similar a un almacenamiento de hilo local Thread-Local Storage en el cual cada hilo de ejecución puede tener valores diferentes para una variable. Sin embargo, con las variables de contexto, podría haber varios contextos en un hilo de ejecución y el uso principal de las variables de contexto es mantener registro de las variables en tareas concurrentes asíncronas."
+  }, {
+    palabra: "contiguo",
+    parrafo: "Un búfer es considerado contiguo con precisión si es C-contiguo o Fortran contiguo. Los búferes cero dimensionales con C y Fortran contiguos. En los arreglos unidimensionales, los ítems deben ser dispuestos en memoria uno siguiente al otro, ordenados por índices que comienzan en cero. En arreglos unidimensionales C-contiguos, el último índice varía más velozmente en el orden de las direcciones de memoria. Sin embargo, en arreglos Fortran contiguos, el primer índice vería más rápidamente."
+  }, {
+    palabra: "descriptor",
+    parrafo: "Cualquier objeto que define los métodos <code>__get__()</code>, <code>__set__()</code>, o <code>__delete__()</code>. Cuando un atributo de clase es un descriptor, su conducta enlazada especial es disparada durante la búsqueda del atributo. Normalmente, usando a.b para consultar, establecer o borrar un atributo busca el objeto llamado b en el diccionario de clase de a, pero si b es un descriptor, el respectivo método descriptor es llamado. Entender descriptores es clave para lograr una comprensión profunda de Python porque son la base de muchas de las capacidades incluyendo funciones, métodos, propiedades, métodos de clase, métodos estáticos, y referencia a súper clases."
+  }, {
+    palabra: "diccionario",
+    parrafo: "Un arreglo asociativo, con claves arbitrarias que son asociadas a valores. Las claves pueden ser cualquier objeto con los métodos <code>__hash__()</code> y <code>__eq__()</code>."
+  }, {
+    palabra: "vista de diccionario",
+    parrafo: "Los objetos retornados por los métodos <code>dict.keys(),</code> <code>dict.values()</code>, y <code>dict.items()</code> son llamados vistas de diccionarios. Proveen una vista dinámica de las entradas de un diccionario, lo que significa que cuando el diccionario cambia, la vista refleja éstos cambios. Para forzar a la vista de diccionario a convertirse en una lista completa, use <code>list(dictview)</code>."
+  }, {
+    palabra: "docstring",
+    parrafo: "Una cadena de caracteres literal que aparece como la primera expresión en una clase, función o módulo. Aunque es ignorada cuando se ejecuta, es reconocida por el compilador y puesta en el atributo <code>__doc__</code> de la clase, función o módulo comprendida. Como está disponible mediante introspección, es el lugar canónico para ubicar la documentación del objeto."
+  }, {
+    palabra: "objeto archivo",
+    parrafo: "Un objeto que expone una API orientada a archivos (con métodos como <code>read()</code> o <code>write()</code>) al objeto subyacente. Dependiendo de la forma en la que fue creado, un objeto archivo, puede mediar el acceso a un archivo real en el disco u otro tipo de dispositivo de almacenamiento o de comunicación (por ejemplo, entrada/salida estándar, búfer de memoria, sockets, pipes, etc.). Los objetos archivo son también denominados objetos tipo archivo o flujos."
+  }, {
+    palabra: "ruta de importación",
+    parrafo: "Una lista de las ubicaciones (o entradas de ruta) que son revisadas por path based finder al importar módulos. Durante la importación, ésta lista de localizaciones usualmente viene de <code>sys.path</code>, pero para los subpaquetes también puede incluir al atributo <code>__path__</code> del paquete padre."
+  }, {
+    palabra: "importar",
+    parrafo: "El proceso mediante el cual el código Python dentro de un módulo se hace alcanzable desde otro código Python en otro módulo."
+  }, {
+    palabra: "importador",
+    parrafo: "Un objeto que buscan y lee un módulo; un objeto que es tanto finder como loader."
+  }, {
+    palabra: "interactivo",
+    parrafo: "Python tiene un intérprete interactivo, lo que significa que puede ingresar sentencias y expresiones en el prompt del intérprete, ejecutarlos de inmediato y ver sus resultados. Sólo ejecute <code>python</code> sin argumentos (podría seleccionarlo desde el menú principal de su computadora). Es una forma muy potente de probar nuevas ideas o inspeccionar módulos y paquetes (recuerde <code>help(x)</code>)."
+  }, {
+    palabra: "interpretado",
+    parrafo: "Python es un lenguaje interpretado, a diferencia de uno compilado, a pesar de que la distinción puede ser difusa debido al compilador a bytecode. Esto significa que los archivos fuente pueden ser corridos directamente, sin crear explícitamente un ejecutable que es corrido luego. Los lenguajes interpretados típicamente tienen ciclos de desarrollo y depuración más cortos que los compilados, sin embargo sus programas suelen correr más lentamente."
+  }, {
+    palabra: "apagado del intérprete",
+    parrafo: "Cuando se le solicita apagarse, el intérprete Python ingresa a un fase especial en la cual gradualmente libera todos los recursos reservados, como módulos y varias estructuras internas críticas. También hace varias llamadas al recolector de basura. Esto puede disparar la ejecución de código de destructores definidos por el usuario o weakref callbacks. El código ejecutado durante la fase de apagado puede encontrar varias excepciones debido a que los recursos que necesita pueden no funcionar más (ejemplos comunes son los módulos de bibliotecas o los artefactos de advertencias warnings machinery)."
+  }, {
+    palabra: "función clave",
+    parrafo: "Una función clave o una función de colación es un invocable que retorna un valor usado para el ordenamiento o clasificación. Por ejemplo, <code>locale.strxfrm()</code> es usada para producir claves de ordenamiento que se adaptan a las convenciones específicas de ordenamiento de un locale. Cierta cantidad de herramientas de Python aceptan funciones clave para controlar como los elementos son ordenados o agrupados. Incluyendo a <code>min()</code>, <code>max()</code>, <code>sorted()</code>, <code>list.sort()</code>, <code>heapq.merge()</code>, <code>heapq.nsmallest()</code>, <code>heapq.nlargest()</code>, y <code>itertools.groupby()</code>."
+  }, {
+    palabra: "metaclase",
+    parrafo: "La clase de una clase. Las definiciones de clases crean nombres de clase, un diccionario de clase, y una lista de clases base. Las metaclases son responsables de tomar estos tres argumentos y crear la clase. La mayoría de los objetos de un lenguaje de programación orientado a objetos provienen de una implementación por defecto. Lo que hace a Python especial que es posible crear metaclases a medida. La mayoría de los usuario nunca necesitarán esta herramienta, pero cuando la necesidad surge, las metaclases pueden brindar soluciones poderosas y elegantes. Han sido usadas para loggear acceso de atributos, agregar seguridad a hilos, rastrear la creación de objetos, implementar singletons, y muchas otras tareas."
+  }, {
+    palabra: "método",
+    parrafo: "Una función que es definida dentro del cuerpo de una clase. Si es llamada como un atributo de una instancia de otra clase, el método tomará el objeto instanciado como su primer argument (el cual es usualmente denominado self)."
+  }, {
+    palabra: "módulo",
+    parrafo: "Un objeto que sirve como unidad de organización del código Python. Los módulos tienen espacios de nombres conteniendo objetos Python arbitrarios. Los módulos son cargados en Python por el proceso de importing."
+  }, {
+    palabra: "especificador de módulo",
+    parrafo: "Un espacio de nombres que contiene la información relacionada a la importación usada al leer un módulo. Una instancia de <code>importlib.machinery.ModuleSpec</code>."
+  }, {
+    palabra: "mutable",
+    parrafo: "Los objetos mutables pueden cambiar su valor pero mantener su <code>id()</code>."
+  }, {
+    palabra: "espacio de nombres",
+    parrafo: "El lugar donde la variable es almacenada. Los espacios de nombres son implementados como diccionarios. Hay espacio de nombre local, global, e incorporado así como espacios de nombres anidados en objetos (en métodos). Los espacios de nombres soportan modularidad previniendo conflictos de nombramiento. Por ejemplo, las funciones <code>builtins.open</code> y <code>os.open()</code> se distinguen por su espacio de nombres. Los espacios de nombres también ayuda a la legibilidad y mantenibilidad dejando claro qué módulo implementa una función. Por ejemplo, escribiendo <code>random.seed()</code> o <code>itertools.islice()</code> queda claro que éstas funciones están implementadas en los módulos <code>random</code> y <code>itertools</code>, respectivamente."
+  }, {
+    palabra: "alcances anidados",
+    parrafo: "La habilidad de referirse a una variable dentro de una definición encerrada. Por ejemplo, una función definida dentro de otra función puede referir a variables en la función externa. Note que los alcances anidados por defecto sólo funcionan para referencia y no para asignación. Las variables locales leen y escriben sólo en el alcance más interno. De manera semejante, las variables globales pueden leer y escribir en el espacio de nombres global. Con <code>nonlocal</code> se puede escribir en alcances exteriores."
+  }, {
+    palabra: "paquete",
+    parrafo: "Un module Python que puede contener submódulos o recursivamente, subpaquetes. Técnicamente, un paquete es un módulo Python con un atributo <code>__path__</code>."
+  }, {
+    palabra: "archivo de texto",
+    parrafo: "Un file object capaz de leer y escribir objetos str. Frecuentemente, un archivo de texto también accede a un flujo de datos binario y maneja automáticamente el text encoding. Ejemplos de archivos de texto que son abiertos en modo texto ('r' o 'w'), <code>sys.stdin</code>, <code>sys.stdout</code>, y las instancias de <code>io.StringIO</code>."
+  }, {
+    palabra: "entorno virtual",
+    parrafo: "Un entorno cooperativamente aislado de ejecución que permite a los usuarios de Python y a las aplicaciones instalar y actualizar paquetes de distribución de Python sin interferir con el comportamiento de otras aplicaciones de Python en el mismo sistema."
+  }, {
+    palabra: "Zen de Python",
+    parrafo: "Un listado de los principios de diseño y la filosofía de Python que son útiles para entender y usar el lenguaje. El listado puede encontrarse ingresando «import this» en la consola interactiva."
+  }, {
+    palabra: "Python",
+    parrafo: "Según la Wikipedia Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en una sintaxis que favorezca un código legible. Y define este como un lenguaje multiparadigma, debido a que soporta orientación a objetos, programación imperativa y en menor medida programación funcional."
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
+    palabra: "",
+    parrafo: ""
+  }, {
     palabra: "",
     parrafo: ""
   }, {
