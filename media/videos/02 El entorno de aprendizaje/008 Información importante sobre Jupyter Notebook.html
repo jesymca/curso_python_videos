@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>008 Información importante sobre Jupyter Notebook</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Hola! Espero que estés disfrutando el curso hasta ahora. </p><p>Antes de continuar debo informarte de un posible fallo que le sucede a algunos usuarios al utilizar Jupyter Notebook en Windows, y es que en ocasiones el programa se para o las celdas con código no se ejecutan correctamente, se quedan con un mensaje [*] y nunca cargan. </p><p>Si es tu caso o no lo descubrirás en la próxima lección. Por eso te explico de ante mano que debes hacer si no logras hacerlo funcionar correctamente.</p><p>En esencia sólo deberás ir a tu Notebook.bat y editar el fichero con la siguiente configuración:</p>
+
+<pre class="prettyprint linenums">jupyter notebook --ip=127.0.0.1 --port=8889 --NotebookApp.token=</pre>
+
+<p>De esta forma cambiaremos el puerto por defecto y desactivaremos la seguridad extra.<br></p><p>En algunas distribuciones de GNU/Linux también puede servir para lanzar el programa si estás teniendo problemas. En MAC OS no se han reportado problemas.</p><p>Nada más, que sigas disfrutando del curso ;-)</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
