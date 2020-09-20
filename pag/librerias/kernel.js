@@ -4,10 +4,11 @@ nombre_curso = "MANUAL PYTHON 3 EN VIDEOS"
 version = "1.0.0"
 ano = "2020"
 editor = "J.E SUMINISTROS Y MAS, C.A."
+diminutivo = "python3_je" // Nombre del subdirectorio en server para mensajes internos
 cabecera = "<div class = 'container'> <div class = 'row well well-sm'> <div class = 'hidden-xs col-sm-4 col-md-6 text-center'> <h2>Descripcion</h2> </div> <div class = 'hidden-xs col-sm-8 col-md-6 text-center'> <h2>Archivo</h2> </div> </div>"
-mensajeactualizacion = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/python/" // Mensajeria de verificacion de actualizacion
-mensajeextra = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/python/extra/" //Mensajeria contendio extra
-linkextenciones = "http://bit.ly/python3_je" // Link de consulta de actualizaciones
+mensajeactualizacion = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/"+diminutivo+"/" // Mensajeria de verificacion de actualizacion
+mensajeextra = "https://local.jesuministrosymas.com.ve/publi/mensajes/cursos/"+diminutivo+"/extra/" //Mensajeria contendio extra
+linkextenciones = "http://bit.ly/"+diminutivo // Link de consulta de actualizaciones
 logoje = "<img src='media/imagen/logo.png' width='180' height='30' alt='J.E SUMINISTROS Y MAS, C.A.' longdesc='LOGO J.E SUMINISTROS Y MAS, C.A.' id='logo' align='left'>"
 
 lugar = "La República Bolivariana de Venezuela<br> Maracay - Estado Aragua"
@@ -45,15 +46,14 @@ imprimirxs = "<p class='text-right'><a class='btn btn-danger btn-sm' href='javas
 
 
 // TEXTOS DE CONTENIDOS
-texto_bienvenida = 'Le saludo y felicito por la adquisicion de este aplicativo, <b>PYTHON EN VIDEOS.</b>'
+texto_bienvenida = 'Le saludo y felicito por la adquisicion de este aplicativo, <b>PYTHON EN VIDEOS.</b> Aquí aprenderás a programar en Python desde cero, hemos compilado una serie de videos y ejercicios practicos que le permitiran no solo comprender el lenguaje de programacion, si no tambien a escribirlo y desarrollar aplicativos con Python, todos los recursos aqui disponibles han sido previamente revisados y se han compilado especialmente para usuarios como usted que tiene interes en aprender de forma rapida uno de los lenguajes de programacion de mayor crecimiento en la actualidad. <h2>¿Por qué aprender Python?</h2> Python se ha convertido en uno de los lenguajes de programación más populares de los últimos años y su uso está en alza.Es fácil de aprender, permite trabajar en diferentes campos de la informática y existe un amplio catálogo de librerías especializadas pensadas para él que lo hacen realmente interesante.<h2>¿Qué es Python?</h2>Python es un lenguaje de programación de código abierto cuyas principales características son:<br><b>Es multiparadigma:</b> Soporta la programación imperativa, programación orientada a objetos y funcional.<br><b> Es interpretado:</b> El código no se compila a lenguaje máquina.<br><b> Es multiplataforma:</b> Se puede encontrar un intérprete de Python para los principales sistemas operativos: Windows, Linux y Mac OS. Además, se puede reutilizar el mismo código en cada una de las plataformas. <br><b>Es dinámicamente tipado:</b> Es decir, una misma variable puede tomar valores de distinto tipo. <h2>¿Qué se puede hacer con Python?</h2> El lenguaje Python es muy versátil y con él se puede desarrollar software de todo tipo. En la actualidad, es utilizado fundamentalmente en Desarrollo Web, APIs, Inteligencia Artificial, Big Data, Machine Learning, DevOps, Scraping y Desarrollo de microcontroladores (MicroPython). Sitios famosos que usan Python Python es usado por muchos de los gigantes tecnológicos, entre otros: Instagram, Google, Spotify, Netflix o Dropbox. Y tú, ¿lo usas?'
 
 // TEXTO FOOTER
-nota_footer = "<b>Nota:</b>El aprendizaje depende de usted, los humanos solo debemos tener un motivo para hacer las cosas, nada es imposible en esta vida, todo se logra cuando se quiere..!"
 nota_footer = '<div class="alert alert-light text-muted container"><b>Nota:</b>El aprendizaje depende de usted, los humanos solo debemos tener un motivo para hacer las cosas, nada es imposible en esta vida, todo se logra cuando se quiere..!</div>'
 // TEXTO COMO USAR ESTE MANUAL
-como_usar_primer = "El diseño fue pensado de manera intuitiva, para acceder a cada una de las secciones que se desea revisar solo debe hacer clic en la barra de seleccion y navegar dentro del area que prefiera. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-como_usar_segundo = "Se sugiere tomar apuntes de las descripciones del video, de esta manera siempre podra consultar sus notas en cualquier momento. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-como_usar_tercero = "Podra revisar los videos cuantas veces sea necesario y de esa manera podra reforzar todos los conocimientos adquirirdos. Siempre este tipo de cursos esta soportado por una gran cantidad de libros o revistas de soporte. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+como_usar_primer = "El diseño fue pensado de manera intuitiva, para acceder a cada una de las secciones que se desea revisar solo debe hacer clic en la barra de seleccion y navegar dentro del area que prefiera. Los archivos adquirirdos pueden ser copiados en cualquier computadora, tablet o telefono, solo debe copiar todo el contenido de la carpeta del aplicativo y abrir con el navegador web de su preferencia el archivo <b>index.html</b>."
+como_usar_segundo = "Se sugiere tomar apuntes de las descripciones del video, de esta manera siempre podra consultar sus notas en cualquier momento. Si bien es cierto siempre podras volver a la misma area, o al mismo video, recuerda que hay muchas formas de adquirir conocimientos, muchas personas retienen mas viendo un video, otras haciendo ejersicios, otras leyendo un libro o simplemente tomando nota de los datos que considere mas importante de alguna de las lecciones disponibles."
+como_usar_tercero = "Ya se indico que logicamente podra revisar los videos cuantas veces sea necesario y de esa manera podra reforzar todos los conocimientos adquirirdos. Siempre este tipo de cursos esta soportado por una gran cantidad de libros o revistas de soporte, para acceder a ellos debe buscar las areas de Bonos o Archivos Extras."
 
 //a = Componente
 //b = Porcentaje
@@ -1167,7 +1167,7 @@ function videos(a) {
     ruta: rut + "21 Bonus/",
     archivo: "/",
     seccion: 21,
-    contenido: "Visite Nuestra web para ver mas contenido"
+    contenido: "Se han incluido una serie de documentos PDF que pueden reforzar los conocimientos adquirirdos en este curso, todos los ejemplares a los que podras acceder aca no necesariamente estan recomendados dentro de las Referencias Bibliograficas o  en la seccion de Libros sugeridos. "
 
   }];
   let selectedVideo = videos.filter((item) => (
