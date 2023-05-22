@@ -1,4 +1,4 @@
-![JESYMCA](http://www.jesuministrosymas.com.ve/LOGO.png)
+![JESYMCA](https://i.imgur.com/98F3SUI.png)
 
 # Kernel Curso Python 3 en Videos
 
